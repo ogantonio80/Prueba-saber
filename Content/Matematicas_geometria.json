@@ -1,0 +1,25 @@
+{
+  "NOMBRE DEL TEMA": {
+    "lesson": {
+      "summary": "Texto breve de la explicación…",
+      "examples": [],
+      "prerequisites": [],
+      "pitfalls": [],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "id-unico",
+        "difficulty": 2,
+        "tags": ["etiqueta"],
+        "stem": "Enunciado de la pregunta…",
+        "choices": ["Opción A", "Opción B", "Opción C", "Opción D"],
+        "answerIndex": 0,
+        "explanation": "Explicación de por qué es correcta la respuesta…",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  }
+}
