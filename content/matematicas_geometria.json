@@ -1,0 +1,48 @@
+{
+  "Teorema de Pitágoras": {
+    "lesson": {
+      "summary": "En un triángulo rectángulo se cumple a² + b² = c², donde c es la hipotenusa. Esta relación permite calcular longitudes faltantes y verificar si un triángulo es rectángulo.",
+      "examples": [
+        { "title": "Ejemplo 1", "steps": ["Catetos 6 y 8 → c = √(36 + 64) = 10"] },
+        { "title": "Ejemplo 2", "steps": ["c = 13 y b = 5 → a = √(169 − 25) = 12"] }
+      ],
+      "prerequisites": ["Cuadrados y raíces", "Identificar hipotenusa y catetos"],
+      "pitfalls": ["Confundir hipotenusa con cateto", "Olvidar elevar al cuadrado"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Calcular hipotenusa", "Calcular cateto", "Aplicar a contextos"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "pit-001",
+        "difficulty": 2,
+        "tags": ["pitagoras"],
+        "stem": "Un triángulo rectángulo tiene catetos 6 y 8. ¿Cuál es la hipotenusa?",
+        "choices": ["9", "10", "11", "12"],
+        "answerIndex": 1,
+        "explanation": "c = √(6² + 8²) = √(36 + 64) = √100 = 10.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "pit-002",
+        "difficulty": 3,
+        "tags": ["pitagoras"],
+        "stem": "Si c = 13 y uno de los catetos es 5, el otro cateto mide:",
+        "choices": ["10", "11", "12", "9"],
+        "answerIndex": 2,
+        "explanation": "a = √(13² − 5²) = √(169 − 25) = √144 = 12.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "pit-003",
+        "difficulty": 3,
+        "tags": ["pitagoras", "contexto"],
+        "stem": "Una escalera apoya a 12 m de la pared y su base está a 5 m. ¿Longitud de la escalera?",
+        "choices": ["10 m", "11 m", "12 m", "13 m"],
+        "answerIndex": 3,
+        "explanation": "La escalera es la hipotenusa: c = √(12² + 5²) = √(144 + 25) = √169 = 13 m.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  }
+}
