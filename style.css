@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#login-screen {
+    text-align: center;
+    padding: 50px;
+}
+
+.user-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+}
+
+#selection-panel, #content-panel {
+    padding: 20px;
+}
+
+select, button {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+}
+
+#study-content, #practice-content, #simulator-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#options button, #sim-options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.correct {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+    color: white;
+}
