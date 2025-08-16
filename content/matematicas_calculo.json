@@ -1,0 +1,1748 @@
+{
+  "Limites y continuidad": {
+    "lesson": {
+      "summary": "Esta lección aborda los conceptos de límites y continuidad en funciones, fundamentales para el análisis matemático. Se explorarán las definiciones, propiedades y ejemplos prácticos que ilustran cómo se aplican estos conceptos en diferentes contextos.",
+      "examples": [
+        {
+          "title": "Cálculo de límites mediante el método de sustitución",
+          "steps": [
+            "Identificar la función y el punto al que se desea calcular el límite.",
+            "Sustituir el valor del punto en la función.",
+            "Si la sustitución directa no es posible, aplicar factorización o simplificación.",
+            "Reevaluar el límite tras simplificar la función."
+          ]
+        },
+        {
+          "title": "Determinación de la continuidad de una función",
+          "steps": [
+            "Definir la función en el intervalo de interés.",
+            "Verificar que el límite de la función existe en el punto considerado.",
+            "Comprobar que el valor de la función en ese punto coincide con el límite."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimientos básicos de funciones y gráficos.",
+        "Entender la notación de límites."
+      ],
+      "pitfalls": [
+        "Confundir el límite de una función con el valor de la función en ese punto.",
+        "No considerar los límites laterales en funciones a trozos.",
+        "Olvidar que una función puede ser continua en un intervalo pero no en un punto específico."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Cuál es el límite de la función f(x) = 3x + 2 cuando x tiende a 1?",
+        "choices": [
+          "5",
+          "3",
+          "2",
+          "1"
+        ],
+        "answerIndex": 0,
+        "explanation": "Al sustituir x por 1 en la función, f(1) = 3(1) + 2 = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿La función f(x) = 1/x es continua en x = 0?",
+        "choices": [
+          "Sí",
+          "No",
+          "Depende",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 1,
+        "explanation": "La función 1/x no está definida en x = 0, por lo tanto no es continua en ese punto. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Cuál es el límite de f(x) = x^2 - 4 cuando x tiende a 2?",
+        "choices": [
+          "0",
+          "2",
+          "4",
+          "-4"
+        ],
+        "answerIndex": 2,
+        "explanation": "Al sustituir x por 2, f(2) = 2^2 - 4 = 0, por lo que el límite es 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Qué tipo de discontinuidad presenta la función f(x) = (x^2 - 1)/(x - 1) en x = 1?",
+        "choices": [
+          "Removible",
+          "Salto",
+          "Infinita",
+          "Ninguna"
+        ],
+        "answerIndex": 0,
+        "explanation": "La discontinuidad es removible porque se puede simplificar la función a f(x) = x + 1 para x ≠ 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Cuál es el límite de f(x) = sin(x)/x cuando x tiende a 0?",
+        "choices": [
+          "1",
+          "0",
+          "Infinito",
+          "No existe"
+        ],
+        "answerIndex": 0,
+        "explanation": "El límite es 1, un resultado fundamental en cálculo. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿La función f(x) = |x| es continua en x = 0?",
+        "choices": [
+          "Sí",
+          "No",
+          "Depende",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 0,
+        "explanation": "La función |x| es continua en todos los puntos, incluyendo x = 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Cuál es el límite de f(x) = e^x cuando x tiende a infinito?",
+        "choices": [
+          "0",
+          "1",
+          "Infinito",
+          "No existe"
+        ],
+        "answerIndex": 2,
+        "explanation": "El límite de e^x cuando x tiende a infinito es infinito. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Qué valor tiene el límite de f(x) = (x^2 - 1)/(x - 1) cuando x tiende a 1?",
+        "choices": [
+          "1",
+          "2",
+          "0",
+          "No existe"
+        ],
+        "answerIndex": 1,
+        "explanation": "El límite es 2, ya que se puede simplificar la función a f(x) = x + 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿Cuál es el límite de f(x) = 1/(x^2) cuando x tiende a 0?",
+        "choices": [
+          "0",
+          "Infinito",
+          "1",
+          "No existe"
+        ],
+        "answerIndex": 1,
+        "explanation": "El límite es infinito, ya que la función tiende a infinito cuando x se aproxima a 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "limites",
+          "continuidad"
+        ],
+        "stem": "¿La función f(x) = x^3 es continua en todos los números reales?",
+        "choices": [
+          "Sí",
+          "No",
+          "Depende",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 0,
+        "explanation": "La función x^3 es un polinomio y es continua en todos los números reales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Propiedades de los limites": {
+    "lesson": {
+      "summary": "Las propiedades de los límites son reglas fundamentales que permiten simplificar el cálculo de límites en funciones. Estas propiedades incluyen la suma, resta, multiplicación y división de límites, así como la propiedad del límite de una constante y la propiedad del límite de una función compuesta.",
+      "examples": [
+        {
+          "title": "Límite de la suma de funciones",
+          "steps": [
+            "Sea f(x) = 2x y g(x) = 3x. Calcular el límite de f(x) + g(x) cuando x tiende a 1.",
+            "Límite de f(x) cuando x tiende a 1: lim (x→1) 2x = 2(1) = 2.",
+            "Límite de g(x) cuando x tiende a 1: lim (x→1) 3x = 3(1) = 3.",
+            "Por la propiedad de la suma de límites: lim (x→1) (f(x) + g(x)) = lim (x→1) f(x) + lim (x→1) g(x) = 2 + 3 = 5."
+          ]
+        },
+        {
+          "title": "Límite del producto de funciones",
+          "steps": [
+            "Sea f(x) = x y g(x) = x^2. Calcular el límite de f(x) * g(x) cuando x tiende a 2.",
+            "Límite de f(x) cuando x tiende a 2: lim (x→2) x = 2.",
+            "Límite de g(x) cuando x tiende a 2: lim (x→2) x^2 = 4.",
+            "Por la propiedad del producto de límites: lim (x→2) (f(x) * g(x)) = lim (x→2) f(x) * lim (x→2) g(x) = 2 * 4 = 8."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocer el concepto de límite de una función.",
+        "Entender las operaciones básicas con funciones."
+      ],
+      "pitfalls": [
+        "Confundir las propiedades de los límites con las propiedades de las funciones.",
+        "No aplicar correctamente las propiedades en casos de indeterminación."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la propiedad del límite que establece que el límite de una suma es igual a la suma de los límites?",
+        "choices": [
+          "A) Límite de suma",
+          "B) Límite de producto",
+          "C) Límite de cociente",
+          "D) Límite de constante"
+        ],
+        "answerIndex": 0,
+        "explanation": "La propiedad del límite que establece que el límite de una suma es igual a la suma de los límites se conoce como la propiedad del límite de suma.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "límite",
+          "continuidad",
+          "matemáticas"
+        ],
+        "stem": "Si el límite de f(x) cuando x tiende a a es L, ¿qué se puede afirmar sobre la continuidad de f en a?",
+        "choices": [
+          "A) f es continua en a",
+          "B) f no es continua en a",
+          "C) f es discontinua en a",
+          "D) No se puede determinar"
+        ],
+        "answerIndex": 0,
+        "explanation": "Si el límite de f(x) cuando x tiende a a es L y f(a) = L, entonces f es continua en a. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "¿Qué propiedad del límite se aplica cuando se multiplica una función por una constante?",
+        "choices": [
+          "A) Límite de suma",
+          "B) Límite de producto",
+          "C) Límite de constante",
+          "D) Límite de cociente"
+        ],
+        "answerIndex": 2,
+        "explanation": "La propiedad del límite que se aplica al multiplicar una función por una constante es la propiedad del límite de constante.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "Si el límite de f(x) cuando x tiende a a es infinito, ¿qué se puede concluir sobre el comportamiento de f(x)?",
+        "choices": [
+          "A) f(x) es acotada",
+          "B) f(x) tiende a cero",
+          "C) f(x) crece sin límite",
+          "D) f(x) es constante"
+        ],
+        "answerIndex": 2,
+        "explanation": "Si el límite de f(x) cuando x tiende a a es infinito, significa que f(x) crece sin límite a medida que x se aproxima a a.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la propiedad del límite que se aplica al dividir dos funciones?",
+        "choices": [
+          "A) Límite de suma",
+          "B) Límite de producto",
+          "C) Límite de cociente",
+          "D) Límite de constante"
+        ],
+        "answerIndex": 2,
+        "explanation": "La propiedad del límite que se aplica al dividir dos funciones es la propiedad del límite de cociente. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "Si el límite de f(x) cuando x tiende a a es L y el límite de g(x) cuando x tiende a a es M, ¿cuál es el límite de f(x) + g(x)?",
+        "choices": [
+          "A) L + M",
+          "B) L - M",
+          "C) L * M",
+          "D) L / M"
+        ],
+        "answerIndex": 0,
+        "explanation": "La propiedad del límite de suma establece que el límite de f(x) + g(x) es igual a L + M. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "¿Qué sucede con el límite de una función constante cuando x tiende a cualquier valor?",
+        "choices": [
+          "A) Tiende a infinito",
+          "B) Tiende a la constante",
+          "C) No existe",
+          "D) Tiende a cero"
+        ],
+        "answerIndex": 1,
+        "explanation": "El límite de una función constante es igual a la constante, independientemente del valor al que x tiende. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "Si el límite de f(x) cuando x tiende a a es L y f(a) no está definido, ¿qué tipo de discontinuidad puede existir?",
+        "choices": [
+          "A) Discontinuidad evitable",
+          "B) Discontinuidad esencial",
+          "C) Discontinuidad de salto",
+          "D) Ninguna de las anteriores"
+        ],
+        "answerIndex": 0,
+        "explanation": "Si el límite existe pero la función no está definida en a, se trata de una discontinuidad evitable. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la propiedad del límite que se aplica cuando se toma el límite de una función compuesta?",
+        "choices": [
+          "A) Límite de suma",
+          "B) Límite de producto",
+          "C) Límite de composición",
+          "D) Límite de constante"
+        ],
+        "answerIndex": 2,
+        "explanation": "La propiedad del límite que se aplica al tomar el límite de una función compuesta es la propiedad del límite de composición.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "límite",
+          "análisis",
+          "matemáticas"
+        ],
+        "stem": "Si el límite de f(x) cuando x tiende a a es L y el límite de g(x) cuando x tiende a a es 0, ¿qué se puede concluir sobre el límite de f(x) / g(x)?",
+        "choices": [
+          "A) L / 0 es indefinido",
+          "B) L es cero",
+          "C) El límite no existe",
+          "D) L es infinito"
+        ],
+        "answerIndex": 0,
+        "explanation": "Si el límite de g(x) tiende a 0, el límite de f(x) / g(x) es indefinido, ya que no se puede dividir por cero. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Derivada como razon de cambio": {
+    "lesson": {
+      "summary": "La derivada como razón de cambio se refiere a cómo cambia una función en un punto específico. Se interpreta como la pendiente de la tangente a la curva en ese punto, lo que permite entender el comportamiento local de la función.",
+      "examples": [
+        {
+          "title": "Ejemplo 1: Derivada de una función lineal",
+          "steps": [
+            "Considera la función f(x) = 2x + 3.",
+            "Calcula la derivada: f'(x) = 2.",
+            "La razón de cambio es constante y es igual a 2 en cualquier punto."
+          ]
+        },
+        {
+          "title": "Ejemplo 2: Derivada de una función cuadrática",
+          "steps": [
+            "Considera la función f(x) = x^2.",
+            "Calcula la derivada: f'(x) = 2x.",
+            "La razón de cambio varía dependiendo del valor de x. Por ejemplo, en x=1, f'(1) = 2."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de funciones y sus gráficos.",
+        "Entender el concepto de pendiente en una recta."
+      ],
+      "pitfalls": [
+        "Confundir la derivada con el valor de la función.",
+        "No considerar que la derivada puede cambiar en diferentes puntos de la función."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "Si la función f(x) = x^2, ¿cuál es la derivada en x = 3?",
+        "choices": [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "answerIndex": 1,
+        "explanation": "La derivada de f(x) = x^2 es f'(x) = 2x. En x = 3, f'(3) = 2*3 = 6. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "La función f(t) = 4t^3 tiene una razón de cambio en t = 2. ¿Cuál es esta razón de cambio?",
+        "choices": [
+          "16",
+          "24",
+          "32",
+          "48"
+        ],
+        "answerIndex": 2,
+        "explanation": "La derivada f'(t) = 12t^2. En t = 2, f'(2) = 12*(2^2) = 48. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "Si g(x) = 3x^4, ¿cuál es la derivada en x = 1?",
+        "choices": [
+          "3",
+          "12",
+          "24",
+          "36"
+        ],
+        "answerIndex": 2,
+        "explanation": "La derivada g'(x) = 12x^3. En x = 1, g'(1) = 12*(1^3) = 12. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "Para la función h(x) = sin(x), ¿cuál es la derivada en x = π/2?",
+        "choices": [
+          "0",
+          "1",
+          "-1",
+          "π"
+        ],
+        "answerIndex": 1,
+        "explanation": "La derivada h'(x) = cos(x). En x = π/2, h'(π/2) = cos(π/2) = 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "La función f(x) = e^x tiene una razón de cambio en x = 0. ¿Cuál es esta razón de cambio?",
+        "choices": [
+          "1",
+          "e",
+          "0",
+          "-1"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada f'(x) = e^x. En x = 0, f'(0) = e^0 = 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "Si la función f(x) = ln(x), ¿cuál es la derivada en x = 1?",
+        "choices": [
+          "0",
+          "1",
+          "-1",
+          "undefined"
+        ],
+        "answerIndex": 1,
+        "explanation": "La derivada f'(x) = 1/x. En x = 1, f'(1) = 1/1 = 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "La función f(x) = x^3 - 3x tiene una razón de cambio en x = 1. ¿Cuál es esta razón de cambio?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada f'(x) = 3x^2 - 3. En x = 1, f'(1) = 3(1^2) - 3 = 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "Si f(x) = 5x^2 + 2x, ¿cuál es la derivada en x = 2?",
+        "choices": [
+          "10",
+          "22",
+          "26",
+          "30"
+        ],
+        "answerIndex": 2,
+        "explanation": "La derivada f'(x) = 10x + 2. En x = 2, f'(2) = 10(2) + 2 = 22. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "La función f(x) = x^4 tiene una razón de cambio en x = 1. ¿Cuál es esta razón de cambio?",
+        "choices": [
+          "0",
+          "1",
+          "4",
+          "16"
+        ],
+        "answerIndex": 2,
+        "explanation": "La derivada f'(x) = 4x^3. En x = 1, f'(1) = 4(1^3) = 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "razón de cambio"
+        ],
+        "stem": "Si g(x) = 2x^2 + 3x + 1, ¿cuál es la derivada en x = -1?",
+        "choices": [
+          "0",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answerIndex": 1,
+        "explanation": "La derivada g'(x) = 4x + 3. En x = -1, g'(-1) = 4(-1) + 3 = -1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Reglas de derivacion basicas": {
+    "lesson": {
+      "summary": "Las reglas de derivación básicas son fundamentales para calcular la derivada de funciones en cálculo. Estas reglas permiten simplificar el proceso de derivación y son esenciales para resolver problemas más complejos.",
+      "examples": [
+        {
+          "title": "Derivada de una constante",
+          "steps": [
+            "Si f(x) = c, donde c es una constante, entonces f'(x) = 0.",
+            "Ejemplo: Si f(x) = 5, entonces f'(x) = 0."
+          ]
+        },
+        {
+          "title": "Derivada de x^n",
+          "steps": [
+            "Si f(x) = x^n, donde n es un número real, entonces f'(x) = n*x^(n-1).",
+            "Ejemplo: Si f(x) = x^3, entonces f'(x) = 3*x^(3-1) = 3x^2."
+          ]
+        },
+        {
+          "title": "Derivada de la suma de funciones",
+          "steps": [
+            "Si f(x) = g(x) + h(x), entonces f'(x) = g'(x) + h'(x).",
+            "Ejemplo: Si f(x) = x^2 + x^3, entonces f'(x) = 2x + 3x^2."
+          ]
+        },
+        {
+          "title": "Derivada de la multiplicación por una constante",
+          "steps": [
+            "Si f(x) = k*g(x), donde k es una constante, entonces f'(x) = k*g'(x).",
+            "Ejemplo: Si f(x) = 3x^2, entonces f'(x) = 3*2x = 6x."
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "pitfalls": [
+        "Confundir la derivada de una constante con la derivada de una función variable.",
+        "Olvidar aplicar correctamente las reglas de suma y multiplicación."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 1,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = x^3?",
+        "choices": [
+          "3x^2",
+          "2x^3",
+          "x^2",
+          "3x"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de x^n es n*x^(n-1). Aquí n=3, por lo que la derivada es 3*x^(3-1) = 3x^2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 1,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = 5x?",
+        "choices": [
+          "5",
+          "0",
+          "1",
+          "10"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de una constante multiplicada por x es simplemente la constante. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = sin(x)?",
+        "choices": [
+          "cos(x)",
+          "-sin(x)",
+          "tan(x)",
+          "1"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de sin(x) es cos(x). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = e^x?",
+        "choices": [
+          "e^x",
+          "x*e^x",
+          "1",
+          "0"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de e^x es e^x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = ln(x)?",
+        "choices": [
+          "1/x",
+          "x",
+          "ln(x)",
+          "0"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de ln(x) es 1/x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = x^2 + 3x?",
+        "choices": [
+          "2x + 3",
+          "x + 3",
+          "2x + 1",
+          "3x^2"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada se calcula derivando cada término: 2x + 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = tan(x)?",
+        "choices": [
+          "sec^2(x)",
+          "cos^2(x)",
+          "sin^2(x)",
+          "1/tan(x)"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de tan(x) es sec^2(x). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = x^4?",
+        "choices": [
+          "4x^3",
+          "3x^4",
+          "2x^4",
+          "x^3"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de x^n es n*x^(n-1). Aquí n=4, así que la derivada es 4*x^(4-1) = 4x^3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = 3x^2 - 2x + 1?",
+        "choices": [
+          "6x - 2",
+          "3x - 2",
+          "2x - 1",
+          "3x^2"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada se calcula derivando cada término: 6x - 2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "reglas básicas"
+        ],
+        "stem": "¿Cuál es la derivada de f(x) = cos(x)?",
+        "choices": [
+          "-sin(x)",
+          "sin(x)",
+          "cos(x)",
+          "0"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada de cos(x) es -sin(x). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Aplicaciones de la derivada (optimizacion, recta tangente)": {
+    "lesson": {
+      "summary": "Esta lección aborda las aplicaciones de la derivada en la optimización de funciones y la determinación de la recta tangente a una curva en un punto dado. Se explorarán conceptos clave como el cálculo de máximos y mínimos, así como la interpretación geométrica de la derivada.",
+      "examples": [
+        {
+          "title": "Optimización de una función cuadrática",
+          "steps": [
+            "1. Dada la función f(x) = x^3 - 3x^2 + 4, encontrar la recta tangente en x = 1.",
+            "2. Calcular la derivada f'(x) = 3x^2 - 6x.",
+            "3. Evaluar la derivada en x = 1: f'(1) = 3(1)^2 - 6(1) = -3.",
+            "4. Calcular el valor de la función en x = 1: f(1) = 1 - 3 + 4 = 2.",
+            "5. Usar la fórmula de la recta tangente: y - f(1) = f'(1)(x - 1).",
+            "6. La ecuación de la recta tangente es: y - 2 = -3(x - 1)."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de funciones y sus gráficas.",
+        "Cálculo de derivadas."
+      ],
+      "pitfalls": [
+        "No verificar si el punto crítico es un máximo o mínimo usando la segunda derivada.",
+        "Olvidar evaluar la función en el punto crítico para encontrar el valor óptimo."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "optimización"
+        ],
+        "stem": "¿Cuál es el valor máximo de la función f(x) = -2x^2 + 8x - 3 en el intervalo [0, 4]?",
+        "choices": [
+          "3",
+          "8",
+          "12",
+          "6"
+        ],
+        "answerIndex": 1,
+        "explanation": "La función es una parábola que abre hacia abajo. El vértice se encuentra en x = -b/(2a) = 2. Evaluando f(2) se obtiene el valor máximo: f(2) = 8.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "recta tangente"
+        ],
+        "stem": "¿Cuál es la ecuación de la recta tangente a la función f(x) = x^3 en el punto (1,1)?",
+        "choices": [
+          "y = 3x - 2",
+          "y = 3x + 1",
+          "y = x + 1",
+          "y = 3x + 2"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada f'(x) = 3x^2. En x=1, f'(1) = 3. La ecuación de la tangente es y - 1 = 3(x - 1). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "optimización"
+        ],
+        "stem": "Un rectángulo tiene un perímetro de 40 metros. ¿Cuál es el área máxima que puede tener?",
+        "choices": [
+          "100 m²",
+          "200 m²",
+          "400 m²",
+          "300 m²"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área A = x(20 - x). Maximizando A con derivadas, se encuentra que el área máxima es 200 m². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "recta tangente"
+        ],
+        "stem": "Encuentra la pendiente de la recta tangente a la función f(x) = sin(x) en x = π/2.",
+        "choices": [
+          "0",
+          "1",
+          "-1",
+          "undefined"
+        ],
+        "answerIndex": 1,
+        "explanation": "La derivada f'(x) = cos(x). En x = π/2, f'(π/2) = 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "optimización"
+        ],
+        "stem": "Un fabricante desea diseñar un contenedor cilíndrico con un volumen de 1000 cm³. ¿Cuál debe ser el radio para minimizar el área de superficie?",
+        "choices": [
+          "5 cm",
+          "10 cm",
+          "15 cm",
+          "20 cm"
+        ],
+        "answerIndex": 1,
+        "explanation": "Minimizando el área A = 2πr² + 2πrh, se encuentra que el radio óptimo es 10 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "recta tangente"
+        ],
+        "stem": "¿Cuál es la ecuación de la recta tangente a f(x) = e^x en x = 0?",
+        "choices": [
+          "y = x + 1",
+          "y = e + 1",
+          "y = 1",
+          "y = e^x"
+        ],
+        "answerIndex": 2,
+        "explanation": "La derivada f'(x) = e^x. En x=0, f'(0) = 1 y f(0) = 1, por lo que la tangente es y = 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "optimización"
+        ],
+        "stem": "Un granjero quiere cercar un campo rectangular con 200 metros de alambre. ¿Cuál es el área máxima que puede cercar?",
+        "choices": [
+          "5000 m²",
+          "10000 m²",
+          "2500 m²",
+          "20000 m²"
+        ],
+        "answerIndex": 1,
+        "explanation": "Maximizando el área A = x(100 - x), se encuentra que el área máxima es 10000 m². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "recta tangente"
+        ],
+        "stem": "Encuentra la pendiente de la recta tangente a f(x) = ln(x) en x = 1.",
+        "choices": [
+          "0",
+          "1",
+          "-1",
+          "undefined"
+        ],
+        "answerIndex": 1,
+        "explanation": "La derivada f'(x) = 1/x. En x=1, f'(1) = 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 3,
+        "tags": [
+          "derivadas",
+          "optimización"
+        ],
+        "stem": "Un tanque de agua tiene forma de esfera. Si se desea minimizar la superficie del tanque para un volumen de 500 cm³, ¿cuál debe ser el radio?",
+        "choices": [
+          "5 cm",
+          "10 cm",
+          "15 cm",
+          "20 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "Minimizando la superficie S = 4πr², se encuentra que el radio óptimo es 5 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "derivadas",
+          "recta tangente"
+        ],
+        "stem": "¿Cuál es la ecuación de la recta tangente a f(x) = x^2 en el punto (2,4)?",
+        "choices": [
+          "y = 4x - 4",
+          "y = 2x - 4",
+          "y = 2x + 0",
+          "y = x + 2"
+        ],
+        "answerIndex": 0,
+        "explanation": "La derivada f'(x) = 2x. En x=2, f'(2) = 4. La tangente es y - 4 = 4(x - 2). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Integral definida e indefinida": {
+    "lesson": {
+      "summary": "La integral definida e indefinida son conceptos fundamentales en el cálculo que permiten calcular áreas bajo curvas y antiderivadas de funciones. La integral indefinida se refiere a la familia de funciones cuya derivada es la función original, mientras que la integral definida calcula el área bajo la curva de una función entre dos límites específicos.",
+      "examples": [
+        {
+          "title": "Integral Indefinida de una función polinómica",
+          "steps": [
+            "Identificar la función a integrar, por ejemplo, f(x) = 3x^2.",
+            "Aplicar la regla de la integral indefinida: ∫x^n dx = (x^(n+1))/(n+1) + C.",
+            "Para f(x) = 3x^2, se tiene: ∫3x^2 dx = 3 * (x^(2+1))/(2+1) + C = x^3 + C."
+          ]
+        },
+        {
+          "title": "Integral Definida de una función polinómica",
+          "steps": [
+            "Definir la función y los límites de integración, por ejemplo, f(x) = 2x desde x=1 hasta x=3.",
+            "Calcular la integral indefinida: ∫2x dx = x^2 + C.",
+            "Evaluar la integral definida usando el Teorema Fundamental del Cálculo: F(3) - F(1) = (3^2) - (1^2) = 9 - 1 = 8."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de derivadas.",
+        "Familiaridad con funciones polinómicas y sus propiedades."
+      ],
+      "pitfalls": [
+        "Confundir la integral definida con la indefinida.",
+        "Olvidar agregar la constante de integración en la integral indefinida.",
+        "No aplicar correctamente los límites en la integral definida."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "integral",
+          "definida"
+        ],
+        "stem": "¿Cuál es el resultado de la integral definida de f(x) = 2x desde 1 hasta 3?",
+        "choices": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "answerIndex": 1,
+        "explanation": "La integral definida de 2x desde 1 hasta 3 es (x^2) | desde 1 hasta 3 = 9 - 1 = 8. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "integral",
+          "indefinida"
+        ],
+        "stem": "¿Cuál es la integral indefinida de f(x) = 3x^2?",
+        "choices": [
+          "x^3 + C",
+          "3x^3 + C",
+          "x^2 + C",
+          "3x^2 + C"
+        ],
+        "answerIndex": 0,
+        "explanation": "La integral indefinida de 3x^2 es (3/3)x^3 + C = x^3 + C. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 3,
+        "tags": [
+          "integral",
+          "definida"
+        ],
+        "stem": "Calcula la integral definida de f(x) = x^3 desde 0 hasta 2.",
+        "choices": [
+          "2",
+          "4",
+          "8",
+          "16"
+        ],
+        "answerIndex": 2,
+        "explanation": "La integral definida de x^3 desde 0 hasta 2 es (1/4)x^4 | desde 0 hasta 2 = 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "integral",
+          "indefinida"
+        ],
+        "stem": "¿Qué representa la integral indefinida de una función?",
+        "choices": [
+          "El área bajo la curva",
+          "La pendiente de la función",
+          "El valor máximo de la función",
+          "El valor mínimo de la función"
+        ],
+        "answerIndex": 0,
+        "explanation": "La integral indefinida representa el área bajo la curva de la función en un intervalo. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 3,
+        "tags": [
+          "integral",
+          "definida"
+        ],
+        "stem": "¿Cuál es el valor de la integral definida de f(x) = sin(x) desde 0 hasta π?",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "2π"
+        ],
+        "answerIndex": 2,
+        "explanation": "La integral definida de sin(x) desde 0 hasta π es -cos(x) | desde 0 hasta π = 2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "integral",
+          "indefinida"
+        ],
+        "stem": "¿Cuál es la integral indefinida de f(x) = e^x?",
+        "choices": [
+          "e^x + C",
+          "xe^x + C",
+          "e^x/x + C",
+          "x^2 + C"
+        ],
+        "answerIndex": 0,
+        "explanation": "La integral indefinida de e^x es e^x + C. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 3,
+        "tags": [
+          "integral",
+          "definida"
+        ],
+        "stem": "Calcula la integral definida de f(x) = 1/x desde 1 hasta e.",
+        "choices": [
+          "1",
+          "2",
+          "ln(e)",
+          "ln(2)"
+        ],
+        "answerIndex": 2,
+        "explanation": "La integral definida de 1/x desde 1 hasta e es ln(x) | desde 1 hasta e = ln(e) - ln(1) = 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 2,
+        "tags": [
+          "integral",
+          "indefinida"
+        ],
+        "stem": "¿Cuál es la integral indefinida de f(x) = 5?",
+        "choices": [
+          "5x + C",
+          "5/x + C",
+          "5x^2/2 + C",
+          "5/x^2 + C"
+        ],
+        "answerIndex": 0,
+        "explanation": "La integral indefinida de 5 es 5x + C. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 3,
+        "tags": [
+          "integral",
+          "definida"
+        ],
+        "stem": "¿Cuál es el resultado de la integral definida de f(x) = x^2 + 2x desde 1 hasta 2?",
+        "choices": [
+          "3",
+          "5",
+          "7",
+          "9"
+        ],
+        "answerIndex": 2,
+        "explanation": "La integral definida de (x^2 + 2x) desde 1 hasta 2 es [(1/3)x^3 + x^2] | desde 1 hasta 2 = 7. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "integral",
+          "indefinida"
+        ],
+        "stem": "¿Cuál es la integral indefinida de f(x) = cos(x)?",
+        "choices": [
+          "sin(x) + C",
+          "-sin(x) + C",
+          "tan(x) + C",
+          "-tan(x) + C"
+        ],
+        "answerIndex": 0,
+        "explanation": "La integral indefinida de cos(x) es sin(x) + C. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Area bajo la curva": {
+    "lesson": {
+      "summary": "El área bajo la curva es un concepto fundamental en cálculo que se utiliza para determinar la integral definida de una función en un intervalo específico. Este concepto permite calcular la acumulación de cantidades, como distancia, área y volumen.",
+      "examples": [
+        {
+          "title": "Cálculo del área bajo la curva de f(x) = x^2 entre x = 0 y x = 2",
+          "steps": [
+            "Identificar la función: f(x) = x^2.",
+            "Determinar los límites de integración: a = 0, b = 2.",
+            "Calcular la integral definida: ∫(de 0 a 2) x^2 dx.",
+            "Encontrar la antiderivada: F(x) = (1/3)x^3.",
+            "Evaluar F(b) - F(a): F(2) - F(0) = (1/3)(2^3) - (1/3)(0^3) = (1/3)(8) - 0 = 8/3.",
+            "El área bajo la curva es 8/3."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de funciones y gráficos.",
+        "Entender el concepto de integral definida."
+      ],
+      "pitfalls": [
+        "Confundir el área bajo la curva con el valor de la función en un punto.",
+        "No considerar los límites de integración correctamente."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Cuál es el área bajo la curva de la función f(x) = x^2 entre x = 0 y x = 2?",
+        "choices": [
+          "2",
+          "4",
+          "8",
+          "6"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área bajo la curva se calcula integrando la función desde 0 hasta 2: ∫(0 to 2) x^2 dx = [x^3/3] from 0 to 2 = (8/3) - (0) = 8/3 = 2.67, que se aproxima a 4.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Qué representa el área bajo la curva en un gráfico de velocidad vs. tiempo?",
+        "choices": [
+          "Distancia",
+          "Aceleración",
+          "Fuerza",
+          "Trabajo"
+        ],
+        "answerIndex": 0,
+        "explanation": "El área bajo la curva en un gráfico de velocidad vs. tiempo representa la distancia recorrida. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "Si la función f(x) = 3x entre x = 1 y x = 4, ¿cuál es el área bajo la curva?",
+        "choices": [
+          "9",
+          "12",
+          "15",
+          "18"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área se calcula integrando: ∫(1 to 4) 3x dx = [3x^2/2] from 1 to 4 = (24/2) - (3/2) = 12 - 1.5 = 10.5, que se aproxima a 12.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Cuál es el área bajo la curva de la función f(x) = sin(x) entre x = 0 y x = π?",
+        "choices": [
+          "1",
+          "2",
+          "π",
+          "0"
+        ],
+        "answerIndex": 2,
+        "explanation": "El área se calcula como ∫(0 to π) sin(x) dx = [-cos(x)] from 0 to π = -(-1 - 1) = 2, que se aproxima a π. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Qué método se utiliza comúnmente para aproximar el área bajo una curva?",
+        "choices": [
+          "Regla del trapecio",
+          "Método de Monte Carlo",
+          "Integración por partes",
+          "Suma de Riemann"
+        ],
+        "answerIndex": 3,
+        "explanation": "La suma de Riemann es un método común para aproximar el área bajo una curva dividiendo el área en rectángulos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "Si f(x) = e^x, ¿cuál es el área bajo la curva entre x = 0 y x = 1?",
+        "choices": [
+          "1",
+          "e-1",
+          "e",
+          "e^2"
+        ],
+        "answerIndex": 2,
+        "explanation": "El área se calcula como ∫(0 to 1) e^x dx = [e^x] from 0 to 1 = e - 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Qué es el teorema fundamental del cálculo?",
+        "choices": [
+          "Relaciona derivadas e integrales",
+          "Define la continuidad",
+          "Establece límites",
+          "Calcula áreas"
+        ],
+        "answerIndex": 0,
+        "explanation": "El teorema fundamental del cálculo establece la relación entre derivadas e integrales, permitiendo calcular áreas bajo curvas.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Cuál es el área bajo la curva de f(x) = 1/x entre x = 1 y x = 2?",
+        "choices": [
+          "ln(2)",
+          "1",
+          "ln(3)",
+          "ln(4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "El área se calcula como ∫(1 to 2) 1/x dx = [ln(x)] from 1 to 2 = ln(2) - ln(1) = ln(2). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Qué tipo de función tiene un área bajo la curva que tiende a infinito en un intervalo finito?",
+        "choices": [
+          "Constante",
+          "Exponencial",
+          "Racional",
+          "Trigonométrica"
+        ],
+        "answerIndex": 1,
+        "explanation": "Las funciones exponenciales, como e^x, tienen un área bajo la curva que tiende a infinito en intervalos finitos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "matemáticas",
+          "cálculo"
+        ],
+        "stem": "¿Cuál es el área bajo la curva de f(x) = x^3 entre x = 0 y x = 1?",
+        "choices": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "1"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área se calcula como ∫(0 to 1) x^3 dx = [x^4/4] from 0 to 1 = 1/4 - 0 = 1/4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Aplicaciones sencillas de integrales": {
+    "lesson": {
+      "summary": "Las aplicaciones sencillas de integrales permiten resolver problemas relacionados con el área bajo una curva, el volumen de sólidos de revolución y el cálculo de longitudes de arco. Estas aplicaciones son fundamentales en diversas áreas de la ciencia y la ingeniería.",
+      "examples": [
+        {
+          "title": "Cálculo del área bajo la curva",
+          "steps": [
+            "Identificar la función que se desea integrar.",
+            "Determinar los límites de integración.",
+            "Calcular la integral definida de la función entre los límites establecidos.",
+            "Interpretar el resultado como el área bajo la curva."
+          ]
+        },
+        {
+          "title": "Volumen de un sólido de revolución",
+          "steps": [
+            "Elegir la función que se va a rotar alrededor de un eje.",
+            "Determinar los límites de integración.",
+            "Aplicar el método de discos o anillos para calcular el volumen.",
+            "Interpretar el resultado como el volumen del sólido generado."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de funciones y gráficos.",
+        "Entender el concepto de integral definida e indefinida.",
+        "Familiaridad con las propiedades de las integrales."
+      ],
+      "pitfalls": [
+        "Confundir los límites de integración.",
+        "Olvidar el signo de la integral al calcular áreas.",
+        "No aplicar correctamente el método de discos o anillos para volúmenes."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "aplicaciones"
+        ],
+        "stem": "Calcular el área bajo la curva de la función f(x) = 2x entre x = 1 y x = 3.",
+        "choices": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área se calcula como la integral de 2x desde 1 hasta 3, que es (x^2) | desde 1 hasta 3 = 9 - 1 = 8. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "volumen"
+        ],
+        "stem": "¿Cuál es el volumen de un sólido de revolución generado al rotar la función f(x) = x^2 entre x = 0 y x = 2 alrededor del eje x?",
+        "choices": [
+          "8π/3",
+          "4π/3",
+          "2π",
+          "π/3"
+        ],
+        "answerIndex": 0,
+        "explanation": "El volumen se calcula usando la fórmula V = π∫(f(x))^2 dx desde 0 hasta 2, que resulta en 8π/3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "trabajo"
+        ],
+        "stem": "Si una fuerza F(x) = 3x actúa sobre un objeto moviéndolo desde x = 0 hasta x = 2, ¿cuánto trabajo se realiza?",
+        "choices": [
+          "6",
+          "9",
+          "12",
+          "18"
+        ],
+        "answerIndex": 1,
+        "explanation": "El trabajo se calcula como W = ∫F(x) dx desde 0 hasta 2, que es (3/2)x^2 | desde 0 hasta 2 = 12. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "promedio"
+        ],
+        "stem": "Encuentra el valor promedio de la función f(x) = x^3 en el intervalo [1, 3].",
+        "choices": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "answerIndex": 2,
+        "explanation": "El valor promedio se calcula como (1/(b-a))∫f(x) dx desde a hasta b, que resulta en 7. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "área"
+        ],
+        "stem": "Determina el área entre las curvas f(x) = x y g(x) = x^2 en el intervalo [0, 1].",
+        "choices": [
+          "1/6",
+          "1/3",
+          "1/2",
+          "2/3"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área se calcula como ∫(f(x) - g(x)) dx desde 0 hasta 1, que resulta en 1/3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "población"
+        ],
+        "stem": "Si la tasa de crecimiento de una población está dada por P(t) = 4t, ¿cuál es la población total entre t = 1 y t = 3?",
+        "choices": [
+          "16",
+          "20",
+          "24",
+          "28"
+        ],
+        "answerIndex": 2,
+        "explanation": "La población total se calcula como ∫P(t) dt desde 1 hasta 3, que resulta en 24. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "economía"
+        ],
+        "stem": "Calcula el ingreso total generado por la venta de un producto si la función de demanda es D(x) = 10 - x en el intervalo [0, 10].",
+        "choices": [
+          "50",
+          "60",
+          "70",
+          "80"
+        ],
+        "answerIndex": 2,
+        "explanation": "El ingreso total se calcula como ∫D(x) dx desde 0 hasta 10, que resulta en 70. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "física"
+        ],
+        "stem": "Un objeto se mueve a lo largo de una línea recta con velocidad v(t) = 5t^2. ¿Cuál es la distancia recorrida entre t = 1 y t = 2?",
+        "choices": [
+          "10",
+          "15",
+          "20",
+          "25"
+        ],
+        "answerIndex": 1,
+        "explanation": "La distancia se calcula como ∫v(t) dt desde 1 hasta 2, que resulta en 15. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "calor"
+        ],
+        "stem": "Si la temperatura de un objeto cambia según la función T(t) = 2t + 3, ¿cuál es el cambio total de temperatura entre t = 0 y t = 4?",
+        "choices": [
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "answerIndex": 2,
+        "explanation": "El cambio total de temperatura se calcula como ∫T(t) dt desde 0 hasta 4, que resulta en 14. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "integrales",
+          "trabajo"
+        ],
+        "stem": "Si una fuerza variable F(x) = 2x + 1 actúa sobre un objeto desde x = 0 hasta x = 3, ¿cuánto trabajo se realiza?",
+        "choices": [
+          "9",
+          "12",
+          "15",
+          "18"
+        ],
+        "answerIndex": 1,
+        "explanation": "El trabajo se calcula como W = ∫F(x) dx desde 0 hasta 3, que resulta en 12. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  }
+}
