@@ -1,0 +1,38 @@
+{
+  "subjects": {
+    "Matemáticas": {
+      "areas": {
+        "Álgebra": "content/matematicas_algebra.json",
+        "Geometría": "content/matematicas_geometria.json",
+        "Cálculo": "content/matematicas_calculo.json",
+        "Estadística y Probabilidad": "content/matematicas_estadistica_y_probabilidad.json"
+      }
+    },
+    "Ciencias Naturales": {
+      "areas": {
+        "Biología": "content/ciencias_naturales_biologia.json",
+        "Química": "content/ciencias_naturales_quimica.json",
+        "Física": "content/ciencias_naturales_fisica.json"
+      }
+    },
+    "Lectura Crítica": {
+      "areas": {
+        "Comprensión": "content/lectura_critica_comprension.json",
+        "Argumentación": "content/lectura_critica_argumentacion.json",
+        "Relación y Estructura": "content/lectura_critica_relacion_y_estructura.json"
+      }
+    },
+    "Ciencias Sociales": {
+      "areas": {
+        "Historia": "content/ciencias_sociales_historia.json",
+        "Geografía": "content/ciencias_sociales_geografia.json",
+        "Ciudadanía y Economía": "content/ciencias_sociales_ciudadania_y_economia.json"
+      }
+    },
+    "Inglés": {
+      "areas": {
+        "Comprensión de lectura": "content/ingles_comprension_de_lectura.json"
+      }
+    }
+  }
+}
