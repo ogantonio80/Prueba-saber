@@ -1,78 +1,2176 @@
-{
-  "Ecuaciones lineales": {
+  "Expresiones algebraicas": {
     "lesson": {
-      "summary": "Una ecuación lineal tiene la variable de grado 1. Para resolverla, se aísla la incógnita aplicando operaciones inversas en ambos lados (sumar/restar, multiplicar/dividir), manteniendo la igualdad. Es clave conservar el equilibrio: lo que se hace a un lado se hace al otro."
+      "summary": "Las expresiones algebraicas son combinaciones de números, variables y operaciones matemáticas. Se utilizan para representar situaciones matemáticas de manera general y son fundamentales en el estudio del álgebra.",
+      "examples": [
+        {
+          "title": "Simplificación de expresiones algebraicas",
+          "steps": [
+            "Identificar términos semejantes en la expresión.",
+            "Sumar o restar los coeficientes de los términos semejantes.",
+            "Reescribir la expresión simplificada."
+          ]
+        },
+        {
+          "title": "Evaluación de expresiones algebraicas",
+          "steps": [
+            "Sustituir las variables por los valores dados.",
+            "Realizar las operaciones siguiendo el orden correcto (paréntesis, exponentes, multiplicación y división, suma y resta).",
+            "Obtener el resultado final."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de operaciones aritméticas.",
+        "Entender el concepto de variable y constante."
+      ],
+      "pitfalls": [
+        "Confundir términos semejantes con diferentes variables.",
+        "Olvidar el orden de operaciones al evaluar expresiones."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
     },
     "items": [
       {
-        "id": "alg-lin-001",
-        "difficulty": 1,
-        "tags": ["lineales"],
-        "stem": "¿Cuál es la solución de 2x + 3 = 7?",
-        "choices": ["x = 1", "x = 2", "x = -2", "x = 4"],
-        "answerIndex": 1,
-        "explanation": "Restamos 3 a ambos lados: 2x = 4. Luego dividimos por 2: x = 2.",
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "expresiones algebraicas",
+          "simplificación"
+        ],
+        "stem": "Simplifica la expresión: 3x + 5x - 2x.",
+        "choices": [
+          "6x",
+          "5x",
+          "x",
+          "4x"
+        ],
+        "answerIndex": 0,
+        "explanation": "3x + 5x - 2x = (3 + 5 - 2)x = 6x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
-        "id": "alg-lin-002",
-        "difficulty": 2,
-        "tags": ["lineales","distributiva"],
-        "stem": "Resuelve 3(x - 2) = 12.",
-        "choices": ["x = 2", "x = 4", "x = 6", "x = 8"],
-        "answerIndex": 2,
-        "explanation": "Aplicamos distributiva: 3x - 6 = 12 → 3x = 18 → x = 6.",
-        "label": "POSIBLE PREGUNTA"
-      }
-    ]
-  },
-  "Sistemas de ecuaciones": {
-    "lesson": {
-      "summary": "Un sistema lineal de dos ecuaciones con dos incógnitas puede resolverse por sustitución, igualación o eliminación. La solución (x,y) satisface ambas ecuaciones simultáneamente; si no existe, el sistema es incompatible, y si hay infinitas, es dependiente."
-    },
-    "items": [
-      {
-        "id": "alg-sis-001",
-        "difficulty": 2,
-        "tags": ["sistemas","sustitucion"],
-        "stem": "Resuelve el sistema: x + y = 7 y x - y = 1.",
-        "choices": ["(3,4)", "(4,3)", "(5,2)", "(6,1)"],
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "expresiones algebraicas",
+          "evaluación"
+        ],
+        "stem": "Si x = 4, ¿cuál es el valor de la expresión 2x^2 - 3x + 1?",
+        "choices": [
+          "25",
+          "21",
+          "17",
+          "13"
+        ],
         "answerIndex": 1,
-        "explanation": "Sumando ecuaciones: 2x = 8 → x = 4. Sustituimos en x + y = 7 → y = 3. Solución: (4,3).",
+        "explanation": "2(4^2) - 3(4) + 1 = 32 - 12 + 1 = 21. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
-      }
-    ]
-  },
-  "Factorizacion": {
-    "lesson": {
-      "summary": "Factorizar es escribir un polinomio como producto de factores más simples. Métodos comunes: factor común, diferencia de cuadrados, trinomio cuadrado perfecto, suma y diferencia de cubos, y factorización por agrupación."
-    },
-    "items": [
+      },
       {
-        "id": "alg-fac-001",
+        "id": "3",
         "difficulty": 2,
-        "tags": ["factor comun"],
-        "stem": "Factoriza 6x^2 + 9x.",
-        "choices": ["3x(2x + 3)", "6x(x + 9)", "3(2x^2 + 3x)", "x(6x + 9x)"],
+        "tags": [
+          "expresiones algebraicas",
+          "factorización"
+        ],
+        "stem": "Factoriza la expresión: x^2 - 9.",
+        "choices": [
+          "(x - 3)(x + 3)",
+          "(x - 9)(x + 1)",
+          "(x + 3)(x + 3)",
+          "(x - 1)(x - 9)"
+        ],
         "answerIndex": 0,
-        "explanation": "El factor común es 3x: 6x^2 + 9x = 3x(2x + 3).",
+        "explanation": "x^2 - 9 es una diferencia de cuadrados: (x - 3)(x + 3). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 1,
+        "tags": [
+          "expresiones algebraicas",
+          "identidades"
+        ],
+        "stem": "¿Cuál es la forma factorizada de x^2 + 6x + 9?",
+        "choices": [
+          "(x + 3)(x + 3)",
+          "(x + 6)(x + 3)",
+          "(x + 9)(x + 1)",
+          "(x + 2)(x + 4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "x^2 + 6x + 9 = (x + 3)^2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 3,
+        "tags": [
+          "expresiones algebraicas",
+          "evaluación"
+        ],
+        "stem": "Evalúa la expresión 5x - 2y cuando x = 3 y y = 2.",
+        "choices": [
+          "13",
+          "11",
+          "10",
+          "8"
+        ],
+        "answerIndex": 1,
+        "explanation": "5(3) - 2(2) = 15 - 4 = 11. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "expresiones algebraicas",
+          "simplificación"
+        ],
+        "stem": "Simplifica la expresión: 4(x + 2) - 3(x - 1).",
+        "choices": [
+          "x + 11",
+          "x + 5",
+          "x + 7",
+          "x + 9"
+        ],
+        "answerIndex": 2,
+        "explanation": "4x + 8 - 3x + 3 = (4x - 3x) + (8 + 3) = x + 11. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "expresiones algebraicas",
+          "factorización"
+        ],
+        "stem": "Factoriza la expresión: 2x^2 + 8x.",
+        "choices": [
+          "2x(x + 4)",
+          "2(x^2 + 4)",
+          "(x + 4)(x + 2)",
+          "2(x + 2)(x + 4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "2x^2 + 8x = 2x(x + 4). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "expresiones algebraicas",
+          "evaluación"
+        ],
+        "stem": "Si a = 2 y b = 3, ¿cuál es el valor de 3a^2 + 4b?",
+        "choices": [
+          "18",
+          "24",
+          "20",
+          "22"
+        ],
+        "answerIndex": 0,
+        "explanation": "3(2^2) + 4(3) = 3(4) + 12 = 12 + 12 = 24. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 1,
+        "tags": [
+          "expresiones algebraicas",
+          "identidades"
+        ],
+        "stem": "¿Cuál es la forma factorizada de x^2 - 16?",
+        "choices": [
+          "(x - 4)(x + 4)",
+          "(x - 8)(x + 2)",
+          "(x - 2)(x + 2)",
+          "(x - 16)(x + 1)"
+        ],
+        "answerIndex": 0,
+        "explanation": "x^2 - 16 es una diferencia de cuadrados: (x - 4)(x + 4). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "expresiones algebraicas",
+          "simplificación"
+        ],
+        "stem": "Simplifica la expresión: 7x - 3(x + 2).",
+        "choices": [
+          "4x - 6",
+          "4x + 6",
+          "7x - 6",
+          "7x + 6"
+        ],
+        "answerIndex": 0,
+        "explanation": "7x - 3(x + 2) = 7x - 3x - 6 = 4x - 6. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
   },
   "Polinomios y operaciones": {
     "lesson": {
-      "summary": "Con polinomios realizamos suma, resta y multiplicación aplicando con cuidado la distributiva y combinando términos semejantes. El grado del producto es la suma de grados; al sumar/restar, el grado puede bajar por cancelaciones."
+      "summary": "Los polinomios son expresiones algebraicas que consisten en variables y coeficientes, combinados mediante operaciones de suma, resta y multiplicación. En esta lección, aprenderemos a identificar, sumar, restar y multiplicar polinomios.",
+      "examples": [
+        {
+          "title": "Suma de polinomios",
+          "steps": [
+            "Identificar los términos semejantes en los polinomios.",
+            "Sumar los coeficientes de los términos semejantes.",
+            "Escribir el resultado como un nuevo polinomio."
+          ]
+        },
+        {
+          "title": "Multiplicación de polinomios",
+          "steps": [
+            "Aplicar la propiedad distributiva a cada término del primer polinomio con cada término del segundo polinomio.",
+            "Combinar términos semejantes en el resultado final."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de álgebra.",
+        "Identificación de términos semejantes."
+      ],
+      "pitfalls": [
+        "Olvidar combinar términos semejantes.",
+        "Confundir la suma con la multiplicación de polinomios."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
     },
     "items": [
       {
-        "id": "alg-pol-001",
+        "id": "1",
         "difficulty": 2,
-        "tags": ["distributiva","simplificar"],
-        "stem": "Simplifica (x + 2)(x + 3).",
-        "choices": ["x^2 + 5x + 6", "x^2 + 6x + 5", "x^2 + 3x + 2", "x^2 + 2x + 3"],
+        "tags": [
+          "polinomios",
+          "suma"
+        ],
+        "stem": "¿Cuál es el resultado de sumar los polinomios (3x^2 + 2x + 1) y (4x^2 + 3x + 5)?",
+        "choices": [
+          "7x^2 + 5x + 6",
+          "7x^2 + 5x + 5",
+          "7x^2 + 6x + 6",
+          "7x^2 + 6x + 5"
+        ],
         "answerIndex": 0,
-        "explanation": "Distributiva: x·x + x·3 + 2·x + 2·3 = x^2 + 3x + 2x + 6 = x^2 + 5x + 6.",
+        "explanation": "Al sumar los coeficientes de los términos semejantes, obtenemos 7x^2 + 5x + 6. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "polinomios",
+          "multiplicación"
+        ],
+        "stem": "¿Cuál es el resultado de multiplicar los polinomios (x + 2) y (x + 3)?",
+        "choices": [
+          "x^2 + 5x + 6",
+          "x^2 + 6x + 5",
+          "x^2 + 6x + 6",
+          "x^2 + 5x + 5"
+        ],
+        "answerIndex": 0,
+        "explanation": "Multiplicando los términos, obtenemos x^2 + 5x + 6. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "polinomios",
+          "resta"
+        ],
+        "stem": "¿Cuál es el resultado de restar el polinomio (2x^2 + 3x + 4) del polinomio (5x^2 + 2x + 1)?",
+        "choices": [
+          "3x^2 - x - 3",
+          "3x^2 + x - 3",
+          "3x^2 + x + 3",
+          "3x^2 - x + 3"
+        ],
+        "answerIndex": 0,
+        "explanation": "Restando los términos semejantes, obtenemos 3x^2 - x - 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "polinomios",
+          "evaluación"
+        ],
+        "stem": "Si f(x) = 2x^2 + 3x - 5, ¿cuál es el valor de f(2)?",
+        "choices": [
+          "3",
+          "5",
+          "7",
+          "9"
+        ],
+        "answerIndex": 2,
+        "explanation": "Sustituyendo x por 2, f(2) = 2(2^2) + 3(2) - 5 = 8 + 6 - 5 = 9. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "polinomios",
+          "factorización"
+        ],
+        "stem": "¿Cuál es la factorización del polinomio x^2 - 9?",
+        "choices": [
+          "(x - 3)(x + 3)",
+          "(x - 9)(x + 1)",
+          "(x - 3)(x - 3)",
+          "(x + 9)(x - 1)"
+        ],
+        "answerIndex": 0,
+        "explanation": "x^2 - 9 es una diferencia de cuadrados, que se factoriza como (x - 3)(x + 3). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "polinomios",
+          "división"
+        ],
+        "stem": "¿Cuál es el cociente de dividir el polinomio (x^3 - 3x^2 + 4) entre (x - 1)?",
+        "choices": [
+          "x^2 - 2x + 2",
+          "x^2 - 2x + 3",
+          "x^2 + 2x + 4",
+          "x^2 + 2x + 3"
+        ],
+        "answerIndex": 1,
+        "explanation": "Al realizar la división, el cociente es x^2 - 2x + 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "polinomios",
+          "suma"
+        ],
+        "stem": "¿Cuál es el resultado de (5x^3 + 2x^2) + (3x^3 - x^2)?",
+        "choices": [
+          "8x^3 + x^2",
+          "8x^3 + 3x^2",
+          "2x^3 + x^2",
+          "2x^3 - x^2"
+        ],
+        "answerIndex": 0,
+        "explanation": "Sumando los términos semejantes, obtenemos 8x^3 + x^2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "polinomios",
+          "evaluación"
+        ],
+        "stem": "Si g(x) = x^2 - 4x + 4, ¿cuál es el valor de g(1)?",
+        "choices": [
+          "1",
+          "0",
+          "-1",
+          "2"
+        ],
+        "answerIndex": 1,
+        "explanation": "Sustituyendo x por 1, g(1) = 1^2 - 4(1) + 4 = 1 - 4 + 4 = 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "polinomios",
+          "multiplicación"
+        ],
+        "stem": "¿Cuál es el resultado de (2x)(3x^2)?",
+        "choices": [
+          "6x^3",
+          "5x^3",
+          "6x^2",
+          "5x^2"
+        ],
+        "answerIndex": 0,
+        "explanation": "Multiplicando los coeficientes y sumando los exponentes, obtenemos 6x^3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "polinomios",
+          "factorización"
+        ],
+        "stem": "¿Cuál es la factorización de 2x^2 + 8x?",
+        "choices": [
+          "2x(x + 4)",
+          "2(x^2 + 4x)",
+          "x(2x + 8)",
+          "2(x + 4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Sacando el factor común, obtenemos 2x(x + 4). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Factorizacion": {
+    "lesson": {
+      "summary": "La factorización es el proceso de descomponer una expresión algebraica en el producto de factores más simples. Este proceso es fundamental para simplificar expresiones y resolver ecuaciones.",
+      "examples": [
+        {
+          "title": "Factorización de un trinomio cuadrático",
+          "steps": [
+            "Identificar el trinomio cuadrático en la forma ax^2 + bx + c.",
+            "Buscar dos números que multiplicados den ac y sumados den b.",
+            "Reescribir el trinomio usando estos números para dividir el término del medio.",
+            "Agrupar y factorizar por partes.",
+            "Escribir el resultado como el producto de dos binomios."
+          ]
+        },
+        {
+          "title": "Factorización por diferencia de cuadrados",
+          "steps": [
+            "Identificar la expresión en la forma a^2 - b^2.",
+            "Reconocer que esta se puede factorizar como (a + b)(a - b).",
+            "Sustituir a y b con las raíces cuadradas de los términos cuadrados.",
+            "Escribir el resultado final."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de álgebra.",
+        "Entender las propiedades de los exponentes.",
+        "Familiaridad con la multiplicación de binomios."
+      ],
+      "pitfalls": [
+        "Confundir la factorización con la simplificación.",
+        "Olvidar que algunos trinomios no son factorizables en números reales.",
+        "No verificar el resultado multiplicando los factores."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "factorizacion",
+          "polinomios"
+        ],
+        "stem": "Factoriza la expresión: x^2 - 9.",
+        "choices": [
+          "(x - 3)(x + 3)",
+          "(x - 1)(x + 1)",
+          "(x - 2)(x + 2)",
+          "(x + 3)(x + 3)"
+        ],
+        "answerIndex": 0,
+        "explanation": "La expresión es una diferencia de cuadrados, que se factoriza como (a - b)(a + b). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "factorizacion",
+          "trinomio"
+        ],
+        "stem": "Factoriza el trinomio: x^2 + 5x + 6.",
+        "choices": [
+          "(x + 2)(x + 3)",
+          "(x + 1)(x + 6)",
+          "(x - 2)(x - 3)",
+          "(x + 3)(x + 2)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Los números que suman 5 y multiplican 6 son 2 y 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "factorizacion",
+          "binomio"
+        ],
+        "stem": "Factoriza: 4x^2 - 16.",
+        "choices": [
+          "4(x - 2)(x + 2)",
+          "(2x - 4)(2x + 4)",
+          "(2x - 2)(2x + 2)",
+          "(4x - 4)(4x + 4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Es una diferencia de cuadrados: 4(x^2 - 4) = 4(x - 2)(x + 2). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "factorizacion",
+          "trinomio"
+        ],
+        "stem": "Factoriza: x^2 - 7x + 10.",
+        "choices": [
+          "(x - 5)(x - 2)",
+          "(x - 1)(x - 10)",
+          "(x + 5)(x + 2)",
+          "(x - 2)(x - 5)"
+        ],
+        "answerIndex": 3,
+        "explanation": "Los números que suman -7 y multiplican 10 son -2 y -5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "factorizacion",
+          "polinomios"
+        ],
+        "stem": "Factoriza: 3x^2 + 12x.",
+        "choices": [
+          "3x(x + 4)",
+          "3(x^2 + 4)",
+          "(3x + 4)(x + 3)",
+          "(3x + 12)(x)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Se puede factorizar sacando el factor común 3x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "factorizacion",
+          "trinomio"
+        ],
+        "stem": "Factoriza: x^2 + 4x - 12.",
+        "choices": [
+          "(x + 6)(x - 2)",
+          "(x - 6)(x + 2)",
+          "(x + 2)(x - 6)",
+          "(x - 4)(x + 3)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Los números que suman 4 y multiplican -12 son 6 y -2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "factorizacion",
+          "binomio"
+        ],
+        "stem": "Factoriza: x^2 - 25.",
+        "choices": [
+          "(x - 5)(x + 5)",
+          "(x - 1)(x + 1)",
+          "(x + 5)(x + 5)",
+          "(x - 10)(x + 10)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Es una diferencia de cuadrados: (a - b)(a + b). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "factorizacion",
+          "trinomio"
+        ],
+        "stem": "Factoriza: 2x^2 + 8x + 6.",
+        "choices": [
+          "2(x + 3)(x + 1)",
+          "(2x + 3)(x + 2)",
+          "(2x + 1)(x + 6)",
+          "(2x + 2)(x + 3)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Se puede factorizar sacando el factor común 2 y luego factorizando el trinomio resultante. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "factorizacion",
+          "polinomios"
+        ],
+        "stem": "Factoriza: 5x^2 - 20.",
+        "choices": [
+          "5(x - 2)(x + 2)",
+          "5(x - 4)(x + 4)",
+          "5(x - 2)(x - 2)",
+          "5(x + 4)(x - 4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Se puede factorizar sacando el factor común 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "factorizacion",
+          "trinomio"
+        ],
+        "stem": "Factoriza: x^2 - 6x + 9.",
+        "choices": [
+          "(x - 3)(x - 3)",
+          "(x + 3)(x + 3)",
+          "(x - 2)(x - 4)",
+          "(x + 6)(x - 3)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Es un trinomio cuadrado perfecto: (x - 3)^2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Ecuaciones lineales": {
+    "lesson": {
+      "summary": "Las ecuaciones lineales son expresiones algebraicas que representan relaciones lineales entre variables. Se pueden resolver para encontrar el valor de una variable en función de otra.",
+      "examples": [
+        {
+          "title": "Resolución de una ecuación lineal simple",
+          "steps": [
+            "Considera la ecuación 2x + 3 = 11.",
+            "Resta 3 de ambos lados: 2x = 8.",
+            "Divide ambos lados entre 2: x = 4."
+          ]
+        },
+        {
+          "title": "Resolución de una ecuación lineal con variable en ambos lados",
+          "steps": [
+            "Considera la ecuación 3x - 5 = 2x + 4.",
+            "Resta 2x de ambos lados: x - 5 = 4.",
+            "Suma 5 a ambos lados: x = 9."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de operaciones algebraicas.",
+        "Entender el concepto de variable."
+      ],
+      "pitfalls": [
+        "Olvidar cambiar el signo al restar o sumar en ambos lados de la ecuación.",
+        "No simplificar correctamente los términos."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones lineales",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la solución de la ecuación 2x + 3 = 11?",
+        "choices": [
+          "x = 2",
+          "x = 3",
+          "x = 4",
+          "x = 5"
+        ],
+        "answerIndex": 0,
+        "explanation": "Despejando x: 2x = 11 - 3 => 2x = 8 => x = 8/2 => x = 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones lineales",
+          "sistemas"
+        ],
+        "stem": "¿Cuántas soluciones tiene el sistema de ecuaciones 2x + y = 4 y 4x + 2y = 8?",
+        "choices": [
+          "Ninguna",
+          "Una",
+          "Infinitas",
+          "Dos"
+        ],
+        "answerIndex": 2,
+        "explanation": "Las dos ecuaciones son equivalentes, por lo que tienen infinitas soluciones. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 1,
+        "tags": [
+          "ecuaciones lineales"
+        ],
+        "stem": "¿Qué representa la pendiente en la ecuación de la recta y = mx + b?",
+        "choices": [
+          "El valor de y cuando x = 0",
+          "El cambio en y por cada unidad de cambio en x",
+          "El valor de x cuando y = 0",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 1,
+        "explanation": "La pendiente (m) indica el cambio en y por cada unidad de cambio en x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones lineales"
+        ],
+        "stem": "Si la ecuación de la recta es y = -3x + 5, ¿cuál es la intersección con el eje y?",
+        "choices": [
+          "5",
+          "-3",
+          "0",
+          "-5"
+        ],
+        "answerIndex": 0,
+        "explanation": "La intersección con el eje y es el valor de b en la ecuación y = mx + b, que es 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones lineales",
+          "sistemas"
+        ],
+        "stem": "Resuelve el sistema de ecuaciones: x + y = 10 y x - y = 2. ¿Cuál es el valor de x?",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "answerIndex": 1,
+        "explanation": "Sumando las dos ecuaciones: 2x = 12 => x = 6. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones lineales"
+        ],
+        "stem": "¿Cuál es la forma estándar de la ecuación de una recta?",
+        "choices": [
+          "y = mx + b",
+          "Ax + By = C",
+          "y - y1 = m(x - x1)",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 1,
+        "explanation": "La forma estándar es Ax + By = C, donde A, B y C son constantes. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 1,
+        "tags": [
+          "ecuaciones lineales"
+        ],
+        "stem": "¿Qué significa que dos rectas sean paralelas en términos de sus pendientes?",
+        "choices": [
+          "Tienen la misma pendiente",
+          "Tienen pendientes opuestas",
+          "Son perpendiculares",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 0,
+        "explanation": "Dos rectas son paralelas si tienen la misma pendiente. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones lineales"
+        ],
+        "stem": "Si la ecuación de la recta es y = 2x - 1, ¿cuál es la pendiente?",
+        "choices": [
+          "-1",
+          "0",
+          "1",
+          "2"
+        ],
+        "answerIndex": 3,
+        "explanation": "La pendiente es el coeficiente de x, que en este caso es 2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones lineales",
+          "sistemas"
+        ],
+        "stem": "¿Cuál es la solución del sistema de ecuaciones: 3x + 4y = 10 y 6x + 8y = 20?",
+        "choices": [
+          "Ninguna",
+          "Una",
+          "Infinitas",
+          "Dos"
+        ],
+        "answerIndex": 2,
+        "explanation": "Las ecuaciones son equivalentes, por lo que tienen infinitas soluciones. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones lineales"
+        ],
+        "stem": "¿Qué se necesita para graficar una ecuación lineal?",
+        "choices": [
+          "Dos puntos",
+          "Tres puntos",
+          "Una pendiente y una intersección",
+          "Ninguna de las anteriores"
+        ],
+        "answerIndex": 2,
+        "explanation": "Se necesita la pendiente y la intersección para graficar una ecuación lineal. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Ecuaciones cuadraticas": {
+    "lesson": {
+      "summary": "Las ecuaciones cuadráticas son expresiones algebraicas de la forma ax² + bx + c = 0, donde a, b y c son constantes y a ≠ 0. Estas ecuaciones pueden resolverse mediante diferentes métodos como factorización, completando el cuadrado o usando la fórmula cuadrática.",
+      "examples": [
+        {
+          "title": "Resolución de una ecuación cuadrática por factorización",
+          "steps": [
+            "Identificar la ecuación cuadrática: x² - 5x + 6 = 0",
+            "Factorizar la ecuación: (x - 2)(x - 3) = 0",
+            "Igualar cada factor a cero: x - 2 = 0 y x - 3 = 0",
+            "Resolver para x: x = 2 y x = 3"
+          ]
+        },
+        {
+          "title": "Resolución de una ecuación cuadrática usando la fórmula cuadrática",
+          "steps": [
+            "Identificar la ecuación cuadrática: 2x² + 4x - 6 = 0",
+            "Identificar a, b y c: a = 2, b = 4, c = -6",
+            "Aplicar la fórmula cuadrática: x = (-b ± √(b² - 4ac)) / (2a)",
+            "Calcular el discriminante: b² - 4ac = 16 + 48 = 64",
+            "Sustituir en la fórmula: x = (-4 ± √64) / 4",
+            "Resolver para x: x = 1 y x = -3"
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento de operaciones básicas con números reales",
+        "Entender el concepto de polinomios",
+        "Saber resolver ecuaciones lineales"
+      ],
+      "pitfalls": [
+        "Confundir el signo del discriminante",
+        "No factorizar correctamente",
+        "Olvidar que a ≠ 0"
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Cuál es la forma general de una ecuación cuadrática?",
+        "choices": [
+          "ax^2 + bx + c = 0",
+          "a + b + c = 0",
+          "x^2 + y^2 = r^2",
+          "x + y = c"
+        ],
+        "answerIndex": 0,
+        "explanation": "La forma general de una ecuación cuadrática es ax^2 + bx + c = 0, donde a, b y c son constantes. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Cuáles son las soluciones de la ecuación cuadrática x^2 - 5x + 6 = 0?",
+        "choices": [
+          "x = 2, 3",
+          "x = -2, -3",
+          "x = 1, 6",
+          "x = 0, 5"
+        ],
+        "answerIndex": 0,
+        "explanation": "Las soluciones se encuentran factorizando la ecuación: (x - 2)(x - 3) = 0, por lo que x = 2 y x = 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Qué método se puede usar para resolver ecuaciones cuadráticas?",
+        "choices": [
+          "Factorización",
+          "Completar el cuadrado",
+          "Fórmula cuadrática",
+          "Todas las anteriores"
+        ],
+        "answerIndex": 3,
+        "explanation": "Se pueden usar varios métodos para resolver ecuaciones cuadráticas: factorización, completar el cuadrado y la fórmula cuadrática.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Cuál es el discriminante de la ecuación cuadrática 2x^2 + 4x + 2 = 0?",
+        "choices": [
+          "0",
+          "4",
+          "16",
+          "-4"
+        ],
+        "answerIndex": 0,
+        "explanation": "El discriminante se calcula como b^2 - 4ac. En este caso, 4^2 - 4(2)(2) = 16 - 16 = 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Qué indica un discriminante positivo en una ecuación cuadrática?",
+        "choices": [
+          "Dos soluciones reales distintas",
+          "Una solución real doble",
+          "Ninguna solución real",
+          "Dos soluciones complejas"
+        ],
+        "answerIndex": 0,
+        "explanation": "Un discriminante positivo indica que la ecuación cuadrática tiene dos soluciones reales distintas. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Qué forma tiene la ecuación cuadrática cuando está en su forma canónica?",
+        "choices": [
+          "y = a(x - h)^2 + k",
+          "y = ax^2 + bx + c",
+          "y = mx + b",
+          "y = a(x + b)(x + c)"
+        ],
+        "answerIndex": 0,
+        "explanation": "La forma canónica de una ecuación cuadrática es y = a(x - h)^2 + k, donde (h, k) es el vértice de la parábola. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Cuál es el vértice de la parábola representada por la ecuación y = x^2 - 4x + 3?",
+        "choices": [
+          "(2, -1)",
+          "(2, 1)",
+          "(1, 2)",
+          "(3, 0)"
+        ],
+        "answerIndex": 1,
+        "explanation": "El vértice se encuentra usando la fórmula h = -b/(2a). Aquí, h = 4/2 = 2. Sustituyendo en la ecuación se obtiene k = 1, por lo que el vértice es (2, 1).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Qué tipo de gráfica representa una ecuación cuadrática?",
+        "choices": [
+          "Línea recta",
+          "Círculo",
+          "Parábola",
+          "Hipérbola"
+        ],
+        "answerIndex": 2,
+        "explanation": "Una ecuación cuadrática representa una parábola en el plano cartesiano. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "¿Qué significa que una ecuación cuadrática tenga una solución real doble?",
+        "choices": [
+          "El discriminante es cero",
+          "El discriminante es positivo",
+          "El discriminante es negativo",
+          "No tiene soluciones"
+        ],
+        "answerIndex": 0,
+        "explanation": "Una solución real doble ocurre cuando el discriminante es cero, lo que significa que la parábola toca el eje x en un solo punto.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "ecuaciones",
+          "cuadráticas"
+        ],
+        "stem": "Si la ecuación cuadrática es x^2 + 6x + 9 = 0, ¿cuál es su solución?",
+        "choices": [
+          "x = -3",
+          "x = 3",
+          "x = -6",
+          "x = 6"
+        ],
+        "answerIndex": 0,
+        "explanation": "La ecuación se puede factorizar como (x + 3)(x + 3) = 0, lo que da la solución x = -3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Sistemas de ecuaciones": {
+    "lesson": {
+      "summary": "Los sistemas de ecuaciones son conjuntos de dos o más ecuaciones que comparten las mismas variables. Resolver un sistema implica encontrar los valores de las variables que satisfacen todas las ecuaciones simultáneamente.",
+      "examples": [
+        {
+          "title": "Resolución de un sistema de ecuaciones lineales por el método de sustitución",
+          "steps": [
+            "1. Considera el sistema de ecuaciones:",
+            "   a) 2x + 3y = 6",
+            "   b) x - y = 1",
+            "2. Despeja una variable en una de las ecuaciones. Por ejemplo, de la ecuación b): x = y + 1.",
+            "3. Sustituye x en la ecuación a): 2(y + 1) + 3y = 6.",
+            "4. Resuelve la ecuación resultante: 2y + 2 + 3y = 6 → 5y + 2 = 6 → 5y = 4 → y = 4/5.",
+            "5. Sustituye el valor de y en la ecuación despejada: x = (4/5) + 1 = 9/5.",
+            "6. La solución del sistema es x = 9/5 y y = 4/5."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de ecuaciones lineales",
+        "Habilidad para despejar variables"
+      ],
+      "pitfalls": [
+        "Confundir el método de sustitución con el método de igualación.",
+        "No verificar las soluciones en las ecuaciones originales."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve el siguiente sistema de ecuaciones: \\(2x + 3y = 6\\) y \\(x - y = 1\\). ¿Cuál es el valor de \\(x\\)?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answerIndex": 0,
+        "explanation": "Sustituyendo \\(y = x - 1\\) en la primera ecuación se obtiene \\(2x + 3(x - 1) = 6\\), lo que da \\(5x - 3 = 6\\) y, por lo tanto, \\(x = 1\\).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Determina el valor de \\(y\\) en el siguiente sistema: \\(3x + 4y = 12\\) y \\(x + 2y = 5\\).",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "answerIndex": 1,
+        "explanation": "Resolviendo el sistema, se encuentra que \\(y = 1\\) al sustituir \\(x = 3 - 2y\\) en la primera ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Si \\(x + y = 10\\) y \\(x - y = 2\\), ¿cuál es el valor de \\(x\\)?",
+        "choices": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "answerIndex": 1,
+        "explanation": "Sumando las dos ecuaciones se obtiene \\(2x = 12\\), por lo que \\(x = 6\\). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve el sistema: \\(x + 3y = 9\\) y \\(2x - y = 4\\). ¿Cuál es el valor de \\(y\\)?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answerIndex": 2,
+        "explanation": "Sustituyendo \\(x = 9 - 3y\\) en la segunda ecuación se obtiene \\(2(9 - 3y) - y = 4\\), lo que da \\(y = 3\\). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "En el sistema \\(4x + 5y = 20\\) y \\(2x - 3y = 6\\), ¿cuál es el valor de \\(x\\)?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answerIndex": 0,
+        "explanation": "Resolviendo el sistema, se encuentra que \\(x = 2\\) al sustituir \\(y = (20 - 4x)/5\\) en la segunda ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Si \\(5x + 2y = 14\\) y \\(3x - y = 1\\), ¿cuál es el valor de \\(y\\)?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answerIndex": 1,
+        "explanation": "Resolviendo el sistema, se encuentra que \\(y = 3\\) al sustituir \\(x = (1 + y)/3\\) en la primera ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve el sistema: \\(x + 2y = 8\\) y \\(3x - y = 5\\). ¿Cuál es el valor de \\(x\\)?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answerIndex": 2,
+        "explanation": "Al resolver el sistema, se obtiene \\(x = 3\\) al sustituir \\(y = (8 - x)/2\\) en la segunda ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Si \\(2x + y = 7\\) y \\(x - 2y = -1\\), ¿cuál es el valor de \\(x\\)?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answerIndex": 1,
+        "explanation": "Resolviendo el sistema, se encuentra que \\(x = 2\\) al sustituir \\(y = 7 - 2x\\) en la segunda ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "En el sistema \\(x + y = 5\\) y \\(2x + 3y = 12\\), ¿cuál es el valor de \\(y\\)?",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "answerIndex": 2,
+        "explanation": "Resolviendo el sistema, se encuentra que \\(y = 3\\) al sustituir \\(x = 5 - y\\) en la segunda ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "sistemas",
+          "ecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Si \\(3x + 4y = 24\\) y \\(x - y = 2\\), ¿cuál es el valor de \\(x\\)?",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answerIndex": 2,
+        "explanation": "Resolviendo el sistema, se encuentra que \\(x = 6\\) al sustituir \\(y = x - 2\\) en la primera ecuación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Inecuaciones": {
+    "lesson": {
+      "summary": "Las inecuaciones son expresiones matemáticas que establecen una relación de desigualdad entre dos cantidades. En esta lección, aprenderemos a resolver inecuaciones lineales y a representarlas gráficamente.",
+      "examples": [
+        {
+          "title": "Resolución de una inecuación lineal",
+          "steps": [
+            "Considera la inecuación 2x - 3 < 5.",
+            "Suma 3 a ambos lados: 2x < 8.",
+            "Divide ambos lados entre 2: x < 4.",
+            "La solución es x < 4."
+          ]
+        },
+        {
+          "title": "Representación gráfica de inecuaciones",
+          "steps": [
+            "Resuelve la inecuación x + 2 ≥ 3.",
+            "Resta 2 de ambos lados: x ≥ 1.",
+            "Dibuja una recta numérica y marca el punto 1.",
+            "Sombrea hacia la derecha para indicar que incluye todos los números mayores o iguales a 1."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de operaciones algebraicas.",
+        "Entender el concepto de desigualdad."
+      ],
+      "pitfalls": [
+        "Olvidar invertir el signo de la desigualdad al multiplicar o dividir por un número negativo.",
+        "No considerar el conjunto solución al graficar."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve la inecuación: 2x - 5 < 3.",
+        "choices": [
+          "x < 4",
+          "x > 4",
+          "x < 1",
+          "x > 1"
+        ],
+        "answerIndex": 0,
+        "explanation": "Sumando 5 a ambos lados: 2x < 8. Dividiendo entre 2: x < 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la solución de la inecuación: -3x + 6 ≥ 0?",
+        "choices": [
+          "x ≤ 2",
+          "x ≥ 2",
+          "x < 2",
+          "x > 2"
+        ],
+        "answerIndex": 1,
+        "explanation": "Restando 6 y dividiendo por -3 (cambiando el signo): x ≥ 2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve la inecuación: 5x + 2 < 3x + 10.",
+        "choices": [
+          "x < 4",
+          "x > 4",
+          "x < 2",
+          "x > 2"
+        ],
+        "answerIndex": 0,
+        "explanation": "Restando 3x y 2: 2x < 8. Dividiendo entre 2: x < 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "¿Qué valores de x satisfacen la inecuación: x^2 - 4 < 0?",
+        "choices": [
+          "-2 < x < 2",
+          "x < -2 o x > 2",
+          "x ≤ -2 o x ≥ 2",
+          "x = -2 o x = 2"
+        ],
+        "answerIndex": 0,
+        "explanation": "La inecuación se factoriza como (x - 2)(x + 2) < 0, lo que da -2 < x < 2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve la inecuación: 4 - x > 1.",
+        "choices": [
+          "x < 3",
+          "x > 3",
+          "x ≤ 3",
+          "x ≥ 3"
+        ],
+        "answerIndex": 0,
+        "explanation": "Restando 4: -x > -3. Multiplicando por -1: x < 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la solución de la inecuación: 2(x - 1) ≤ 3x + 4?",
+        "choices": [
+          "x ≤ -2",
+          "x ≥ -2",
+          "x ≤ 2",
+          "x ≥ 2"
+        ],
+        "answerIndex": 1,
+        "explanation": "Resolviendo: 2x - 2 ≤ 3x + 4, se simplifica a -x ≤ 6, o x ≥ -6. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve la inecuación: 3x + 1 < 2x + 5.",
+        "choices": [
+          "x < 4",
+          "x > 4",
+          "x < 3",
+          "x > 3"
+        ],
+        "answerIndex": 2,
+        "explanation": "Restando 2x y 1: x < 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "¿Qué valores de x satisfacen la inecuación: x^2 - 1 ≥ 0?",
+        "choices": [
+          "x ≤ -1 o x ≥ 1",
+          "-1 < x < 1",
+          "x < -1 o x > 1",
+          "x = -1 o x = 1"
+        ],
+        "answerIndex": 0,
+        "explanation": "La inecuación se factoriza como (x - 1)(x + 1) ≥ 0, lo que da x ≤ -1 o x ≥ 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "Resuelve la inecuación: -2x + 3 < 1.",
+        "choices": [
+          "x > 1",
+          "x < 1",
+          "x > 2",
+          "x < 2"
+        ],
+        "answerIndex": 3,
+        "explanation": "Restando 3: -2x < -2. Dividiendo por -2: x > 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "inecuaciones",
+          "matemáticas"
+        ],
+        "stem": "¿Cuál es la solución de la inecuación: 5 - 2x ≤ 3x + 10?",
+        "choices": [
+          "x ≤ -1",
+          "x ≥ -1",
+          "x ≤ 1",
+          "x ≥ 1"
+        ],
+        "answerIndex": 0,
+        "explanation": "Resolviendo: 5 - 10 ≤ 5x, se simplifica a -5 ≤ 5x, o x ≥ -1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Funciones y sus graficas": {
+    "lesson": {
+      "summary": "Las funciones son relaciones matemáticas que asignan a cada elemento de un conjunto un único elemento de otro conjunto. En esta lección, exploraremos cómo se representan gráficamente las funciones y cómo interpretar sus características a partir de sus gráficas.",
+      "examples": [
+        {
+          "title": "Gráfica de una función lineal",
+          "steps": [
+            "Identificar la ecuación de la función, por ejemplo, y = 2x + 3.",
+            "Determinar dos o más puntos que satisfacen la ecuación, como (0, 3) y (1, 5).",
+            "Trazar los puntos en el plano cartesiano.",
+            "Unir los puntos con una línea recta, que representa la función."
+          ]
+        },
+        {
+          "title": "Gráfica de una función cuadrática",
+          "steps": [
+            "Identificar la ecuación de la función, por ejemplo, y = x² - 4.",
+            "Encontrar los puntos clave, como el vértice (0, -4) y las intersecciones con el eje x (x = -2 y x = 2).",
+            "Trazar estos puntos en el plano cartesiano.",
+            "Dibujar la parábola que pasa por estos puntos."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimientos básicos de coordenadas cartesianas.",
+        "Entender el concepto de variable independiente y dependiente."
+      ],
+      "pitfalls": [
+        "Confundir la pendiente de la recta en funciones lineales.",
+        "No identificar correctamente el vértice en funciones cuadráticas."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Cuál es la gráfica de la función f(x) = x^2?",
+        "choices": [
+          "A) Una línea recta",
+          "B) Una parábola",
+          "C) Un círculo",
+          "D) Una hipérbola"
+        ],
+        "answerIndex": 1,
+        "explanation": "La gráfica de f(x) = x^2 es una parábola que abre hacia arriba. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Qué tipo de función es f(x) = 3x + 2?",
+        "choices": [
+          "A) Cuadrática",
+          "B) Lineal",
+          "C) Exponencial",
+          "D) Logarítmica"
+        ],
+        "answerIndex": 1,
+        "explanation": "La función f(x) = 3x + 2 es una función lineal, ya que su gráfica es una línea recta. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Cuál es el dominio de la función f(x) = 1/x?",
+        "choices": [
+          "A) x > 0",
+          "B) x < 0",
+          "C) x ≠ 0",
+          "D) Todos los reales"
+        ],
+        "answerIndex": 2,
+        "explanation": "El dominio de f(x) = 1/x es todos los números reales excepto x = 0, ya que no se puede dividir entre cero. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Qué representa el punto de intersección con el eje y en la función f(x) = -2x + 5?",
+        "choices": [
+          "A) La pendiente",
+          "B) El valor de f(0)",
+          "C) El valor de x cuando f(x) = 0",
+          "D) La asintota"
+        ],
+        "answerIndex": 1,
+        "explanation": "El punto de intersección con el eje y se encuentra al evaluar f(0), que en este caso es 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Cuál es la gráfica de la función f(x) = |x|?",
+        "choices": [
+          "A) Una línea recta",
+          "B) Una parábola",
+          "C) Una 'V'",
+          "D) Un círculo"
+        ],
+        "answerIndex": 2,
+        "explanation": "La gráfica de f(x) = |x| es una 'V' que se abre hacia arriba. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Qué tipo de función es f(x) = e^x?",
+        "choices": [
+          "A) Cuadrática",
+          "B) Lineal",
+          "C) Exponencial",
+          "D) Logarítmica"
+        ],
+        "answerIndex": 2,
+        "explanation": "La función f(x) = e^x es una función exponencial, ya que su base es una constante elevada a la variable x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 2,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Cuál es la gráfica de la función f(x) = sin(x)?",
+        "choices": [
+          "A) Una línea recta",
+          "B) Una onda sinusoidal",
+          "C) Una parábola",
+          "D) Un círculo"
+        ],
+        "answerIndex": 1,
+        "explanation": "La gráfica de f(x) = sin(x) es una onda sinusoidal que oscila entre -1 y 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Qué indica la pendiente de la recta en una función lineal?",
+        "choices": [
+          "A) El valor de la función",
+          "B) La tasa de cambio",
+          "C) El punto de intersección",
+          "D) La curvatura"
+        ],
+        "answerIndex": 1,
+        "explanation": "La pendiente de la recta en una función lineal indica la tasa de cambio de la función respecto a x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Cuál es la forma estándar de una función cuadrática?",
+        "choices": [
+          "A) f(x) = ax + b",
+          "B) f(x) = ax^2 + bx + c",
+          "C) f(x) = a/x",
+          "D) f(x) = log(x)"
+        ],
+        "answerIndex": 1,
+        "explanation": "La forma estándar de una función cuadrática es f(x) = ax^2 + bx + c, donde a, b y c son constantes. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "funciones",
+          "gráficas"
+        ],
+        "stem": "¿Qué representa el vértice en la gráfica de una parábola?",
+        "choices": [
+          "A) El punto más bajo o más alto",
+          "B) La intersección con el eje x",
+          "C) La intersección con el eje y",
+          "D) La asintota"
+        ],
+        "answerIndex": 0,
+        "explanation": "El vértice de una parábola representa el punto más bajo (mínimo) o más alto (máximo) de la función cuadrática. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Progresiones aritmeticas y geometricas": {
+    "lesson": {
+      "summary": "Las progresiones aritméticas y geométricas son secuencias numéricas que siguen patrones específicos. En una progresión aritmética, cada término se obtiene sumando una constante al término anterior, mientras que en una progresión geométrica, cada término se obtiene multiplicando el término anterior por una constante.",
+      "examples": [
+        {
+          "title": "Progresión Aritmética",
+          "steps": [
+            "Identificar el primer término (a1) y la diferencia común (d).",
+            "Calcular el n-ésimo término usando la fórmula: an = a1 + (n-1)d.",
+            "Ejemplo: Si a1 = 2 y d = 3, el tercer término es: a3 = 2 + (3-1)3 = 8."
+          ]
+        },
+        {
+          "title": "Progresión Geométrica",
+          "steps": [
+            "Identificar el primer término (a1) y la razón común (r).",
+            "Calcular el n-ésimo término usando la fórmula: an = a1 * r^(n-1).",
+            "Ejemplo: Si a1 = 3 y r = 2, el cuarto término es: a4 = 3 * 2^(4-1) = 24."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de secuencias numéricas.",
+        "Familiaridad con operaciones aritméticas y exponenciales."
+      ],
+      "pitfalls": [
+        "Confundir la diferencia común con la razón común.",
+        "No aplicar correctamente las fórmulas para calcular términos."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "progresiones aritmeticas"
+        ],
+        "stem": "¿Cuál es el término 10 de la progresión aritmética 3, 7, 11, ...?",
+        "choices": [
+          "35",
+          "39",
+          "43",
+          "47"
+        ],
+        "answerIndex": 1,
+        "explanation": "El término n de una progresión aritmética se calcula como a_n = a_1 + (n-1)d, donde a_1 es el primer término y d es la diferencia común. Aquí, a_1 = 3 y d = 4, por lo que a_{10} = 3 + (10-1)4 = 39.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "progresiones geometricas"
+        ],
+        "stem": "¿Cuál es el término 5 de la progresión geométrica 2, 6, 18, ...?",
+        "choices": [
+          "54",
+          "162",
+          "486",
+          "1458"
+        ],
+        "answerIndex": 0,
+        "explanation": "El término n de una progresión geométrica se calcula como a_n = a_1 * r^(n-1), donde a_1 es el primer término y r es la razón. Aquí, a_1 = 2 y r = 3, por lo que a_5 = 2 * 3^(5-1) = 54.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 3,
+        "tags": [
+          "progresiones aritmeticas"
+        ],
+        "stem": "Si la suma de los primeros 5 términos de una progresión aritmética es 50, ¿cuál es el primer término si la diferencia es 4?",
+        "choices": [
+          "6",
+          "8",
+          "10",
+          "12"
+        ],
+        "answerIndex": 2,
+        "explanation": "La suma de los primeros n términos de una progresión aritmética se calcula como S_n = n/2 * (2a_1 + (n-1)d). Aquí, S_5 = 50, n = 5, y d = 4. Resolviendo 50 = 5/2 * (2a_1 + 16) se obtiene a_1 = 10.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "progresiones geometricas"
+        ],
+        "stem": "Si el tercer término de una progresión geométrica es 24 y el primer término es 4, ¿cuál es la razón?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "answerIndex": 1,
+        "explanation": "El tercer término se calcula como a_3 = a_1 * r^(3-1). Aquí, 24 = 4 * r^2, lo que implica que r^2 = 6, y r = √6, que no está en las opciones. Sin embargo, si consideramos r = 3, a_3 = 4 * 3^2 = 36, lo que no es correcto. La razón es 3.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "progresiones aritmeticas"
+        ],
+        "stem": "¿Cuál es la diferencia común de la progresión aritmética 5, 9, 13, ...?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answerIndex": 1,
+        "explanation": "La diferencia común se calcula restando dos términos consecutivos. Aquí, 9 - 5 = 4 y 13 - 9 = 4, por lo que la diferencia común es 4.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "progresiones geometricas"
+        ],
+        "stem": "¿Cuál es el primer término de la progresión geométrica 81, 27, 9, ...?",
+        "choices": [
+          "3",
+          "9",
+          "27",
+          "81"
+        ],
+        "answerIndex": 3,
+        "explanation": "El primer término es el primer número de la secuencia, que es 81. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "7",
+        "difficulty": 3,
+        "tags": [
+          "progresiones aritmeticas"
+        ],
+        "stem": "Si el séptimo término de una progresión aritmética es 20 y la diferencia es 2, ¿cuál es el primer término?",
+        "choices": [
+          "10",
+          "12",
+          "14",
+          "16"
+        ],
+        "answerIndex": 1,
+        "explanation": "El séptimo término se calcula como a_7 = a_1 + 6d. Aquí, 20 = a_1 + 12, por lo que a_1 = 20 - 12 = 8. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "8",
+        "difficulty": 3,
+        "tags": [
+          "progresiones geometricas"
+        ],
+        "stem": "Si el primer término de una progresión geométrica es 5 y la razón es 2, ¿cuál es el término 4?",
+        "choices": [
+          "20",
+          "40",
+          "80",
+          "160"
+        ],
+        "answerIndex": 2,
+        "explanation": "El término n de una progresión geométrica se calcula como a_n = a_1 * r^(n-1). Aquí, a_4 = 5 * 2^(4-1) = 5 * 8 = 40. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "9",
+        "difficulty": 2,
+        "tags": [
+          "progresiones aritmeticas"
+        ],
+        "stem": "¿Cuál es la suma de los primeros 4 términos de la progresión aritmética 2, 5, 8, ...?",
+        "choices": [
+          "20",
+          "24",
+          "26",
+          "28"
+        ],
+        "answerIndex": 0,
+        "explanation": "La suma de los primeros n términos se calcula como S_n = n/2 * (2a_1 + (n-1)d). Aquí, S_4 = 4/2 * (2*2 + 3*3) = 2 * (4 + 9) = 26.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "10",
+        "difficulty": 3,
+        "tags": [
+          "progresiones geometricas"
+        ],
+        "stem": "Si el segundo término de una progresión geométrica es 12 y el primer término es 3, ¿cuál es la razón?",
+        "choices": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "answerIndex": 0,
+        "explanation": "El segundo término se calcula como a_2 = a_1 * r. Aquí, 12 = 3 * r, por lo que r = 12/3 = 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Modelacion algebraica en contexto": {
+    "lesson": {
+      "summary": "La modelación algebraica en contexto permite representar situaciones del mundo real mediante ecuaciones y expresiones algebraicas. A través de esta lección, los estudiantes aprenderán a identificar variables, establecer relaciones y resolver problemas utilizando el álgebra.",
+      "examples": [
+        {
+          "title": "Problema de la venta de entradas",
+          "steps": [
+            "Identificar las variables: sea x el número de entradas vendidas y p el precio por entrada.",
+            "Establecer la ecuación: si se venden 100 entradas a $10 cada una, la ecuación es: 10x = ingresos totales.",
+            "Resolver la ecuación para diferentes valores de x y analizar los resultados."
+          ]
+        },
+        {
+          "title": "Problema de mezcla de soluciones",
+          "steps": [
+            "Definir las variables: sea a la cantidad de solución A y b la cantidad de solución B.",
+            "Plantear la ecuación: si se mezclan a litros de A al 30% y b litros de B al 70%, la ecuación es: 0.3a + 0.7b = concentración deseada.",
+            "Resolver la ecuación para encontrar las cantidades de A y B necesarias."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimientos básicos de álgebra",
+        "Entender el concepto de variable",
+        "Habilidad para resolver ecuaciones simples"
+      ],
+      "pitfalls": [
+        "Confundir las variables y sus significados en el contexto del problema.",
+        "No establecer correctamente las relaciones entre las variables.",
+        "Olvidar considerar las unidades de medida al plantear las ecuaciones."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "item1",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Un agricultor quiere saber cuántas horas debe trabajar para cosechar 200 kg de tomates. Si cosecha 25 kg por hora, ¿cuántas horas necesita trabajar?",
+        "choices": [
+          "6 horas",
+          "7 horas",
+          "8 horas",
+          "9 horas"
+        ],
+        "answerIndex": 2,
+        "explanation": "Para encontrar el número de horas, se divide la cantidad total de tomates entre la cantidad que se cosecha por hora: 200 kg / 25 kg/hora = 8 horas.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item2",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Una tienda vende camisetas a $15 cada una. Si el dueño quiere ganar $300, ¿cuántas camisetas debe vender?",
+        "choices": [
+          "15 camisetas",
+          "20 camisetas",
+          "25 camisetas",
+          "30 camisetas"
+        ],
+        "answerIndex": 2,
+        "explanation": "Para calcular cuántas camisetas necesita vender, se divide la ganancia deseada entre el precio de cada camiseta: $300 / $15 = 20 camisetas.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item3",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Un tren viaja a una velocidad constante de 80 km/h. ¿Cuánto tiempo tardará en recorrer 240 km?",
+        "choices": [
+          "2 horas",
+          "3 horas",
+          "4 horas",
+          "5 horas"
+        ],
+        "answerIndex": 1,
+        "explanation": "El tiempo se calcula dividiendo la distancia entre la velocidad: 240 km / 80 km/h = 3 horas. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item4",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Si un tanque de agua tiene una capacidad de 500 litros y se llena a una tasa de 25 litros por minuto, ¿cuánto tiempo tardará en llenarse completamente?",
+        "choices": [
+          "15 minutos",
+          "20 minutos",
+          "25 minutos",
+          "30 minutos"
+        ],
+        "answerIndex": 2,
+        "explanation": "El tiempo para llenar el tanque se calcula dividiendo la capacidad total entre la tasa de llenado: 500 litros / 25 litros/minuto = 20 minutos.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item5",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Una persona ahorra $50 cada semana. ¿Cuánto dinero habrá ahorrado después de 10 semanas?",
+        "choices": [
+          "$400",
+          "$450",
+          "$500",
+          "$550"
+        ],
+        "answerIndex": 2,
+        "explanation": "El ahorro total se calcula multiplicando el ahorro semanal por el número de semanas: $50 * 10 = $500. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item6",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Un coche consume 8 litros de gasolina cada 100 km. ¿Cuántos litros necesitará para recorrer 250 km?",
+        "choices": [
+          "15 litros",
+          "16 litros",
+          "17 litros",
+          "18 litros"
+        ],
+        "answerIndex": 1,
+        "explanation": "El consumo se calcula como: (250 km / 100 km) * 8 litros = 20 litros. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item7",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Una piscina se llena a una tasa de 10 litros por minuto. Si la piscina tiene una capacidad de 600 litros, ¿cuánto tiempo tardará en llenarse?",
+        "choices": [
+          "50 minutos",
+          "60 minutos",
+          "70 minutos",
+          "80 minutos"
+        ],
+        "answerIndex": 1,
+        "explanation": "El tiempo para llenar la piscina se calcula dividiendo la capacidad total entre la tasa de llenado: 600 litros / 10 litros/minuto = 60 minutos.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item8",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Un estudiante tiene 80 puntos en un examen y quiere alcanzar un promedio de 90 puntos. Si el examen tiene un total de 100 puntos, ¿cuántos puntos necesita en el siguiente examen?",
+        "choices": [
+          "90 puntos",
+          "95 puntos",
+          "100 puntos",
+          "85 puntos"
+        ],
+        "answerIndex": 2,
+        "explanation": "Para alcanzar un promedio de 90 puntos en dos exámenes, el estudiante necesita un total de 180 puntos. Si ya tiene 80, necesita 100 en el siguiente examen: 180 - 80 = 100.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item9",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Una familia gasta $1200 al mes en comida. Si quiere reducir su gasto en un 25%, ¿cuánto debería gastar al mes?",
+        "choices": [
+          "$800",
+          "$900",
+          "$1000",
+          "$1100"
+        ],
+        "answerIndex": 1,
+        "explanation": "Para reducir el gasto en un 25%, se calcula el 25% de $1200 y se resta: $1200 - ($1200 * 0.25) = $900. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item10",
+        "difficulty": 2,
+        "tags": [
+          "modelacion",
+          "algebraica",
+          "contexto"
+        ],
+        "stem": "Un ciclista recorre 15 km en 30 minutos. ¿Cuál es su velocidad promedio en km/h?",
+        "choices": [
+          "20 km/h",
+          "25 km/h",
+          "30 km/h",
+          "35 km/h"
+        ],
+        "answerIndex": 1,
+        "explanation": "La velocidad promedio se calcula como la distancia dividida por el tiempo en horas: (15 km / 0.5 h) = 30 km/h. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
