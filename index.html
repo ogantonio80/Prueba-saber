@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Saber 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-screen">
+    <h1>Bienvenidas</h1>
+    <p>Selecciona tu usuario:</p>
+    <button class="user-btn" data-user="Alba" style="background-color: pink;">Alba</button>
+    <button class="user-btn" data-user="Lara" style="background-color: violet;">Lara</button>
+    <button class="user-btn" data-user="Prueba" style="background-color: lightgray;">Usuario de Prueba</button>
+</div>
+
+<div id="main-app" style="display:none;">
+    <header>
+        <h1 id="app-title">Plataforma Saber 11</h1>
+        <p id="current-user"></p>
+        <nav>
+            <button class="menu-btn" data-mode="estudio">Estudio</button>
+            <button class="menu-btn" data-mode="practica">Práctica</button>
+            <button class="menu-btn" data-mode="simulador">Simulador</button>
+        </nav>
+    </header>
+
+    <section id="selection-panel">
+        <label for="materia">Materia:</label>
+        <select id="materia"></select>
+
+        <label for="tema">Tema:</label>
+        <select id="tema"></select>
+
+        <button id="start-btn">Comenzar</button>
+    </section>
+
+    <section id="content-panel" style="display:none;">
+        <div id="study-content" style="display:none;">
+            <h2 id="study-title"></h2>
+            <p id="study-text"></p>
+            <img id="study-image" src="" alt="" style="max-width:100%;display:none;">
+            <button id="next-topic-btn">Siguiente Tema</button>
+        </div>
+
+        <div id="practice-content" style="display:none;">
+            <h2 id="question-title"></h2>
+            <div id="options"></div>
+            <p id="feedback"></p>
+            <button id="next-question-btn" style="display:none;">Siguiente Pregunta</button>
+        </div>
+
+        <div id="simulator-content" style="display:none;">
+            <h2>Simulador Saber 11</h2>
+            <div id="sim-question"></div>
+            <div id="sim-options"></div>
+            <p id="sim-feedback"></p>
+            <button id="next-sim-btn" style="display:none;">Siguiente Pregunta</button>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
