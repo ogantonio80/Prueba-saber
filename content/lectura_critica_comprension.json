@@ -1,0 +1,47 @@
+{
+  "Idea principal": {
+    "lesson": {
+      "summary": "La idea principal resume el mensaje central del texto. Pregúntate: ¿de qué trata y qué afirma el autor? No la confundas con un dato llamativo.",
+      "examples": [
+        { "title": "Ejemplo", "steps": ["Si el texto explica que los manglares protegen la costa, la idea principal es su función protectora."] }
+      ],
+      "prerequisites": ["Diferenciar idea principal/detalles"],
+      "pitfalls": ["Elegir un dato curioso en vez del mensaje central"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Idea principal", "Título adecuado", "Resumen"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "lc-ip-001",
+        "difficulty": 2,
+        "tags": ["idea_principal"],
+        "stem": "Un texto explica que los manglares reducen la erosión costera y albergan especies. ¿Cuál sería la idea principal?",
+        "choices": [
+          "Los manglares son decorativos",
+          "Los manglares protegen la costa y son refugio de especies",
+          "En la costa hace calor",
+          "Las especies marinas son peligrosas"
+        ],
+        "answerIndex": 1,
+        "explanation": "La opción resume el mensaje central; las otras son irrelevantes o demasiado específicas.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "lc-ip-002",
+        "difficulty": 3,
+        "tags": ["titulo"],
+        "stem": "¿Qué título es más adecuado para un texto que argumenta que leer diariamente mejora la atención y el vocabulario?",
+        "choices": [
+          "La lectura es aburrida",
+          "Leer de noche empeora el sueño",
+          "Beneficios de la lectura diaria",
+          "Lectura y cocina"
+        ],
+        "answerIndex": 2,
+        "explanation": "El mejor título representa la tesis general del texto.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  }
+}
