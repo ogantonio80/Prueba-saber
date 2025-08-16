@@ -1,46 +1,281 @@
 {
   "Teorema de Pitágoras": {
     "lesson": {
-      "summary": "En un triángulo rectángulo se cumple a² + b² = c², donde c es la hipotenusa. Esta relación permite calcular longitudes faltantes y verificar si un triángulo es rectángulo.",
+      "summary": "En un triángulo rectángulo se cumple a² + b² = c², donde a y b son catetos y c es la hipotenusa (lado opuesto al ángulo recto). Este teorema permite calcular longitudes faltantes, verificar si un triángulo es rectángulo y resolver problemas de distancia en contextos reales (rampas, escaleras, diagonales). Identificar correctamente la hipotenusa es clave.",
       "examples": [
-        { "title": "Ejemplo 1", "steps": ["Catetos 6 y 8 → c = √(36 + 64) = 10"] },
-        { "title": "Ejemplo 2", "steps": ["c = 13 y b = 5 → a = √(169 − 25) = 12"] }
+        { "title": "Hipotenusa conocida catetos", "steps": ["Catetos 6 y 8", "c = √(6² + 8²) = √(36 + 64) = √100 = 10"] },
+        { "title": "Cateto conocido c y b", "steps": ["c = 13 y b = 5", "a = √(c² − b²) = √(169 − 25) = 12"] }
       ],
       "prerequisites": ["Cuadrados y raíces", "Identificar hipotenusa y catetos"],
       "pitfalls": ["Confundir hipotenusa con cateto", "Olvidar elevar al cuadrado"],
       "pregunta_tipo": null,
-      "tipos_de_pregunta": ["Calcular hipotenusa", "Calcular cateto", "Aplicar a contextos"],
+      "tipos_de_pregunta": ["Calcular hipotenusa", "Calcular cateto", "Aplicación en contexto"],
       "images": []
     },
     "items": [
       {
-        "id": "pit-001",
+        "id": "geo-pit-001",
         "difficulty": 2,
         "tags": ["pitagoras"],
         "stem": "Un triángulo rectángulo tiene catetos 6 y 8. ¿Cuál es la hipotenusa?",
         "choices": ["9", "10", "11", "12"],
         "answerIndex": 1,
-        "explanation": "c = √(6² + 8²) = √(36 + 64) = √100 = 10.",
+        "explanation": "La hipotenusa se obtiene con c = √(a² + b²). Sustituyendo: √(6² + 8²) = √(36 + 64) = √100 = 10. Un error frecuente es sumar 6 + 8 y no los cuadrados.",
         "label": "POSIBLE PREGUNTA"
       },
       {
-        "id": "pit-002",
+        "id": "geo-pit-002",
         "difficulty": 3,
         "tags": ["pitagoras"],
-        "stem": "Si c = 13 y uno de los catetos es 5, el otro cateto mide:",
-        "choices": ["10", "11", "12", "9"],
-        "answerIndex": 2,
-        "explanation": "a = √(13² − 5²) = √(169 − 25) = √144 = 12.",
+        "stem": "Si c = 13 y uno de los catetos es 5, el otro cateto vale:",
+        "choices": ["9", "10", "11", "12"],
+        "answerIndex": 3,
+        "explanation": "Para hallar un cateto: a = √(c² − b²). Así: √(13² − 5²) = √(169 − 25) = √144 = 12. Ojo: no se restan c − b sino los cuadrados.",
         "label": "POSIBLE PREGUNTA"
       },
       {
-        "id": "pit-003",
+        "id": "geo-pit-003",
         "difficulty": 3,
-        "tags": ["pitagoras", "contexto"],
-        "stem": "Una escalera apoya a 12 m de la pared y su base está a 5 m. ¿Longitud de la escalera?",
-        "choices": ["10 m", "11 m", "12 m", "13 m"],
-        "answerIndex": 3,
-        "explanation": "La escalera es la hipotenusa: c = √(12² + 5²) = √(144 + 25) = √169 = 13 m.",
+        "tags": ["contexto"],
+        "stem": "Una escalera se apoya a 12 m de altura y su base está a 5 m de la pared. ¿Longitud de la escalera?",
+        "choices": ["12 m", "13 m", "14 m", "15 m"],
+        "answerIndex": 1,
+        "explanation": "La escalera es la hipotenusa del triángulo rectángulo formado por pared y suelo: c = √(12² + 5²) = √(144 + 25) = √169 = 13 m. En contexto real, identifica primero qué lado es la hipotenusa.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+
+  "Ángulos y triángulos": {
+    "lesson": {
+      "summary": "La suma de los ángulos interiores de cualquier triángulo es 180°. En triángulos rectángulos, uno es 90° y los otros dos suman 90°. En un triángulo isósceles, los ángulos en la base son iguales; en un equilátero, los tres valen 60°. Esta propiedad permite calcular ángulos faltantes y clasificar triángulos.",
+      "examples": [
+        { "title": "Suma 180°", "steps": ["Si A=70° y B=50°, C=180°−(70°+50°)=60°"] },
+        { "title": "Rectángulo", "steps": ["Si uno es 90° y el otro agudo es 35°, el tercero es 55°"] }
+      ],
+      "prerequisites": ["Medida de ángulos", "Clasificación de triángulos"],
+      "pitfalls": ["Olvidar que la suma es 180°", "Confundir isósceles con equilátero"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Calcular ángulos", "Clasificar triángulos"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "geo-ang-001",
+        "difficulty": 1,
+        "tags": ["angulos"],
+        "stem": "En un triángulo, A = 70° y B = 50°. ¿C?",
+        "choices": ["40°", "50°", "60°", "70°"],
+        "answerIndex": 2,
+        "explanation": "La suma de los ángulos interiores es 180°. C = 180° − (70° + 50°) = 60°. Es una aplicación directa de la propiedad.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-ang-002",
+        "difficulty": 2,
+        "tags": ["rectangulo"],
+        "stem": "En un triángulo rectángulo, uno de los ángulos agudos mide 35°. ¿Cuánto mide el otro?",
+        "choices": ["45°", "55°", "60°", "65°"],
+        "answerIndex": 1,
+        "explanation": "En triángulo rectángulo, los dos agudos suman 90°. Por tanto, 90° − 35° = 55°. Recordar que ya hay un ángulo de 90°.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-ang-003",
+        "difficulty": 2,
+        "tags": ["clasificacion"],
+        "stem": "Si un triángulo tiene dos lados iguales, ¿qué se puede afirmar de sus ángulos en la base?",
+        "choices": ["Son diferentes", "Suman 120°", "Son congruentes", "Uno es 90°"],
+        "answerIndex": 2,
+        "explanation": "Un triángulo con dos lados iguales es isósceles, y sus ángulos en la base son congruentes (iguales). Esta propiedad es fundamental para resolver ángulos faltantes.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+
+  "Polígonos y perímetros": {
+    "lesson": {
+      "summary": "El perímetro es la suma de las longitudes de todos los lados de una figura. En polígonos regulares (todos los lados iguales), el perímetro es número de lados por la longitud de un lado. Dominar perímetros permite comparar longitudes de cercas, marcos o contornos y resolver problemas prácticos.",
+      "examples": [
+        { "title": "Rectángulo", "steps": ["P = 2(l + w). Si l=12 y w=5 → P=34"] },
+        { "title": "Polígono regular", "steps": ["Hexágono regular de lado 7 → P=6×7=42"] }
+      ],
+      "prerequisites": ["Unidades de longitud"],
+      "pitfalls": ["Confundir área con perímetro"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Calcular perímetro", "Comparar perímetros"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "geo-per-001",
+        "difficulty": 1,
+        "tags": ["perimetro"],
+        "stem": "Un rectángulo tiene largo 12 cm y ancho 5 cm. ¿Perímetro?",
+        "choices": ["24 cm", "30 cm", "34 cm", "40 cm"],
+        "answerIndex": 2,
+        "explanation": "P = 2(l + w) = 2(12 + 5) = 2×17 = 34 cm. No confundas con el área, que sería 12×5.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-per-002",
+        "difficulty": 2,
+        "tags": ["regular"],
+        "stem": "Un pentágono regular tiene lado 9 cm. ¿Perímetro?",
+        "choices": ["36 cm", "45 cm", "54 cm", "90 cm"],
+        "answerIndex": 1,
+        "explanation": "En un polígono regular, P = n×lado. Para pentágono (n=5): 5×9 = 45 cm. A veces se confunde con multiplicar por 10.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-per-003",
+        "difficulty": 3,
+        "tags": ["comparacion"],
+        "stem": "¿Cuál tiene mayor perímetro: un cuadrado de lado 10 cm o un rectángulo de 8 cm por 14 cm?",
+        "choices": ["El cuadrado", "El rectángulo", "Son iguales", "No se puede saber"],
+        "answerIndex": 2,
+        "explanation": "Cuadrado: P=4×10=40 cm. Rectángulo: P=2(8+14)=2×22=44 cm. Por tanto, el rectángulo tiene mayor perímetro (44>40).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+
+  "Áreas de figuras planas": {
+    "lesson": {
+      "summary": "El área mide la superficie de una figura. Fórmulas clave: cuadrado A = l², rectángulo A = l×w, triángulo A = (b×h)/2, paralelogramo A = b×h, trapecio A = (B + b)/2 × h, círculo A = πr². Es vital identificar correctamente base y altura (perpendiculares).",
+      "examples": [
+        { "title": "Triángulo", "steps": ["b=10 y h=6 → A=(10×6)/2=30"] },
+        { "title": "Círculo", "steps": ["r=7, π≈3,14 → A≈3,14×49≈153,86"] }
+      ],
+      "prerequisites": ["Unidades de área", "Perpendicularidad"],
+      "pitfalls": ["Confundir lado con altura", "Usar perímetro en vez de área"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Calcular área", "Aplicación en contexto"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "geo-area-001",
+        "difficulty": 2,
+        "tags": ["triangulo"],
+        "stem": "Un triángulo tiene base 12 cm y altura 5 cm. ¿Área?",
+        "choices": ["17 cm²", "30 cm²", "60 cm²", "120 cm²"],
+        "answerIndex": 1,
+        "explanation": "A = (b×h)/2 = (12×5)/2 = 60/2 = 30 cm². Recuerda que base y altura son perpendiculares.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-area-002",
+        "difficulty": 2,
+        "tags": ["circulo"],
+        "stem": "Un círculo tiene radio 7 cm (π≈3,14). ¿Área?",
+        "choices": ["49 cm²", "153,86 cm²", "43,96 cm²", "308 cm²"],
+        "answerIndex": 1,
+        "explanation": "A = πr² ≈ 3,14×7² = 3,14×49 ≈ 153,86 cm². Un error típico es usar 2πr (perímetro) en lugar de πr² (área).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-area-003",
+        "difficulty": 3,
+        "tags": ["trapecio"],
+        "stem": "Un trapecio tiene bases 10 cm y 6 cm, y altura 4 cm. ¿Área?",
+        "choices": ["32 cm²", "40 cm²", "64 cm²", "80 cm²"],
+        "answerIndex": 0,
+        "explanation": "A = (B + b)/2 × h = (10 + 6)/2 × 4 = 16/2 × 4 = 8×4 = 32 cm². Identifica bien las bases paralelas y la altura perpendicular.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+
+  "Circunferencia y círculo": {
+    "lesson": {
+      "summary": "La circunferencia es el contorno; el círculo es la región interior. Fórmulas: longitud de circunferencia L = 2πr, área del círculo A = πr². El diámetro es 2r. Muchos problemas piden convertir entre radio, diámetro, longitud y área.",
+      "examples": [
+        { "title": "Longitud", "steps": ["r=5, π≈3,14 → L≈2×3,14×5=31,4"] },
+        { "title": "Diámetro", "steps": ["Si L=31,4 y π≈3,14: r≈L/(2π)=31,4/(6,28)=5 → d=10"] }
+      ],
+      "prerequisites": ["Proporcionalidad", "Potenciación"],
+      "pitfalls": ["Confundir 2πr con πr²", "Usar diámetro como radio"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Longitud", "Área", "Conversión r–d"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "geo-circ-001",
+        "difficulty": 2,
+        "tags": ["longitud"],
+        "stem": "Radio 5 cm (π≈3,14). ¿Longitud de la circunferencia?",
+        "choices": ["15,7 cm", "25 cm", "31,4 cm", "78,5 cm"],
+        "answerIndex": 2,
+        "explanation": "L = 2πr ≈ 2×3,14×5 = 31,4 cm. A veces se confunde con el área (πr²).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-circ-002",
+        "difficulty": 2,
+        "tags": ["area"],
+        "stem": "Diámetro 14 cm (π≈3,14). ¿Área del círculo?",
+        "choices": ["49π cm²", "153,86 cm²", "307,72 cm²", "98 cm²"],
+        "answerIndex": 1,
+        "explanation": "Si d=14, r=7. A=πr²≈3,14×49≈153,86 cm². Error típico: usar 2πr en vez de πr² o tomar d como r.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-circ-003",
+        "difficulty": 3,
+        "tags": ["conversion"],
+        "stem": "Si la longitud de una circunferencia es 62,8 cm (π≈3,14), ¿cuál es el diámetro?",
+        "choices": ["10 cm", "20 cm", "30 cm", "40 cm"],
+        "answerIndex": 1,
+        "explanation": "L = 2πr → r = L/(2π) = 62,8/6,28 = 10 cm. El diámetro es 2r = 20 cm.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+
+  "Transformaciones (isometrías)": {
+    "lesson": {
+      "summary": "Traslación, rotación y reflexión son isometrías: conservan distancias y ángulos. Una traslación ‘desplaza’ la figura; una rotación gira alrededor de un punto; una reflexión (simetría) invierte respecto a una recta. Importa identificar el tipo de transformación y sus efectos (orientación, posición).",
+      "examples": [
+        { "title": "Reflexión", "steps": ["Reflejar un triángulo respecto al eje y → cambia signo en x"] },
+        { "title": "Rotación 90°", "steps": ["(x, y) → (−y, x) en torno al origen (convención antihoraria)"] }
+      ],
+      "prerequisites": ["Coordenadas cartesianas básicas"],
+      "pitfalls": ["Confundir traslación con rotación", "Olvidar que la isometría conserva medidas"],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": ["Identificar transformación", "Coordenadas transformadas"],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "geo-iso-001",
+        "difficulty": 2,
+        "tags": ["reflexion"],
+        "stem": "Al reflejar un punto (x, y) respecto al eje y, sus nuevas coordenadas son:",
+        "choices": ["(x, −y)", "(−x, y)", "(−y, x)", "(y, x)"],
+        "answerIndex": 1,
+        "explanation": "Reflexión respecto al eje y invierte el signo de x y mantiene y: (x, y) → (−x, y). En el eje x sería (x, −y).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-iso-002",
+        "difficulty": 3,
+        "tags": ["rotacion"],
+        "stem": "Una rotación de 90° antihoraria alrededor del origen transforma (x, y) en:",
+        "choices": ["(y, −x)", "(−y, x)", "(−x, −y)", "(x, y)"],
+        "answerIndex": 1,
+        "explanation": "La regla estándar (antihoraria) es (x, y) → (−y, x). A 180° sería (−x, −y) y a 270° (y, −x).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "geo-iso-003",
+        "difficulty": 2,
+        "tags": ["traslacion"],
+        "stem": "Una traslación 3 unidades a la derecha y 2 hacia arriba lleva (4, −1) a:",
+        "choices": ["(1, −3)", "(7, 1)", "(7, −3)", "(1, 1)"],
+        "answerIndex": 1,
+        "explanation": "Sumas el vector (3, 2): (4+3, −1+2) = (7, 1). Una traslación no cambia tamaño ni orientación, solo posición.",
         "label": "POSIBLE PREGUNTA"
       }
     ]
