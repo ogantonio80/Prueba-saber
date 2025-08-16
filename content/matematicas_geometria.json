@@ -1,4 +1,561 @@
 {
+  "Puntos rectas y planos": {
+    "lesson": {
+      "summary": "En esta lección se abordarán los conceptos fundamentales de puntos, rectas y planos en el espacio tridimensional. Se explicará cómo se representan y se relacionan entre sí, así como sus propiedades y aplicaciones en la geometría.",
+      "examples": [
+        {
+          "title": "Identificación de puntos, rectas y planos",
+          "steps": [
+            "Definir un punto como una ubicación en el espacio sin dimensiones.",
+            "Representar una recta como una línea que se extiende infinitamente en ambas direcciones, definida por dos puntos.",
+            "Describir un plano como una superficie plana que se extiende infinitamente en dos dimensiones, definido por tres puntos no colineales."
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "pitfalls": [
+        "Confundir un punto con una línea o un plano.",
+        "No considerar que una recta se define por al menos dos puntos.",
+        "Olvidar que un plano requiere tres puntos no colineales para su definición."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "puntos",
+          "rectas",
+          "planos"
+        ],
+        "stem": "¿Cuál es la definición de un punto en geometría?",
+        "choices": [
+          "Una figura bidimensional",
+          "Una posición en el espacio sin dimensiones",
+          "Una línea recta",
+          "Un plano tridimensional"
+        ],
+        "answerIndex": 1,
+        "explanation": "Un punto es una posición en el espacio que no tiene dimensiones, es decir, no tiene longitud, ancho ni altura. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "rectas",
+          "planos"
+        ],
+        "stem": "¿Qué se necesita para definir una recta en el espacio tridimensional?",
+        "choices": [
+          "Un punto y un plano",
+          "Dos puntos",
+          "Tres puntos no colineales",
+          "Un punto y un vector"
+        ],
+        "answerIndex": 1,
+        "explanation": "Para definir una recta en el espacio tridimensional se necesitan dos puntos, ya que una recta se extiende indefinidamente en ambas direcciones a través de esos puntos.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "planos"
+        ],
+        "stem": "¿Cuál es la característica principal de un plano en geometría?",
+        "choices": [
+          "Es una figura tridimensional",
+          "Es una superficie bidimensional que se extiende indefinidamente",
+          "Es una línea recta",
+          "Es un conjunto de puntos en una curva"
+        ],
+        "answerIndex": 1,
+        "explanation": "Un plano es una superficie bidimensional que se extiende indefinidamente en todas direcciones, y se puede definir mediante tres puntos no colineales.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "puntos",
+          "rectas",
+          "planos"
+        ],
+        "stem": "Si un punto pertenece a una recta, ¿qué se puede afirmar sobre el punto y la recta?",
+        "choices": [
+          "El punto está en el plano de la recta",
+          "El punto es el origen de la recta",
+          "El punto no puede estar en el plano",
+          "El punto es colineal con otros puntos de la recta"
+        ],
+        "answerIndex": 3,
+        "explanation": "Si un punto pertenece a una recta, se puede afirmar que es colineal con otros puntos de la recta, es decir, todos los puntos de la recta están en la misma línea.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "rectas",
+          "planos"
+        ],
+        "stem": "¿Qué se entiende por la intersección de dos planos en el espacio?",
+        "choices": [
+          "Un punto",
+          "Una línea",
+          "Un plano",
+          "No se intersectan"
+        ],
+        "answerIndex": 1,
+        "explanation": "La intersección de dos planos en el espacio es una línea, siempre que los planos no sean paralelos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "puntos",
+          "rectas",
+          "planos"
+        ],
+        "stem": "¿Cuál es la relación entre dos rectas que son perpendiculares?",
+        "choices": [
+          "Se cruzan en un punto formando un ángulo de 90 grados",
+          "Son paralelas",
+          "No se intersectan",
+          "Son colineales"
+        ],
+        "answerIndex": 0,
+        "explanation": "Dos rectas son perpendiculares si se cruzan en un punto formando un ángulo de 90 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Segmentos y medidas": {
+    "lesson": {
+      "summary": "En esta lección se abordará el concepto de segmentos y sus medidas, así como la forma de calcular la longitud de un segmento en el plano cartesiano.",
+      "examples": [
+        {
+          "title": "Cálculo de la longitud de un segmento en el plano cartesiano",
+          "steps": [
+            "Identificar las coordenadas de los extremos del segmento. Por ejemplo, A(2, 3) y B(5, 7).",
+            "Aplicar la fórmula de la distancia: d = √((x2 - x1)² + (y2 - y1)²).",
+            "Sustituir las coordenadas en la fórmula: d = √((5 - 2)² + (7 - 3)²).",
+            "Calcular: d = √(3² + 4²) = √(9 + 16) = √25 = 5."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de coordenadas en el plano cartesiano.",
+        "Familiaridad con el teorema de Pitágoras."
+      ],
+      "pitfalls": [
+        "Confundir las coordenadas de los puntos A y B.",
+        "No aplicar correctamente la fórmula de la distancia."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "segmentos"
+        ],
+        "stem": "Si un segmento AB mide 8 cm y el segmento BC mide 5 cm, ¿cuál es la longitud total del segmento AC si A, B y C son colineales?",
+        "choices": [
+          "13 cm",
+          "3 cm",
+          "5 cm",
+          "8 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud total del segmento AC es la suma de AB y BC: 8 cm + 5 cm = 13 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "medidas"
+        ],
+        "stem": "Un segmento de línea se divide en tres partes iguales. Si la longitud total del segmento es de 24 cm, ¿cuánto mide cada parte?",
+        "choices": [
+          "6 cm",
+          "8 cm",
+          "12 cm",
+          "4 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud de cada parte es 24 cm dividido entre 3, lo que da 8 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "segmentos"
+        ],
+        "stem": "Si el segmento DE mide 10 cm y se le añade un segmento EF de 4 cm, ¿cuál es la longitud total del segmento DF?",
+        "choices": [
+          "14 cm",
+          "10 cm",
+          "4 cm",
+          "6 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud total del segmento DF es la suma de DE y EF: 10 cm + 4 cm = 14 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "medidas"
+        ],
+        "stem": "Un segmento de 30 cm se corta en dos partes, una de 12 cm y otra de x cm. ¿Cuál es el valor de x?",
+        "choices": [
+          "18 cm",
+          "12 cm",
+          "30 cm",
+          "24 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud de x es 30 cm - 12 cm = 18 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "segmentos"
+        ],
+        "stem": "Si el segmento GH mide 15 cm y se reduce en 5 cm, ¿cuál es la nueva longitud del segmento?",
+        "choices": [
+          "10 cm",
+          "15 cm",
+          "5 cm",
+          "20 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "La nueva longitud del segmento GH es 15 cm - 5 cm = 10 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "medidas"
+        ],
+        "stem": "Un segmento de 50 cm se divide en dos partes, una de 20 cm y otra de y cm. ¿Cuál es la longitud de y?",
+        "choices": [
+          "30 cm",
+          "20 cm",
+          "50 cm",
+          "10 cm"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud de y es 50 cm - 20 cm = 30 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Angulos y sus clasificaciones": {
+    "lesson": {
+      "summary": "Los ángulos son figuras geométricas formadas por dos rayos que comparten un punto en común llamado vértice. Se clasifican según su medida en ángulos agudos, rectos, obtusos, llanos y completos.",
+      "examples": [
+        {
+          "title": "Clasificación de ángulos",
+          "steps": [
+            "Identificar el vértice y los dos rayos que forman el ángulo.",
+            "Medir el ángulo utilizando un transportador.",
+            "Clasificar el ángulo según su medida: menos de 90° (agudo), exactamente 90° (recto), entre 90° y 180° (obtuso), exactamente 180° (plano), y 360° (completo)."
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "pitfalls": [
+        "Confundir ángulos agudos con ángulos rectos.",
+        "No medir correctamente el ángulo con el transportador."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "ángulos",
+          "geometría"
+        ],
+        "stem": "¿Cuál de las siguientes opciones describe un ángulo agudo?",
+        "choices": [
+          "Un ángulo mayor de 90 grados",
+          "Un ángulo menor de 90 grados",
+          "Un ángulo igual a 90 grados",
+          "Un ángulo menor de 180 grados"
+        ],
+        "answerIndex": 1,
+        "explanation": "Un ángulo agudo es aquel que mide menos de 90 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "ángulos",
+          "geometría"
+        ],
+        "stem": "¿Qué tipo de ángulo tiene una medida de exactamente 90 grados?",
+        "choices": [
+          "Ángulo agudo",
+          "Ángulo recto",
+          "Ángulo obtuso",
+          "Ángulo llano"
+        ],
+        "answerIndex": 1,
+        "explanation": "Un ángulo recto es aquel que mide exactamente 90 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "ángulos",
+          "geometría"
+        ],
+        "stem": "¿Cuál es la clasificación de un ángulo que mide más de 90 grados pero menos de 180 grados?",
+        "choices": [
+          "Ángulo agudo",
+          "Ángulo recto",
+          "Ángulo obtuso",
+          "Ángulo llano"
+        ],
+        "answerIndex": 2,
+        "explanation": "Un ángulo obtuso es aquel que mide más de 90 grados y menos de 180 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "ángulos",
+          "geometría"
+        ],
+        "stem": "¿Qué tipo de ángulo se forma cuando dos rayos se encuentran y forman un ángulo de 180 grados?",
+        "choices": [
+          "Ángulo agudo",
+          "Ángulo recto",
+          "Ángulo obtuso",
+          "Ángulo llano"
+        ],
+        "answerIndex": 3,
+        "explanation": "Un ángulo llano es aquel que mide exactamente 180 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "ángulos",
+          "geometría"
+        ],
+        "stem": "¿Cómo se clasifica un ángulo que mide exactamente 360 grados?",
+        "choices": [
+          "Ángulo agudo",
+          "Ángulo recto",
+          "Ángulo obtuso",
+          "Ángulo completo"
+        ],
+        "answerIndex": 3,
+        "explanation": "Un ángulo completo es aquel que mide exactamente 360 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "ángulos",
+          "geometría"
+        ],
+        "stem": "¿Cuál es la suma de los ángulos internos de un triángulo?",
+        "choices": [
+          "90 grados",
+          "180 grados",
+          "270 grados",
+          "360 grados"
+        ],
+        "answerIndex": 1,
+        "explanation": "La suma de los ángulos internos de un triángulo siempre es 180 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Propiedades de los triangulos": {
+    "lesson": {
+      "summary": "Las propiedades de los triángulos son fundamentales para entender su geometría y resolver problemas relacionados. Incluyen la suma de los ángulos interiores, la relación entre lados y ángulos, y las propiedades de los triángulos isósceles, equiláteros y escalenos.",
+      "examples": [
+        {
+          "title": "Suma de los ángulos interiores de un triángulo",
+          "steps": [
+            "Considera un triángulo ABC.",
+            "Identifica los ángulos interiores: ∠A, ∠B, ∠C.",
+            "Aplica la propiedad: ∠A + ∠B + ∠C = 180°.",
+            "Si ∠A = 50° y ∠B = 70°, entonces ∠C = 180° - (50° + 70°) = 60°."
+          ]
+        },
+        {
+          "title": "Propiedades de los triángulos isósceles",
+          "steps": [
+            "Identifica un triángulo isósceles ABC donde AB = AC.",
+            "Aplica la propiedad: los ángulos opuestos a los lados iguales son iguales, es decir, ∠B = ∠C.",
+            "Si AB = AC = 5 cm y BC = 6 cm, puedes calcular los ángulos usando la ley de cosenos o trigonometría."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de geometría.",
+        "Familiaridad con los conceptos de ángulos y lados."
+      ],
+      "pitfalls": [
+        "Confundir la suma de los ángulos interiores con la suma de los ángulos exteriores.",
+        "No aplicar correctamente las propiedades de los triángulos isósceles."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "triangulo_1",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "geometría"
+        ],
+        "stem": "¿Cuál de las siguientes afirmaciones es verdadera sobre los triángulos?",
+        "choices": [
+          "Todos los triángulos son equiláteros.",
+          "La suma de los ángulos interiores de un triángulo es 180 grados.",
+          "Un triángulo puede tener dos ángulos rectos.",
+          "Los triángulos no pueden ser isósceles."
+        ],
+        "answerIndex": 1,
+        "explanation": "La suma de los ángulos interiores de cualquier triángulo siempre es 180 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "triangulo_2",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "geometría"
+        ],
+        "stem": "¿Qué tipo de triángulo tiene todos sus lados de diferente longitud?",
+        "choices": [
+          "Equilátero",
+          "Isósceles",
+          "Escaleno",
+          "Rectángulo"
+        ],
+        "answerIndex": 2,
+        "explanation": "Un triángulo escaleno tiene todos sus lados de diferente longitud. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "triangulo_3",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "geometría"
+        ],
+        "stem": "Si un triángulo tiene un ángulo de 90 grados, ¿cómo se llama?",
+        "choices": [
+          "Triángulo equilátero",
+          "Triángulo isósceles",
+          "Triángulo rectángulo",
+          "Triángulo obtusángulo"
+        ],
+        "answerIndex": 2,
+        "explanation": "Un triángulo con un ángulo de 90 grados se llama triángulo rectángulo. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "triangulo_4",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "geometría"
+        ],
+        "stem": "¿Cuál es la propiedad de los triángulos isósceles?",
+        "choices": [
+          "Tienen todos los lados iguales.",
+          "Tienen dos lados de igual longitud.",
+          "Tienen un ángulo recto.",
+          "Tienen tres ángulos agudos."
+        ],
+        "answerIndex": 1,
+        "explanation": "Los triángulos isósceles tienen dos lados de igual longitud. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "triangulo_5",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "geometría"
+        ],
+        "stem": "¿Qué se puede afirmar sobre los triángulos equiláteros?",
+        "choices": [
+          "Tienen un ángulo obtuso.",
+          "Tienen todos sus lados y ángulos iguales.",
+          "Tienen un lado más largo que los otros.",
+          "No pueden ser isósceles."
+        ],
+        "answerIndex": 1,
+        "explanation": "Los triángulos equiláteros tienen todos sus lados y ángulos iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "triangulo_6",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "geometría"
+        ],
+        "stem": "¿Cuál es la relación entre los lados de un triángulo y sus ángulos?",
+        "choices": [
+          "El lado más largo se opone al ángulo más pequeño.",
+          "El lado más corto se opone al ángulo más grande.",
+          "El lado más largo se opone al ángulo más grande.",
+          "No hay relación entre lados y ángulos."
+        ],
+        "answerIndex": 2,
+        "explanation": "En un triángulo, el lado más largo se opone al ángulo más grande. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
   "Teorema de Pitagoras": {
     "lesson": {
       "summary": "El Teorema de Pitágoras establece que en un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos. Este teorema es fundamental en la geometría y se utiliza para calcular distancias y resolver problemas en diversas aplicaciones.",
@@ -6,28 +563,18 @@
         {
           "title": "Calcular la longitud de la hipotenusa",
           "steps": [
-            "Identifica los catetos del triángulo rectángulo. Supongamos que los catetos miden 3 cm y 4 cm.",
-            "Aplica el Teorema de Pitágoras: c² = a² + b², donde c es la hipotenusa y a y b son los catetos.",
-            "Sustituye los valores: c² = 3² + 4².",
-            "Calcula: c² = 9 + 16.",
-            "Suma los resultados: c² = 25.",
-            "Finalmente, toma la raíz cuadrada: c = √25 = 5 cm."
-          ]
-        },
-        {
-          "title": "Verificar si un triángulo es rectángulo",
-          "steps": [
-            "Toma las longitudes de los lados: 5 cm, 12 cm y 13 cm.",
-            "Identifica el lado más largo como la hipotenusa (13 cm).",
-            "Aplica el Teorema de Pitágoras: verifica si 13² = 5² + 12².",
-            "Calcula: 169 = 25 + 144.",
-            "Suma los resultados: 169 = 169, por lo tanto, el triángulo es rectángulo."
+            "Identificar los catetos del triángulo rectángulo. Supongamos que los catetos miden 3 cm y 4 cm.",
+            "Aplicar el Teorema de Pitágoras: c² = a² + b², donde c es la hipotenusa y a y b son los catetos.",
+            "Sustituir los valores: c² = 3² + 4².",
+            "Calcular: c² = 9 + 16.",
+            "Sumar los resultados: c² = 25.",
+            "Tomar la raíz cuadrada para encontrar c: c = √25 = 5 cm."
           ]
         }
       ],
       "prerequisites": [
         "Conocimiento básico de triángulos y sus propiedades.",
-        "Familiaridad con el cálculo de potencias y raíces cuadradas."
+        "Familiaridad con operaciones de potencias y raíces cuadradas."
       ],
       "pitfalls": [
         "Confundir los catetos con la hipotenusa.",
@@ -45,7 +592,7 @@
           "geometría",
           "teorema de Pitágoras"
         ],
-        "stem": "En un triángulo rectángulo, si un cateto mide 3 cm y el otro cateto mide 4 cm, ¿cuánto mide la hipotenusa?",
+        "stem": "¿Cuál es la longitud de la hipotenusa en un triángulo rectángulo cuyas catetos miden 3 cm y 4 cm?",
         "choices": [
           "5 cm",
           "6 cm",
@@ -53,129 +600,130 @@
           "8 cm"
         ],
         "answerIndex": 0,
-        "explanation": "Aplicando el teorema de Pitágoras: a² + b² = c², donde a = 3 y b = 4. Entonces, 3² + 4² = 9 + 16 = 25, y c = √25 = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "Aplicando el teorema de Pitágoras: c² = a² + b², donde a = 3 y b = 4. Entonces, c² = 3² + 4² = 9 + 16 = 25, por lo que c = √25 = 5.",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "2",
-        "difficulty": 3,
+        "difficulty": 2,
         "tags": [
           "geometría",
           "teorema de Pitágoras"
         ],
-        "stem": "Un triángulo rectángulo tiene una hipotenusa de 10 cm y un cateto de 6 cm. ¿Cuál es la longitud del otro cateto?",
+        "stem": "En un triángulo rectángulo, si uno de los catetos mide 5 cm y la hipotenusa mide 13 cm, ¿cuánto mide el otro cateto?",
         "choices": [
+          "12 cm",
+          "10 cm",
           "8 cm",
-          "7 cm",
-          "9 cm",
-          "5 cm"
+          "6 cm"
         ],
         "answerIndex": 0,
-        "explanation": "Usando el teorema de Pitágoras: c² = a² + b². Aquí, 10² = 6² + b², lo que implica 100 = 36 + b², así que b² = 64, y b = 8.",
+        "explanation": "Usando el teorema de Pitágoras: c² = a² + b². Aquí, 13² = 5² + b², lo que da 169 = 25 + b², así que b² = 144, y b = 12. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "3",
-        "difficulty": 2,
+        "difficulty": 3,
         "tags": [
           "geometría",
           "teorema de Pitágoras"
         ],
-        "stem": "Si un triángulo rectángulo tiene catetos de 5 cm y 12 cm, ¿cuál es la longitud de la hipotenusa?",
+        "stem": "Si un triángulo tiene lados de 8 cm, 15 cm y 17 cm, ¿es un triángulo rectángulo?",
         "choices": [
-          "13 cm",
-          "10 cm",
-          "11 cm",
-          "14 cm"
+          "Sí",
+          "No",
+          "Depende",
+          "No se puede determinar"
         ],
         "answerIndex": 0,
-        "explanation": "Aplicando el teorema de Pitágoras: 5² + 12² = c², es decir, 25 + 144 = c², por lo que c² = 169 y c = 13. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "Verificando con el teorema de Pitágoras: 17² = 8² + 15², 289 = 64 + 225, 289 = 289. Por lo tanto, sí es un triángulo rectángulo.",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "4",
-        "difficulty": 3,
-        "tags": [
-          "geometría",
-          "teorema de Pitágoras"
-        ],
-        "stem": "En un triángulo rectángulo, si la hipotenusa mide 15 cm y uno de los catetos mide 9 cm, ¿cuánto mide el otro cateto?",
-        "choices": [
-          "12 cm",
-          "10 cm",
-          "11 cm",
-          "13 cm"
-        ],
-        "answerIndex": 0,
-        "explanation": "Usando el teorema de Pitágoras: 15² = 9² + b², es decir, 225 = 81 + b², por lo que b² = 144 y b = 12. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
-        "label": "POSIBLE PREGUNTA"
-      },
-      {
-        "id": "5",
         "difficulty": 2,
         "tags": [
           "geometría",
           "teorema de Pitágoras"
         ],
-        "stem": "Un triángulo rectángulo tiene catetos de 8 cm y 15 cm. ¿Cuál es la longitud de la hipotenusa?",
+        "stem": "Un triángulo rectángulo tiene un cateto de 6 cm y una hipotenusa de 10 cm. ¿Cuál es la longitud del otro cateto?",
         "choices": [
-          "17 cm",
-          "18 cm",
-          "16 cm",
-          "19 cm"
+          "8 cm",
+          "7 cm",
+          "5 cm",
+          "4 cm"
         ],
         "answerIndex": 0,
-        "explanation": "Aplicando el teorema de Pitágoras: 8² + 15² = c², es decir, 64 + 225 = c², por lo que c² = 289 y c = 17. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "Aplicando el teorema de Pitágoras: c² = a² + b². Aquí, 10² = 6² + b², 100 = 36 + b², así que b² = 64, y b = 8. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
-        "id": "6",
+        "id": "5",
         "difficulty": 3,
         "tags": [
           "geometría",
           "teorema de Pitágoras"
         ],
-        "stem": "Si un triángulo rectángulo tiene una hipotenusa de 20 cm y un cateto de 16 cm, ¿cuánto mide el otro cateto?",
+        "stem": "Si un triángulo rectángulo tiene catetos de 9 cm y 12 cm, ¿cuál es el área del triángulo?",
         "choices": [
-          "12 cm",
-          "10 cm",
-          "8 cm",
-          "14 cm"
+          "54 cm²",
+          "72 cm²",
+          "36 cm²",
+          "108 cm²"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área de un triángulo es (base * altura) / 2. Aquí, (9 * 12) / 2 = 108 / 2 = 54 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "teorema de Pitágoras"
+        ],
+        "stem": "¿Cuál es la relación entre los lados de un triángulo rectángulo según el teorema de Pitágoras?",
+        "choices": [
+          "a² + b² = c²",
+          "a + b = c",
+          "a² - b² = c²",
+          "a + b² = c"
         ],
         "answerIndex": 0,
-        "explanation": "Usando el teorema de Pitágoras: 20² = 16² + b², es decir, 400 = 256 + b², por lo que b² = 144 y b = 12. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El teorema de Pitágoras establece que en un triángulo rectángulo, la suma de los cuadrados de los catetos (a y b) es igual al cuadrado de la hipotenusa (c).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
   },
-  "Angulos y triangulos": {
+  "Congruencia y semejanza de triangulos": {
     "lesson": {
-      "summary": "En esta lección se abordarán los conceptos de ángulos y triángulos, incluyendo sus tipos, propiedades y relaciones. Se explorará cómo calcular la suma de los ángulos en un triángulo y se presentarán ejemplos prácticos para aplicar estos conocimientos.",
+      "summary": "La congruencia y semejanza de triángulos son conceptos fundamentales en geometría que permiten establecer relaciones entre diferentes triángulos. Dos triángulos son congruentes si tienen la misma forma y tamaño, mientras que son semejantes si tienen la misma forma pero no necesariamente el mismo tamaño.",
       "examples": [
         {
-          "title": "Clasificación de triángulos según sus ángulos",
+          "title": "Congruencia de triángulos",
           "steps": [
-            "Identificar los tipos de ángulos: agudo (menos de 90°), recto (exactamente 90°) y obtuso (más de 90°).",
-            "Clasificar triángulos: equilátero (tres ángulos agudos), isósceles (dos ángulos iguales) y escaleno (tres ángulos diferentes).",
-            "Ejemplo: Un triángulo tiene ángulos de 50°, 60° y 70°. Clasifícalo."
+            "Identificar los lados y ángulos de los triángulos.",
+            "Aplicar los criterios de congruencia: Lado-Lado-Lado (LLL), Lado-Ángulo-Lado (LAL), Ángulo-Ángulo (AA).",
+            "Demostrar que los triángulos son congruentes al cumplir con uno de los criterios."
           ]
         },
         {
-          "title": "Cálculo de la suma de los ángulos en un triángulo",
+          "title": "Semejanza de triángulos",
           "steps": [
-            "Recordar que la suma de los ángulos internos de un triángulo es siempre 180°.",
-            "Si un triángulo tiene un ángulo de 40° y otro de 70°, calcular el tercer ángulo.",
-            "Suma: 40° + 70° + x = 180°; por lo tanto, x = 180° - 110° = 70°."
+            "Identificar los lados y ángulos de los triángulos.",
+            "Aplicar los criterios de semejanza: Ángulo-Ángulo (AA), Lado-Lado-Lado (LLL) de semejanza, Lado-Ángulo-Lado (LAL).",
+            "Demostrar que los triángulos son semejantes al cumplir con uno de los criterios."
           ]
         }
       ],
       "prerequisites": [
-        "Conocimiento básico de geometría.",
-        "Familiaridad con la medición de ángulos."
+        "Conocimiento básico de triángulos y sus propiedades.",
+        "Entender los conceptos de ángulos y lados."
       ],
       "pitfalls": [
-        "Confundir los tipos de triángulos.",
-        "Olvidar que la suma de los ángulos en un triángulo siempre es 180°."
+        "Confundir congruencia con semejanza.",
+        "No verificar todos los lados y ángulos al aplicar los criterios.",
+        "Olvidar que la semejanza no implica congruencia."
       ],
       "pregunta_tipo": null,
       "tipos_de_pregunta": [],
@@ -186,64 +734,82 @@
         "id": "1",
         "difficulty": 2,
         "tags": [
-          "ángulos",
-          "triángulos"
+          "triángulos",
+          "congruencia"
         ],
-        "stem": "¿Cuál es la suma de los ángulos interiores de un triángulo?",
+        "stem": "¿Cuál de las siguientes afirmaciones es verdadera sobre triángulos congruentes?",
         "choices": [
-          "90 grados",
-          "180 grados",
-          "270 grados",
-          "360 grados"
+          "Tienen lados y ángulos correspondientes iguales.",
+          "Tienen solo lados iguales.",
+          "Tienen solo ángulos iguales.",
+          "No tienen relación entre sí."
         ],
-        "answerIndex": 1,
-        "explanation": "La suma de los ángulos interiores de un triángulo siempre es 180 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "Los triángulos congruentes tienen lados y ángulos correspondientes iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "2",
         "difficulty": 2,
         "tags": [
-          "ángulos",
-          "triángulos"
+          "triángulos",
+          "semejanza"
         ],
-        "stem": "Si un triángulo tiene un ángulo de 90 grados, ¿qué tipo de triángulo es?",
+        "stem": "Si dos triángulos son semejantes, ¿qué se puede afirmar sobre sus ángulos?",
         "choices": [
-          "Equilátero",
-          "Isósceles",
-          "Escaleno",
-          "Rectángulo"
+          "Son iguales.",
+          "Son diferentes.",
+          "Son complementarios.",
+          "Son suplementarios."
         ],
-        "answerIndex": 3,
-        "explanation": "Un triángulo con un ángulo de 90 grados se llama triángulo rectángulo. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "Los triángulos semejantes tienen ángulos correspondientes iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "3",
         "difficulty": 2,
         "tags": [
-          "ángulos",
-          "triángulos"
+          "triángulos",
+          "congruencia"
         ],
-        "stem": "En un triángulo isósceles, ¿cuántos ángulos son iguales?",
+        "stem": "¿Qué criterio se utiliza para demostrar que dos triángulos son congruentes?",
         "choices": [
-          "Ninguno",
-          "Uno",
-          "Dos",
-          "Tres"
+          "Lado-Lado-Lado (LLL)",
+          "Ángulo-Ángulo (AA)",
+          "Lado-Ángulo-Lado (LAL)",
+          "Ángulo-Lado-Ángulo (ALA)"
         ],
-        "answerIndex": 2,
-        "explanation": "En un triángulo isósceles, dos ángulos son iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "El criterio Lado-Lado-Lado (LLL) establece que si tres lados de un triángulo son iguales a tres lados de otro triángulo, son congruentes.",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "4",
         "difficulty": 2,
         "tags": [
-          "ángulos",
-          "triángulos"
+          "triángulos",
+          "semejanza"
         ],
-        "stem": "¿Qué tipo de triángulo tiene todos sus lados de diferente longitud?",
+        "stem": "Si un triángulo tiene lados de longitud 3, 4 y 5, ¿cuál de los siguientes triángulos es semejante a él?",
+        "choices": [
+          "Triángulo de lados 6, 8 y 10.",
+          "Triángulo de lados 2, 3 y 4.",
+          "Triángulo de lados 5, 5 y 5.",
+          "Triángulo de lados 1, 1 y 1."
+        ],
+        "answerIndex": 0,
+        "explanation": "El triángulo de lados 6, 8 y 10 es semejante porque sus lados son proporcionales a los del triángulo original. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "congruencia"
+        ],
+        "stem": "¿Qué tipo de triángulo es aquel que tiene todos sus lados de diferente longitud?",
         "choices": [
           "Equilátero",
           "Isósceles",
@@ -255,76 +821,197 @@
         "label": "POSIBLE PREGUNTA"
       },
       {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "triángulos",
+          "semejanza"
+        ],
+        "stem": "Si dos triángulos tienen un ángulo igual y los lados adyacentes a ese ángulo son proporcionales, ¿qué se puede concluir?",
+        "choices": [
+          "Son congruentes.",
+          "Son semejantes.",
+          "No tienen relación.",
+          "Son equiláteros."
+        ],
+        "answerIndex": 1,
+        "explanation": "Si dos triángulos tienen un ángulo igual y los lados adyacentes son proporcionales, son semejantes por el criterio Ángulo-Lado-Ángulo (ALA).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Cuadrilateros y sus propiedades": {
+    "lesson": {
+      "summary": "Los cuadriláteros son figuras geométricas que tienen cuatro lados. En esta lección, exploraremos las propiedades de los diferentes tipos de cuadriláteros, como los rectángulos, cuadrados, rombos, trapecios y paralelogramos.",
+      "examples": [
+        {
+          "title": "Propiedades del rectángulo",
+          "steps": [
+            "Identificar que un rectángulo tiene cuatro ángulos rectos.",
+            "Verificar que los lados opuestos son iguales y paralelos.",
+            "Calcular el área usando la fórmula A = base × altura."
+          ]
+        },
+        {
+          "title": "Propiedades del rombo",
+          "steps": [
+            "Reconocer que un rombo tiene todos sus lados iguales.",
+            "Observar que los ángulos opuestos son iguales y los ángulos adyacentes son suplementarios.",
+            "Calcular el área usando la fórmula A = (diagonal1 × diagonal2) / 2."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de geometría.",
+        "Familiaridad con los conceptos de ángulos y paralelogramo."
+      ],
+      "pitfalls": [
+        "Confundir los tipos de cuadriláteros.",
+        "Olvidar que en un cuadrilátero los ángulos internos suman 360 grados."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "cuadriláteros"
+        ],
+        "stem": "¿Cuál de las siguientes afirmaciones es verdadera sobre un cuadrado?",
+        "choices": [
+          "A) Todos sus lados son de diferente longitud.",
+          "B) Tiene dos pares de lados paralelos.",
+          "C) Sus ángulos son todos rectos.",
+          "D) Es un tipo de trapecio."
+        ],
+        "answerIndex": 2,
+        "explanation": "Un cuadrado tiene todos sus ángulos rectos, además de ser un paralelogramo. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "cuadriláteros"
+        ],
+        "stem": "¿Qué tipo de cuadrilátero tiene solo un par de lados paralelos?",
+        "choices": [
+          "A) Rectángulo",
+          "B) Trapecio",
+          "C) Rombo",
+          "D) Paralelogramo"
+        ],
+        "answerIndex": 1,
+        "explanation": "El trapecio es el único cuadrilátero que tiene solo un par de lados paralelos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "cuadriláteros"
+        ],
+        "stem": "¿Cuál es la suma de los ángulos interiores de un cuadrilátero?",
+        "choices": [
+          "A) 180 grados",
+          "B) 360 grados",
+          "C) 540 grados",
+          "D) 720 grados"
+        ],
+        "answerIndex": 1,
+        "explanation": "La suma de los ángulos interiores de cualquier cuadrilátero es 360 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "cuadriláteros"
+        ],
+        "stem": "¿Qué cuadrilátero tiene todos sus lados de igual longitud y sus ángulos son iguales?",
+        "choices": [
+          "A) Rectángulo",
+          "B) Trapecio",
+          "C) Rombo",
+          "D) Cuadrado"
+        ],
+        "answerIndex": 3,
+        "explanation": "El cuadrado tiene todos sus lados de igual longitud y todos sus ángulos son rectos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
         "id": "5",
         "difficulty": 2,
         "tags": [
-          "ángulos",
-          "triángulos"
+          "geometría",
+          "cuadriláteros"
         ],
-        "stem": "Si un triángulo tiene ángulos de 50 y 60 grados, ¿cuánto mide el tercer ángulo?",
+        "stem": "¿Cuál de los siguientes cuadriláteros es un paralelogramo?",
         "choices": [
-          "70 grados",
-          "80 grados",
-          "90 grados",
-          "100 grados"
+          "A) Trapecio",
+          "B) Rectángulo",
+          "C) Romboide",
+          "D) Todas las anteriores"
         ],
-        "answerIndex": 1,
-        "explanation": "La suma de los ángulos es 180 grados, por lo que el tercer ángulo mide 70 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 3,
+        "explanation": "Tanto el rectángulo como el romboide son tipos de paralelogramos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "6",
         "difficulty": 2,
         "tags": [
-          "ángulos",
-          "triángulos"
+          "geometría",
+          "cuadriláteros"
         ],
-        "stem": "¿Cuál de los siguientes triángulos tiene un ángulo mayor a 90 grados?",
+        "stem": "¿Cuál es la característica principal de un rombo?",
         "choices": [
-          "Triángulo equilátero",
-          "Triángulo isósceles",
-          "Triángulo rectángulo",
-          "Triángulo obtusángulo"
+          "A) Todos sus ángulos son rectos.",
+          "B) Tiene dos pares de lados paralelos.",
+          "C) Todos sus lados son de igual longitud.",
+          "D) Tiene un par de lados paralelos."
         ],
-        "answerIndex": 3,
-        "explanation": "Un triángulo obtusángulo tiene un ángulo mayor a 90 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 2,
+        "explanation": "El rombo tiene todos sus lados de igual longitud, pero no necesariamente tiene ángulos rectos. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
   },
-  "Poligonos y perimetros": {
+  "Poligonos regulares e irregulares": {
     "lesson": {
-      "summary": "En esta lección se abordará el concepto de polígonos y cómo calcular sus perímetros. Se explicará la clasificación de los polígonos según el número de lados y se presentarán fórmulas para calcular el perímetro de diferentes tipos de polígonos.",
+      "summary": "Los polígonos son figuras geométricas planas que tienen lados rectos. Se clasifican en regulares, donde todos sus lados y ángulos son iguales, e irregulares, donde no cumplen con esta propiedad. En esta lección, exploraremos las características de ambos tipos de polígonos, así como sus propiedades y ejemplos.",
       "examples": [
         {
-          "title": "Cálculo del perímetro de un triángulo",
+          "title": "Identificación de polígonos regulares e irregulares",
           "steps": [
-            "Identificar las longitudes de los tres lados del triángulo.",
-            "Sumar las longitudes de los lados: P = lado1 + lado2 + lado3."
+            "Dibuja un triángulo equilátero y un triángulo escaleno.",
+            "Identifica los lados y ángulos de cada triángulo.",
+            "Clasifica el triángulo equilátero como regular y el escaleno como irregular."
           ]
         },
         {
-          "title": "Cálculo del perímetro de un cuadrado",
+          "title": "Cálculo del perímetro de un polígono regular",
           "steps": [
-            "Identificar la longitud de un lado del cuadrado.",
-            "Multiplicar la longitud del lado por 4: P = 4 * lado."
-          ]
-        },
-        {
-          "title": "Cálculo del perímetro de un rectángulo",
-          "steps": [
-            "Identificar las longitudes de los dos lados del rectángulo.",
-            "Sumar el doble de la longitud y el doble del ancho: P = 2 * (largo + ancho)."
+            "Selecciona un cuadrado con lados de 5 cm.",
+            "Calcula el perímetro multiplicando la longitud de un lado por 4.",
+            "El perímetro del cuadrado es 20 cm."
           ]
         }
       ],
       "prerequisites": [
-        "Conocimiento básico de geometría.",
-        "Familiaridad con las operaciones de suma."
+        "Conocimiento básico de geometría",
+        "Identificación de figuras planas"
       ],
       "pitfalls": [
-        "Confundir el número de lados al calcular el perímetro.",
-        "Olvidar sumar todos los lados en polígonos con más de 4 lados."
+        "Confundir polígonos regulares con irregulares",
+        "No considerar que los polígonos deben tener al menos tres lados"
       ],
       "pregunta_tipo": null,
       "tipos_de_pregunta": [],
@@ -336,17 +1023,17 @@
         "difficulty": 2,
         "tags": [
           "polígonos",
-          "perímetros"
+          "geometría"
         ],
-        "stem": "¿Cuál es el perímetro de un triángulo cuyas longitudes de lados son 5 cm, 7 cm y 10 cm?",
+        "stem": "¿Cuál de los siguientes es un polígono regular?",
         "choices": [
-          "22 cm",
-          "20 cm",
-          "18 cm",
-          "25 cm"
+          "Triángulo escaleno",
+          "Cuadrado",
+          "Trapecio",
+          "Pentágono irregular"
         ],
-        "answerIndex": 0,
-        "explanation": "El perímetro se calcula sumando las longitudes de todos los lados: 5 + 7 + 10 = 22 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 1,
+        "explanation": "Un cuadrado tiene todos sus lados y ángulos iguales, por lo que es un polígono regular. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -354,17 +1041,17 @@
         "difficulty": 2,
         "tags": [
           "polígonos",
-          "perímetros"
+          "geometría"
         ],
-        "stem": "Un cuadrado tiene un lado de 4 cm. ¿Cuál es su perímetro?",
+        "stem": "¿Qué característica define a un polígono irregular?",
         "choices": [
-          "16 cm",
-          "12 cm",
-          "8 cm",
-          "20 cm"
+          "Todos sus lados son iguales",
+          "Todos sus ángulos son iguales",
+          "No tiene lados ni ángulos iguales",
+          "Es un polígono con más de tres lados"
         ],
-        "answerIndex": 0,
-        "explanation": "El perímetro de un cuadrado se calcula multiplicando la longitud de un lado por 4: 4 x 4 = 16 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 2,
+        "explanation": "Un polígono irregular es aquel que no tiene lados ni ángulos iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -372,17 +1059,17 @@
         "difficulty": 2,
         "tags": [
           "polígonos",
-          "perímetros"
+          "geometría"
         ],
-        "stem": "Si un rectángulo tiene una base de 6 cm y una altura de 3 cm, ¿cuál es su perímetro?",
+        "stem": "¿Cuántos lados tiene un hexágono?",
         "choices": [
-          "18 cm",
-          "20 cm",
-          "12 cm",
-          "15 cm"
+          "4",
+          "5",
+          "6",
+          "7"
         ],
-        "answerIndex": 0,
-        "explanation": "El perímetro de un rectángulo se calcula como 2*(base + altura): 2*(6 + 3) = 18 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 2,
+        "explanation": "Un hexágono tiene seis lados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -390,17 +1077,17 @@
         "difficulty": 2,
         "tags": [
           "polígonos",
-          "perímetros"
+          "geometría"
         ],
-        "stem": "Un pentágono regular tiene lados de 5 cm. ¿Cuál es su perímetro?",
+        "stem": "¿Cuál de los siguientes polígonos es irregular?",
         "choices": [
-          "25 cm",
-          "20 cm",
-          "30 cm",
-          "15 cm"
+          "Rombo",
+          "Rectángulo",
+          "Pentágono",
+          "Triángulo isósceles"
         ],
-        "answerIndex": 0,
-        "explanation": "El perímetro de un pentágono regular se calcula multiplicando la longitud de un lado por 5: 5 x 5 = 25 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 3,
+        "explanation": "Un triángulo isósceles puede tener lados de diferentes longitudes, por lo que puede ser irregular. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -408,17 +1095,17 @@
         "difficulty": 2,
         "tags": [
           "polígonos",
-          "perímetros"
+          "geometría"
         ],
-        "stem": "¿Cuál es el perímetro de un hexágono regular con lados de 3 cm?",
+        "stem": "¿Qué tipo de polígono tiene todos sus lados y ángulos iguales?",
         "choices": [
-          "18 cm",
-          "15 cm",
-          "12 cm",
-          "21 cm"
+          "Polígono irregular",
+          "Polígono regular",
+          "Polígono convexo",
+          "Polígono cóncavo"
         ],
-        "answerIndex": 0,
-        "explanation": "El perímetro de un hexágono regular se calcula multiplicando la longitud de un lado por 6: 3 x 6 = 18 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 1,
+        "explanation": "Un polígono regular es aquel que tiene todos sus lados y ángulos iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -426,17 +1113,17 @@
         "difficulty": 2,
         "tags": [
           "polígonos",
-          "perímetros"
+          "geometría"
         ],
-        "stem": "Un octágono regular tiene lados de 2 cm. ¿Cuál es su perímetro?",
+        "stem": "¿Cuál es el nombre del polígono de 8 lados?",
         "choices": [
-          "16 cm",
-          "14 cm",
-          "18 cm",
-          "12 cm"
+          "Heptágono",
+          "Octágono",
+          "Nonágono",
+          "Decágono"
         ],
-        "answerIndex": 0,
-        "explanation": "El perímetro de un octágono regular se calcula multiplicando la longitud de un lado por 8: 2 x 8 = 16 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 1,
+        "explanation": "Un polígono de 8 lados se llama octágono. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
@@ -457,12 +1144,12 @@
           "title": "Ecuación de la circunferencia",
           "steps": [
             "Identificar el centro (h, k) y el radio r.",
-            "Escribir la ecuación en la forma (x - h)² + (y - k)² = r²."
+            "Escribir la ecuación de la circunferencia: (x - h)² + (y - k)² = r²."
           ]
         }
       ],
       "prerequisites": [
-        "Conocimientos básicos de geometría.",
+        "Conocimiento de geometría básica.",
         "Familiaridad con las propiedades de los triángulos y polígonos."
       ],
       "pitfalls": [
@@ -490,7 +1177,7 @@
           "4r"
         ],
         "answerIndex": 0,
-        "explanation": "La fórmula para calcular la circunferencia de un círculo es 2πr, donde r es el radio del círculo. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "La fórmula para calcular la circunferencia de un círculo es 2πr, donde r es el radio. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -498,18 +1185,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "circunferencia",
+          "área",
           "círculo"
         ],
-        "stem": "Si el radio de un círculo es 5 cm, ¿cuál es su área?",
+        "stem": "¿Cuál es el área de un círculo con un radio de 5 cm?",
         "choices": [
           "25π cm²",
           "10π cm²",
           "20π cm²",
-          "30π cm²"
+          "15π cm²"
         ],
         "answerIndex": 0,
-        "explanation": "El área de un círculo se calcula con la fórmula πr². Si r = 5 cm, el área es π(5)² = 25π cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El área de un círculo se calcula con la fórmula πr². Para un radio de 5 cm, el área es π(5)² = 25π cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -518,7 +1205,7 @@
         "tags": [
           "geometría",
           "circunferencia",
-          "círculo"
+          "radio"
         ],
         "stem": "Si la circunferencia de un círculo es 31.4 cm, ¿cuál es su radio?",
         "choices": [
@@ -527,8 +1214,8 @@
           "15 cm",
           "20 cm"
         ],
-        "answerIndex": 1,
-        "explanation": "La circunferencia C se calcula como C = 2πr. Si C = 31.4 cm, entonces r = C/(2π) = 31.4/(2π) ≈ 5 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "La circunferencia se calcula como 2πr. Si 2πr = 31.4, entonces r = 31.4/(2π) = 5 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -536,18 +1223,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "circunferencia",
+          "diámetro",
           "círculo"
         ],
-        "stem": "¿Qué relación existe entre el diámetro y el radio de un círculo?",
+        "stem": "Si el diámetro de un círculo es 12 cm, ¿cuál es su radio?",
         "choices": [
-          "El diámetro es el doble del radio",
-          "El diámetro es la mitad del radio",
-          "El diámetro es igual al radio",
-          "No hay relación"
+          "6 cm",
+          "12 cm",
+          "24 cm",
+          "3 cm"
         ],
         "answerIndex": 0,
-        "explanation": "El diámetro de un círculo es el doble del radio, es decir, d = 2r. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El radio es la mitad del diámetro. Por lo tanto, si el diámetro es 12 cm, el radio es 12/2 = 6 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -556,17 +1243,17 @@
         "tags": [
           "geometría",
           "circunferencia",
-          "círculo"
+          "área"
         ],
-        "stem": "Si un círculo tiene un área de 50π cm², ¿cuál es su radio?",
+        "stem": "Si el área de un círculo es 50π cm², ¿cuál es el diámetro del círculo?",
         "choices": [
-          "5 cm",
           "10 cm",
-          "7.07 cm",
-          "12.56 cm"
+          "5 cm",
+          "20 cm",
+          "15 cm"
         ],
-        "answerIndex": 2,
-        "explanation": "El área A de un círculo se calcula como A = πr². Si A = 50π, entonces r² = 50, por lo que r = √50 ≈ 7.07 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "El área se calcula como πr². Si πr² = 50π, entonces r² = 50, y r = √50. El diámetro es 2r = 2√50 ≈ 10 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -577,64 +1264,196 @@
           "circunferencia",
           "círculo"
         ],
-        "stem": "¿Cuál es la relación entre la circunferencia y el área de un círculo?",
+        "stem": "¿Qué relación existe entre el diámetro y la circunferencia de un círculo?",
         "choices": [
-          "Ambos son iguales",
-          "Ambos dependen del radio",
-          "Ambos son independientes",
-          "Ambos son proporcionales al diámetro"
+          "La circunferencia es el doble del diámetro",
+          "La circunferencia es la mitad del diámetro",
+          "La circunferencia es igual al diámetro",
+          "La circunferencia es π veces el diámetro"
         ],
-        "answerIndex": 1,
-        "explanation": "La circunferencia y el área de un círculo dependen del radio, pero no son iguales ni independientes. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 3,
+        "explanation": "La circunferencia de un círculo es igual a π veces el diámetro. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
   },
-  "Area y perimetro de figuras planas": {
+  "Longitud de la circunferencia y arco": {
     "lesson": {
-      "summary": "En esta lección se abordarán los conceptos de área y perímetro de figuras planas, incluyendo cuadrados, rectángulos, triángulos y círculos. Se explicarán las fórmulas necesarias para calcular el área y el perímetro de cada figura, así como su aplicación en problemas prácticos.",
+      "summary": "La longitud de la circunferencia se calcula utilizando la fórmula L = 2πr, donde r es el radio de la circunferencia. El arco es una parte de la circunferencia y su longitud se puede calcular con la fórmula L_arco = (θ/360) * L, donde θ es el ángulo central en grados y L es la longitud de la circunferencia.",
       "examples": [
         {
-          "title": "Cálculo del área y perímetro de un cuadrado",
+          "title": "Ejemplo 1: Calcular la longitud de una circunferencia",
           "steps": [
-            "Identificar la longitud de un lado del cuadrado (L).",
-            "Calcular el perímetro usando la fórmula P = 4 * L.",
-            "Calcular el área usando la fórmula A = L^2."
+            "Identificar el radio de la circunferencia, por ejemplo, r = 5 cm.",
+            "Aplicar la fórmula L = 2πr.",
+            "Sustituir el valor del radio: L = 2π(5) = 10π cm.",
+            "Calcular el valor numérico: L ≈ 31.42 cm."
           ]
         },
         {
-          "title": "Cálculo del área y perímetro de un rectángulo",
+          "title": "Ejemplo 2: Calcular la longitud de un arco",
           "steps": [
-            "Identificar la longitud (L) y la anchura (W) del rectángulo.",
-            "Calcular el perímetro usando la fórmula P = 2 * (L + W).",
-            "Calcular el área usando la fórmula A = L * W."
-          ]
-        },
-        {
-          "title": "Cálculo del área y perímetro de un triángulo",
-          "steps": [
-            "Identificar la base (b) y la altura (h) del triángulo.",
-            "Calcular el área usando la fórmula A = (b * h) / 2.",
-            "Calcular el perímetro sumando las longitudes de los tres lados."
-          ]
-        },
-        {
-          "title": "Cálculo del área y perímetro de un círculo",
-          "steps": [
-            "Identificar el radio (r) del círculo.",
-            "Calcular el perímetro (circunferencia) usando la fórmula C = 2 * π * r.",
-            "Calcular el área usando la fórmula A = π * r^2."
+            "Determinar el radio de la circunferencia, r = 4 cm, y el ángulo central, θ = 90 grados.",
+            "Calcular la longitud de la circunferencia: L = 2π(4) = 8π cm.",
+            "Aplicar la fórmula del arco: L_arco = (θ/360) * L = (90/360) * 8π = 2π cm.",
+            "Calcular el valor numérico: L_arco ≈ 6.28 cm."
           ]
         }
       ],
       "prerequisites": [
-        "Conocimientos básicos de geometría.",
-        "Familiaridad con las operaciones matemáticas básicas."
+        "Conocimiento básico de geometría",
+        "Fórmulas de área y perímetro"
       ],
       "pitfalls": [
-        "Confundir área con perímetro.",
-        "No utilizar las unidades adecuadas en los cálculos.",
-        "Olvidar que el área se mide en unidades cuadradas y el perímetro en unidades lineales."
+        "Confundir el radio con el diámetro.",
+        "No convertir correctamente los grados a radianes si es necesario."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "circunferencia"
+        ],
+        "stem": "¿Cuál es la fórmula para calcular la longitud de una circunferencia?",
+        "choices": [
+          "2πr",
+          "πr²",
+          "πd",
+          "4r"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud de una circunferencia se calcula con la fórmula 2πr, donde r es el radio. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "arco"
+        ],
+        "stem": "Si un arco de circunferencia tiene un ángulo central de 60 grados y el radio es de 5 cm, ¿cuál es la longitud del arco?",
+        "choices": [
+          "5π/3",
+          "5π/6",
+          "5/3",
+          "5/6"
+        ],
+        "answerIndex": 1,
+        "explanation": "La longitud del arco se calcula como (θ/360) * 2πr. Aquí, θ = 60 y r = 5, por lo que la longitud del arco es (60/360) * 2π(5) = 5π/6.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "circunferencia"
+        ],
+        "stem": "Si el diámetro de una circunferencia es 10 cm, ¿cuál es su longitud?",
+        "choices": [
+          "10π",
+          "5π",
+          "20π",
+          "15π"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud de la circunferencia se calcula con la fórmula πd. Aquí, d = 10, por lo que la longitud es 10π. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "arco"
+        ],
+        "stem": "Un arco de circunferencia tiene una longitud de 8 cm y está subtendido por un ángulo central de 90 grados. ¿Cuál es el radio de la circunferencia?",
+        "choices": [
+          "8 cm",
+          "16 cm",
+          "4 cm",
+          "2 cm"
+        ],
+        "answerIndex": 1,
+        "explanation": "La longitud del arco se calcula como (θ/360) * 2πr. Despejando r, tenemos r = (longitud * 360) / (θ * 2π). Sustituyendo, r = (8 * 360) / (90 * 2π) = 16 cm.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "circunferencia"
+        ],
+        "stem": "¿Qué relación existe entre la longitud de un arco y el ángulo central que lo subtende?",
+        "choices": [
+          "Son directamente proporcionales",
+          "Son inversamente proporcionales",
+          "No tienen relación",
+          "Son iguales"
+        ],
+        "answerIndex": 0,
+        "explanation": "La longitud de un arco es directamente proporcional al ángulo central que lo subtende, manteniendo constante el radio. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "arco"
+        ],
+        "stem": "Si un arco de circunferencia mide 3π cm y el radio es de 6 cm, ¿cuál es el ángulo central en grados?",
+        "choices": [
+          "60",
+          "90",
+          "180",
+          "120"
+        ],
+        "answerIndex": 3,
+        "explanation": "La longitud del arco se calcula como (θ/360) * 2πr. Despejando θ, tenemos θ = (longitud * 360) / (2πr). Sustituyendo, θ = (3π * 360) / (2π * 6) = 180 grados.",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Area de figuras planas": {
+    "lesson": {
+      "summary": "En esta lección se abordará el concepto de área de figuras planas, incluyendo triángulos, rectángulos, cuadrados y círculos. Se explicarán las fórmulas necesarias para calcular el área de cada figura y se presentarán ejemplos prácticos para facilitar la comprensión.",
+      "examples": [
+        {
+          "title": "Cálculo del área de un triángulo",
+          "steps": [
+            "Identificar la base y la altura del triángulo.",
+            "Aplicar la fórmula del área: A = (base * altura) / 2.",
+            "Sustituir los valores de base y altura en la fórmula.",
+            "Calcular el área."
+          ]
+        },
+        {
+          "title": "Cálculo del área de un círculo",
+          "steps": [
+            "Identificar el radio del círculo.",
+            "Aplicar la fórmula del área: A = π * radio².",
+            "Sustituir el valor del radio en la fórmula.",
+            "Calcular el área utilizando el valor de π (aproximadamente 3.14)."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento de las propiedades de las figuras planas.",
+        "Familiaridad con las operaciones básicas de matemáticas."
+      ],
+      "pitfalls": [
+        "Confundir la base y la altura en el triángulo.",
+        "Olvidar el factor de 1/2 en la fórmula del área del triángulo.",
+        "No utilizar el valor correcto de π al calcular el área del círculo."
       ],
       "pregunta_tipo": null,
       "tipos_de_pregunta": [],
@@ -647,17 +1466,17 @@
         "tags": [
           "geometría",
           "área",
-          "perímetro"
+          "figuras planas"
         ],
-        "stem": "¿Cuál es el área de un rectángulo que tiene una base de 5 cm y una altura de 3 cm?",
+        "stem": "¿Cuál es el área de un triángulo con base de 10 cm y altura de 5 cm?",
         "choices": [
-          "15 cm²",
-          "8 cm²",
-          "10 cm²",
-          "12 cm²"
+          "25 cm²",
+          "30 cm²",
+          "20 cm²",
+          "15 cm²"
         ],
         "answerIndex": 0,
-        "explanation": "El área de un rectángulo se calcula multiplicando la base por la altura: 5 cm * 3 cm = 15 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El área de un triángulo se calcula con la fórmula: (base * altura) / 2. Por lo tanto, (10 * 5) / 2 = 25 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -665,17 +1484,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "perímetro"
+          "área",
+          "figuras planas"
         ],
-        "stem": "¿Cuál es el perímetro de un cuadrado que tiene un lado de 4 cm?",
+        "stem": "¿Qué área tiene un cuadrado cuyo lado mide 4 cm?",
         "choices": [
-          "12 cm",
-          "16 cm",
-          "8 cm",
-          "20 cm"
+          "8 cm²",
+          "12 cm²",
+          "16 cm²",
+          "20 cm²"
         ],
-        "answerIndex": 1,
-        "explanation": "El perímetro de un cuadrado se calcula multiplicando la longitud de un lado por 4: 4 cm * 4 = 16 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 2,
+        "explanation": "El área de un cuadrado se calcula con la fórmula: lado * lado. Por lo tanto, 4 * 4 = 16 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -683,17 +1503,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "área"
+          "área",
+          "figuras planas"
         ],
-        "stem": "¿Qué área tiene un triángulo cuya base mide 6 cm y su altura 4 cm?",
+        "stem": "Si un rectángulo tiene una base de 8 cm y una altura de 3 cm, ¿cuál es su área?",
         "choices": [
-          "12 cm²",
           "24 cm²",
-          "10 cm²",
+          "30 cm²",
+          "20 cm²",
           "18 cm²"
         ],
         "answerIndex": 0,
-        "explanation": "El área de un triángulo se calcula como (base * altura) / 2: (6 cm * 4 cm) / 2 = 12 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El área de un rectángulo se calcula con la fórmula: base * altura. Por lo tanto, 8 * 3 = 24 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -701,17 +1522,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "perímetro"
+          "área",
+          "figuras planas"
         ],
-        "stem": "Si un círculo tiene un radio de 3 cm, ¿cuál es su perímetro (circunferencia)?",
+        "stem": "¿Cuál es el área de un círculo con un radio de 3 cm? (Usa π ≈ 3.14)",
         "choices": [
-          "6π cm",
-          "9π cm",
-          "12π cm",
-          "3π cm"
+          "28.26 cm²",
+          "31.42 cm²",
+          "18.84 cm²",
+          "9.42 cm²"
         ],
         "answerIndex": 0,
-        "explanation": "El perímetro de un círculo se calcula como 2πr. Para un radio de 3 cm: 2π * 3 cm = 6π cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El área de un círculo se calcula con la fórmula: π * radio². Por lo tanto, 3.14 * (3)² = 28.26 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -719,17 +1541,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "área"
+          "área",
+          "figuras planas"
         ],
-        "stem": "¿Cuál es el área de un paralelogramo con base de 10 cm y altura de 5 cm?",
+        "stem": "¿Cuál es el área de un paralelogramo con base de 6 cm y altura de 4 cm?",
         "choices": [
-          "50 cm²",
-          "30 cm²",
-          "40 cm²",
-          "20 cm²"
+          "24 cm²",
+          "20 cm²",
+          "18 cm²",
+          "22 cm²"
         ],
         "answerIndex": 0,
-        "explanation": "El área de un paralelogramo se calcula como base * altura: 10 cm * 5 cm = 50 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El área de un paralelogramo se calcula con la fórmula: base * altura. Por lo tanto, 6 * 4 = 24 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -737,17 +1560,18 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "perímetro"
+          "área",
+          "figuras planas"
         ],
-        "stem": "¿Cuál es el perímetro de un rectángulo que tiene una base de 7 cm y una altura de 2 cm?",
+        "stem": "¿Qué área tiene un rombo con diagonales de 10 cm y 6 cm?",
         "choices": [
-          "18 cm",
-          "14 cm",
-          "20 cm",
-          "16 cm"
+          "30 cm²",
+          "40 cm²",
+          "20 cm²",
+          "25 cm²"
         ],
         "answerIndex": 0,
-        "explanation": "El perímetro de un rectángulo se calcula como 2 * (base + altura): 2 * (7 cm + 2 cm) = 18 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El área de un rombo se calcula con la fórmula: (diagonal1 * diagonal2) / 2. Por lo tanto, (10 * 6) / 2 = 30 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
@@ -759,27 +1583,45 @@
         {
           "title": "Cálculo del volumen de un cubo",
           "steps": [
-            "Identificar la longitud de un lado del cubo. Por ejemplo, si el lado mide 3 cm.",
-            "Aplicar la fórmula del volumen del cubo: V = lado³.",
-            "Calcular: V = 3 cm × 3 cm × 3 cm = 27 cm³."
+            "Identificar la longitud de un lado del cubo (L).",
+            "Aplicar la fórmula del volumen: V = L^3.",
+            "Sustituir el valor de L en la fórmula y calcular."
           ]
         },
         {
           "title": "Cálculo del volumen de un cilindro",
           "steps": [
-            "Identificar el radio de la base y la altura del cilindro. Por ejemplo, radio = 2 cm y altura = 5 cm.",
-            "Aplicar la fórmula del volumen del cilindro: V = π × radio² × altura.",
-            "Calcular: V = π × (2 cm)² × 5 cm = 20π cm³ ≈ 62.83 cm³."
+            "Identificar el radio (r) de la base y la altura (h) del cilindro.",
+            "Aplicar la fórmula del volumen: V = πr^2h.",
+            "Sustituir los valores de r y h en la fórmula y calcular."
+          ]
+        },
+        {
+          "title": "Cálculo del volumen de una esfera",
+          "steps": [
+            "Identificar el radio (r) de la esfera.",
+            "Aplicar la fórmula del volumen: V = (4/3)πr^3.",
+            "Sustituir el valor de r en la fórmula y calcular."
+          ]
+        },
+        {
+          "title": "Cálculo del volumen de un cono",
+          "steps": [
+            "Identificar el radio (r) de la base y la altura (h) del cono.",
+            "Aplicar la fórmula del volumen: V = (1/3)πr^2h.",
+            "Sustituir los valores de r y h en la fórmula y calcular."
           ]
         }
       ],
       "prerequisites": [
-        "Conocimiento de las propiedades de los sólidos geométricos.",
-        "Familiaridad con las operaciones básicas de multiplicación y potencia."
+        "Conocimiento básico de geometría",
+        "Familiaridad con las fórmulas matemáticas",
+        "Habilidad para realizar operaciones con números reales"
       ],
       "pitfalls": [
-        "Confundir las fórmulas de los diferentes sólidos.",
-        "Olvidar las unidades de medida al calcular el volumen."
+        "Confundir las fórmulas de diferentes sólidos",
+        "Olvidar las unidades de medida",
+        "No aplicar correctamente las operaciones matemáticas"
       ],
       "pregunta_tipo": null,
       "tipos_de_pregunta": [],
@@ -791,18 +1633,17 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "volumen",
-          "sólidos"
+          "volumen"
         ],
-        "stem": "¿Cuál es el volumen de un cubo que tiene una arista de 4 cm?",
+        "stem": "¿Cuál es el volumen de un cubo de lado 4 cm?",
         "choices": [
           "16 cm³",
+          "32 cm³",
           "64 cm³",
-          "12 cm³",
           "8 cm³"
         ],
-        "answerIndex": 1,
-        "explanation": "El volumen de un cubo se calcula como V = a³, donde 'a' es la longitud de la arista. En este caso, V = 4³ = 64 cm³. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 2,
+        "explanation": "El volumen de un cubo se calcula como lado³, es decir, 4 cm × 4 cm × 4 cm = 64 cm³. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -810,18 +1651,17 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "volumen",
-          "sólidos"
+          "volumen"
         ],
         "stem": "¿Qué fórmula se utiliza para calcular el volumen de un cilindro?",
         "choices": [
-          "V = πr²h",
-          "V = 2πrh",
-          "V = πd²h/4",
-          "V = 4/3πr³"
+          "πr²h",
+          "2πrh",
+          "πd²",
+          "πr²/3"
         ],
         "answerIndex": 0,
-        "explanation": "La fórmula para calcular el volumen de un cilindro es V = πr²h, donde 'r' es el radio de la base y 'h' es la altura. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "La fórmula para calcular el volumen de un cilindro es V = πr²h, donde r es el radio y h es la altura. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -829,18 +1669,17 @@
         "difficulty": 3,
         "tags": [
           "geometría",
-          "volumen",
-          "sólidos"
+          "volumen"
         ],
         "stem": "Un cono tiene un radio de 3 cm y una altura de 9 cm. ¿Cuál es su volumen?",
         "choices": [
           "27π cm³",
-          "9π cm³",
           "18π cm³",
+          "9π cm³",
           "36π cm³"
         ],
         "answerIndex": 0,
-        "explanation": "El volumen de un cono se calcula como V = (1/3)πr²h. Sustituyendo, V = (1/3)π(3)²(9) = 27π cm³. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El volumen de un cono se calcula como V = (1/3)πr²h. Sustituyendo los valores: V = (1/3)π(3 cm)²(9 cm) = 27π cm³. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -848,18 +1687,17 @@
         "difficulty": 3,
         "tags": [
           "geometría",
-          "volumen",
-          "sólidos"
+          "volumen"
         ],
-        "stem": "¿Cuál es el volumen de una esfera con un radio de 5 cm?",
+        "stem": "¿Cuál es el volumen de una esfera de radio 5 cm?",
         "choices": [
           "100/3 π cm³",
-          "500/3 π cm³",
           "125/3 π cm³",
-          "250/3 π cm³"
+          "150/3 π cm³",
+          "200/3 π cm³"
         ],
         "answerIndex": 1,
-        "explanation": "El volumen de una esfera se calcula como V = (4/3)πr³. Para r = 5 cm, V = (4/3)π(5)³ = (4/3)π(125) = 500/3 π cm³. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "El volumen de una esfera se calcula como V = (4/3)πr³. Para r = 5 cm, V = (4/3)π(5 cm)³ = (4/3)π(125 cm³) = 500/3 π cm³.",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -867,18 +1705,17 @@
         "difficulty": 2,
         "tags": [
           "geometría",
-          "volumen",
-          "sólidos"
+          "volumen"
         ],
-        "stem": "¿Qué sólido tiene un volumen de 36 cm³ y una base cuadrada de 3 cm de lado?",
+        "stem": "¿Qué figura tiene un volumen de 120 cm³ y es un prisma rectangular con dimensiones 4 cm, 5 cm y h? ¿Cuál es la altura h?",
         "choices": [
-          "Cubo",
-          "Prisma rectangular",
-          "Cilindro",
-          "Pirámide"
+          "6 cm",
+          "5 cm",
+          "4 cm",
+          "3 cm"
         ],
-        "answerIndex": 3,
-        "explanation": "Para una pirámide, el volumen se calcula como V = (1/3)Área_base * altura. Si la base es un cuadrado de 3 cm, el área es 9 cm². Para que el volumen sea 36 cm³, la altura debe ser 12 cm.",
+        "answerIndex": 0,
+        "explanation": "El volumen de un prisma rectangular se calcula como V = largo × ancho × alto. Entonces, 120 cm³ = 4 cm × 5 cm × h, lo que implica que h = 120 cm³ / (4 cm × 5 cm) = 6 cm.",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -886,40 +1723,1073 @@
         "difficulty": 3,
         "tags": [
           "geometría",
-          "volumen",
-          "sólidos"
+          "volumen"
         ],
-        "stem": "Si un prisma rectangular tiene dimensiones de 2 cm, 3 cm y 4 cm, ¿cuál es su volumen?",
+        "stem": "Si un prisma triangular tiene una base de área 10 cm² y una altura de 12 cm, ¿cuál es su volumen?",
         "choices": [
-          "24 cm³",
-          "12 cm³",
-          "6 cm³",
-          "8 cm³"
+          "60 cm³",
+          "120 cm³",
+          "30 cm³",
+          "40 cm³"
         ],
         "answerIndex": 0,
-        "explanation": "El volumen de un prisma rectangular se calcula multiplicando las tres dimensiones: V = largo × ancho × alto = 2 × 3 × 4 = 24 cm³.",
+        "explanation": "El volumen de un prisma se calcula como V = área de la base × altura. Por lo tanto, V = 10 cm² × 12 cm = 120 cm³. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
   },
-  "Razones trigonometricas basicas": {
+  "Coordenadas cartesianas": {
     "lesson": {
-      "summary": "Las razones trigonométricas básicas son funciones que relacionan los ángulos de un triángulo rectángulo con las longitudes de sus lados. Las tres razones trigonométricas fundamentales son seno, coseno y tangente.",
+      "summary": "Las coordenadas cartesianas son un sistema que permite ubicar puntos en un plano mediante un par ordenado de números. Cada punto se representa por su distancia horizontal y vertical desde un origen.",
       "examples": [
         {
-          "title": "Cálculo de razones trigonométricas en un triángulo rectángulo",
+          "title": "Ubicación de puntos en el plano cartesiano",
           "steps": [
-            "Dibuja un triángulo rectángulo y etiqueta los lados: opuesto, adyacente e hipotenusa.",
-            "Si el ángulo es θ, identifica los lados correspondientes: seno(θ) = opuesto/hipotenusa, coseno(θ) = adyacente/hipotenusa, tangente(θ) = opuesto/adyacente.",
-            "Ejemplo: En un triángulo rectángulo donde el lado opuesto mide 3 y la hipotenusa mide 5, calcula seno(θ).",
-            "seno(θ) = 3/5 = 0.6. Repite el proceso para coseno y tangente."
+            "Identificar el origen (0,0) en el plano.",
+            "Localizar el eje X (horizontal) y el eje Y (vertical).",
+            "Para el punto (3, 2), mover 3 unidades a la derecha en el eje X y 2 unidades hacia arriba en el eje Y."
+          ]
+        },
+        {
+          "title": "Distancia entre dos puntos",
+          "steps": [
+            "Identificar dos puntos A(x1, y1) y B(x2, y2).",
+            "Aplicar la fórmula de distancia: d = √((x2 - x1)² + (y2 - y1)²).",
+            "Calcular la distancia entre A(1, 2) y B(4, 6)."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de geometría.",
+        "Familiaridad con los ejes X e Y."
+      ],
+      "pitfalls": [
+        "Confundir las coordenadas X e Y al ubicarlas en el plano.",
+        "Olvidar que el primer número representa la posición en el eje X y el segundo en el eje Y."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "coordenadas",
+          "cartesianas"
+        ],
+        "stem": "¿Cuál es la coordenada del punto A en el plano cartesiano si se encuentra en la posición (3, 4)?",
+        "choices": [
+          "(3, 4)",
+          "(4, 3)",
+          "(0, 0)",
+          "(-3, -4)"
+        ],
+        "answerIndex": 0,
+        "explanation": "El punto A se encuentra en la posición (3, 4) en el plano cartesiano. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "coordenadas",
+          "cartesianas"
+        ],
+        "stem": "Si el punto B tiene coordenadas (-2, 5), ¿en qué cuadrante se encuentra?",
+        "choices": [
+          "Cuadrante I",
+          "Cuadrante II",
+          "Cuadrante III",
+          "Cuadrante IV"
+        ],
+        "answerIndex": 1,
+        "explanation": "El punto B se encuentra en el cuadrante II, donde las coordenadas x son negativas y las y son positivas. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 3,
+        "tags": [
+          "coordenadas",
+          "cartesianas"
+        ],
+        "stem": "¿Cuál es la distancia entre los puntos C(1, 2) y D(4, 6) en el plano cartesiano?",
+        "choices": [
+          "5",
+          "4",
+          "3",
+          "6"
+        ],
+        "answerIndex": 0,
+        "explanation": "La distancia se calcula usando la fórmula d = √((x2 - x1)² + (y2 - y1)²). En este caso, d = √((4 - 1)² + (6 - 2)²) = √(9 + 16) = √25 = 5.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "coordenadas",
+          "cartesianas"
+        ],
+        "stem": "¿Qué representa el origen en el sistema de coordenadas cartesianas?",
+        "choices": [
+          "(1, 1)",
+          "(0, 0)",
+          "(1, 0)",
+          "(0, 1)"
+        ],
+        "answerIndex": 1,
+        "explanation": "El origen en el sistema de coordenadas cartesianas es el punto (0, 0). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 3,
+        "tags": [
+          "coordenadas",
+          "cartesianas"
+        ],
+        "stem": "Si el punto E se mueve 3 unidades a la derecha y 2 unidades hacia abajo desde la posición (2, 3), ¿cuáles son sus nuevas coordenadas?",
+        "choices": [
+          "(5, 1)",
+          "(5, 5)",
+          "(1, 1)",
+          "(1, 5)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Al mover 3 unidades a la derecha, la coordenada x se convierte en 2 + 3 = 5. Al mover 2 unidades hacia abajo, la coordenada y se convierte en 3 - 2 = 1. Por lo tanto, las nuevas coordenadas son (5, 1).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "coordenadas",
+          "cartesianas"
+        ],
+        "stem": "¿Cuál es la representación gráfica de las coordenadas (0, -3)?",
+        "choices": [
+          "En el eje x",
+          "En el eje y",
+          "En el origen",
+          "En el cuadrante III"
+        ],
+        "answerIndex": 1,
+        "explanation": "Las coordenadas (0, -3) se encuentran en el eje y, ya que la coordenada x es 0. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Distancia entre dos puntos": {
+    "lesson": {
+      "summary": "La distancia entre dos puntos en el plano cartesiano se calcula utilizando la fórmula de la distancia, que se deriva del teorema de Pitágoras. Esta fórmula permite encontrar la longitud del segmento de línea que une dos puntos dados.",
+      "examples": [
+        {
+          "title": "Ejemplo 1: Calcular la distancia entre los puntos A(2, 3) y B(5, 7)",
+          "steps": [
+            "Identificar las coordenadas de los puntos: A(2, 3) y B(5, 7).",
+            "Aplicar la fórmula de la distancia: d = √((x2 - x1)² + (y2 - y1)²).",
+            "Sustituir los valores: d = √((5 - 2)² + (7 - 3)²).",
+            "Calcular: d = √(3² + 4²) = √(9 + 16) = √25 = 5."
+          ]
+        },
+        {
+          "title": "Ejemplo 2: Calcular la distancia entre los puntos C(-1, -1) y D(2, 3)",
+          "steps": [
+            "Identificar las coordenadas de los puntos: C(-1, -1) y D(2, 3).",
+            "Aplicar la fórmula de la distancia: d = √((x2 - x1)² + (y2 - y1)²).",
+            "Sustituir los valores: d = √((2 - (-1))² + (3 - (-1))²).",
+            "Calcular: d = √(3² + 4²) = √(9 + 16) = √25 = 5."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento de coordenadas en el plano cartesiano.",
+        "Familiaridad con el teorema de Pitágoras."
+      ],
+      "pitfalls": [
+        "Confundir las coordenadas al aplicar la fórmula.",
+        "Olvidar elevar al cuadrado las diferencias antes de sumar."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "distancia"
+        ],
+        "stem": "Calcula la distancia entre los puntos A(2, 3) y B(5, 7).",
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "answerIndex": 2,
+        "explanation": "La distancia se calcula usando la fórmula d = √((x2 - x1)² + (y2 - y1)²). En este caso, d = √((5 - 2)² + (7 - 3)²) = √(9 + 16) = √25 = 5.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "distancia"
+        ],
+        "stem": "Si los puntos C(-1, -1) y D(2, 3) son extremos de un segmento, ¿cuál es la longitud del segmento CD?",
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "answerIndex": 3,
+        "explanation": "Usando la fórmula de distancia: d = √((2 - (-1))² + (3 - (-1))²) = √(9 + 16) = √25 = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "distancia"
+        ],
+        "stem": "Encuentra la distancia entre los puntos E(0, 0) y F(3, 4).",
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "answerIndex": 2,
+        "explanation": "Aplicando la fórmula de distancia: d = √((3 - 0)² + (4 - 0)²) = √(9 + 16) = √25 = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "distancia"
+        ],
+        "stem": "Determina la distancia entre los puntos G(1, 2) y H(4, 6).",
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "answerIndex": 2,
+        "explanation": "La distancia se calcula como d = √((4 - 1)² + (6 - 2)²) = √(9 + 16) = √25 = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "distancia"
+        ],
+        "stem": "¿Cuál es la distancia entre los puntos I(3, 3) y J(3, 7)?",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answerIndex": 0,
+        "explanation": "La distancia se calcula como d = √((3 - 3)² + (7 - 3)²) = √(0 + 16) = √16 = 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "distancia"
+        ],
+        "stem": "Encuentra la distancia entre los puntos K(-2, -3) y L(1, 1).",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "answerIndex": 1,
+        "explanation": "Usando la fórmula de distancia: d = √((1 - (-2))² + (1 - (-3))²) = √(9 + 16) = √25 = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Pendiente de una recta": {
+    "lesson": {
+      "summary": "La pendiente de una recta es una medida que indica la inclinación de la recta respecto al eje horizontal. Se calcula como el cambio en la coordenada y dividido por el cambio en la coordenada x entre dos puntos de la recta.",
+      "examples": [
+        {
+          "title": "Cálculo de la pendiente entre dos puntos",
+          "steps": [
+            "Identificar dos puntos en la recta, por ejemplo, A(2, 3) y B(5, 7).",
+            "Calcular el cambio en y: 7 - 3 = 4.",
+            "Calcular el cambio en x: 5 - 2 = 3.",
+            "Aplicar la fórmula de la pendiente: m = (cambio en y) / (cambio en x) = 4 / 3.",
+            "La pendiente de la recta es 4/3."
           ]
         }
       ],
       "prerequisites": [],
       "pitfalls": [
-        "Confundir los lados opuesto y adyacente.",
-        "Olvidar que el seno y el coseno son funciones que dependen del ángulo."
+        "Confundir el cambio en y con el cambio en x.",
+        "Olvidar que la pendiente puede ser negativa si la recta desciende.",
+        "No simplificar la fracción de la pendiente cuando es posible."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "item1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente",
+          "recta"
+        ],
+        "stem": "¿Cuál es la pendiente de la recta que pasa por los puntos (2, 3) y (4, 7)?",
+        "choices": [
+          "2",
+          "1",
+          "0.5",
+          "3"
+        ],
+        "answerIndex": 0,
+        "explanation": "La pendiente se calcula como (y2 - y1) / (x2 - x1) = (7 - 3) / (4 - 2) = 4 / 2 = 2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente",
+          "recta"
+        ],
+        "stem": "Si la ecuación de una recta es y = -3x + 5, ¿cuál es su pendiente?",
+        "choices": [
+          "-3",
+          "3",
+          "5",
+          "-5"
+        ],
+        "answerIndex": 0,
+        "explanation": "En la ecuación de la forma y = mx + b, m representa la pendiente. Aquí, m = -3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente",
+          "recta"
+        ],
+        "stem": "¿Qué significa una pendiente de 0 en una recta?",
+        "choices": [
+          "La recta es vertical",
+          "La recta es horizontal",
+          "La recta tiene una pendiente positiva",
+          "La recta tiene una pendiente negativa"
+        ],
+        "answerIndex": 1,
+        "explanation": "Una pendiente de 0 indica que la recta es horizontal, es decir, no hay cambio en y al cambiar x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente",
+          "recta"
+        ],
+        "stem": "Si una recta tiene una pendiente positiva, ¿cómo se comporta gráficamente?",
+        "choices": [
+          "Desciende de izquierda a derecha",
+          "Asciende de izquierda a derecha",
+          "Es horizontal",
+          "Es vertical"
+        ],
+        "answerIndex": 1,
+        "explanation": "Una pendiente positiva indica que la recta asciende a medida que se mueve de izquierda a derecha. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item5",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente",
+          "recta"
+        ],
+        "stem": "¿Cuál es la pendiente de la recta que se representa por la ecuación 2x + 3y = 6?",
+        "choices": [
+          "-2/3",
+          "2/3",
+          "3/2",
+          "-3/2"
+        ],
+        "answerIndex": 0,
+        "explanation": "Reescribiendo la ecuación en forma pendiente-intersección (y = mx + b), se obtiene y = -2/3x + 2, donde la pendiente m = -2/3.",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente",
+          "recta"
+        ],
+        "stem": "Si dos rectas son perpendiculares, ¿qué relación tienen sus pendientes?",
+        "choices": [
+          "Son iguales",
+          "Son opuestas",
+          "El producto de sus pendientes es -1",
+          "El producto de sus pendientes es 1"
+        ],
+        "answerIndex": 2,
+        "explanation": "Dos rectas son perpendiculares si el producto de sus pendientes es -1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Ecuacion de la recta": {
+    "lesson": {
+      "summary": "La ecuación de la recta es una representación matemática que describe todas las coordenadas (x, y) que forman una línea recta en el plano cartesiano. La forma más común de la ecuación de la recta es la forma pendiente-intersección, que se expresa como y = mx + b, donde m es la pendiente y b es la intersección con el eje y.",
+      "examples": [
+        {
+          "title": "Ejemplo 1: Encontrar la ecuación de la recta a partir de dos puntos",
+          "steps": [
+            "Identificar los dos puntos dados, por ejemplo, A(1, 2) y B(3, 4).",
+            "Calcular la pendiente (m) usando la fórmula m = (y2 - y1) / (x2 - x1).",
+            "Sustituir los valores: m = (4 - 2) / (3 - 1) = 1.",
+            "Usar la fórmula de la ecuación de la recta y = mx + b. Sustituyendo m = 1, tenemos y = x + b.",
+            "Sustituir uno de los puntos en la ecuación para encontrar b. Usando A(1, 2): 2 = 1(1) + b, por lo que b = 1.",
+            "La ecuación de la recta es y = x + 1."
+          ]
+        },
+        {
+          "title": "Ejemplo 2: Graficar la ecuación de la recta y = 2x - 3",
+          "steps": [
+            "Identificar la pendiente (m = 2) y la intersección con el eje y (b = -3).",
+            "Graficar el punto de intersección en el eje y (0, -3).",
+            "Usar la pendiente para encontrar otro punto: desde (0, -3), subir 2 unidades y mover 1 unidad a la derecha para llegar a (1, -1).",
+            "Unir los puntos para formar la recta."
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "pitfalls": [
+        "Confundir la pendiente con la intersección y no identificar correctamente los puntos en el plano cartesiano.",
+        "Olvidar que la pendiente puede ser negativa, lo que indica que la recta desciende de izquierda a derecha."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "ecuaciones"
+        ],
+        "stem": "¿Cuál es la forma general de la ecuación de la recta en el plano cartesiano?",
+        "choices": [
+          "y = mx + b",
+          "y = ax^2 + bx + c",
+          "x = ky + d",
+          "y = kx"
+        ],
+        "answerIndex": 0,
+        "explanation": "La forma general de la ecuación de la recta es y = mx + b, donde m es la pendiente y b es la intersección con el eje y. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "pendiente"
+        ],
+        "stem": "Si la ecuación de la recta es y = 3x + 2, ¿cuál es la pendiente de la recta?",
+        "choices": [
+          "2",
+          "3",
+          "5",
+          "0"
+        ],
+        "answerIndex": 1,
+        "explanation": "En la ecuación y = mx + b, m representa la pendiente. Aquí, m = 3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "intersección"
+        ],
+        "stem": "En la ecuación de la recta y = -2x + 4, ¿cuál es la intersección con el eje y?",
+        "choices": [
+          "2",
+          "4",
+          "-2",
+          "0"
+        ],
+        "answerIndex": 1,
+        "explanation": "La intersección con el eje y se encuentra en el valor de b en la ecuación y = mx + b, que es 4. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "sistemas"
+        ],
+        "stem": "¿Cuál es el punto de intersección de las rectas y = 2x + 1 y y = -x + 4?",
+        "choices": [
+          "(1, 3)",
+          "(2, 5)",
+          "(3, 7)",
+          "(0, 1)"
+        ],
+        "answerIndex": 0,
+        "explanation": "Resolviendo el sistema de ecuaciones, se encuentra que el punto de intersección es (1, 3). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "pendiente"
+        ],
+        "stem": "Si una recta tiene una pendiente de 0, ¿qué tipo de recta es?",
+        "choices": [
+          "Vertical",
+          "Horizontal",
+          "Creciente",
+          "Decreciente"
+        ],
+        "answerIndex": 1,
+        "explanation": "Una recta con pendiente 0 es horizontal, lo que significa que no sube ni baja. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "ecuaciones"
+        ],
+        "stem": "¿Qué representa la pendiente en la ecuación de la recta?",
+        "choices": [
+          "La distancia entre dos puntos",
+          "La inclinación de la recta",
+          "La intersección con el eje x",
+          "La longitud de la recta"
+        ],
+        "answerIndex": 1,
+        "explanation": "La pendiente representa la inclinación de la recta, indicando cómo cambia y con respecto a x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Transformaciones geometricas": {
+    "lesson": {
+      "summary": "Las transformaciones geométricas son operaciones que modifican la posición, tamaño o forma de una figura en el plano. Las principales transformaciones son la traslación, rotación, reflexión y dilatación.",
+      "examples": [
+        {
+          "title": "Traslación de un triángulo",
+          "steps": [
+            "Identificar las coordenadas de los vértices del triángulo original.",
+            "Decidir el vector de traslación (por ejemplo, (2, 3)).",
+            "Sumar el vector de traslación a cada vértice del triángulo original para obtener las nuevas coordenadas."
+          ]
+        },
+        {
+          "title": "Rotación de un cuadrado",
+          "steps": [
+            "Determinar el centro de rotación y el ángulo de rotación (por ejemplo, 90 grados).",
+            "Aplicar la fórmula de rotación a cada vértice del cuadrado.",
+            "Obtener las nuevas coordenadas de los vértices después de la rotación."
+          ]
+        },
+        {
+          "title": "Reflexión de un pentágono",
+          "steps": [
+            "Identificar la línea de reflexión (por ejemplo, el eje x).",
+            "Determinar la posición de cada vértice respecto a la línea de reflexión.",
+            "Calcular las nuevas coordenadas reflejando cada vértice sobre la línea."
+          ]
+        },
+        {
+          "title": "Dilatación de un círculo",
+          "steps": [
+            "Identificar el centro y el radio del círculo original.",
+            "Decidir el factor de dilatación (por ejemplo, 2).",
+            "Multiplicar el radio por el factor de dilatación para obtener el nuevo radio."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de coordenadas en el plano cartesiano.",
+        "Entender conceptos de figuras geométricas básicas."
+      ],
+      "pitfalls": [
+        "Confundir la dirección de la traslación.",
+        "No aplicar correctamente el ángulo de rotación.",
+        "Olvidar considerar la línea de reflexión en la reflexión.",
+        "No mantener la proporción adecuada en la dilatación."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "item1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "transformaciones"
+        ],
+        "stem": "¿Cuál de las siguientes opciones describe mejor una rotación en el plano?",
+        "choices": [
+          "Un cambio de posición sin alterar la forma",
+          "Un cambio de tamaño",
+          "Un cambio de forma",
+          "Un cambio de color"
+        ],
+        "answerIndex": 0,
+        "explanation": "Una rotación implica mover una figura alrededor de un punto fijo sin cambiar su forma ni tamaño. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "transformaciones"
+        ],
+        "stem": "Si un triángulo se refleja sobre el eje Y, ¿cómo se verán sus coordenadas?",
+        "choices": [
+          "(x, y) a (x, -y)",
+          "(x, y) a (-x, y)",
+          "(x, y) a (-x, -y)",
+          "(x, y) a (y, x)"
+        ],
+        "answerIndex": 1,
+        "explanation": "La reflexión sobre el eje Y cambia el signo de la coordenada x, manteniendo la coordenada y igual. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item3",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "transformaciones"
+        ],
+        "stem": "¿Qué transformación geométrica se aplica cuando se aumenta el tamaño de una figura manteniendo su forma?",
+        "choices": [
+          "Reflexión",
+          "Rotación",
+          "Escalado",
+          "Translación"
+        ],
+        "answerIndex": 2,
+        "explanation": "El escalado es la transformación que aumenta o disminuye el tamaño de una figura manteniendo su forma. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "transformaciones"
+        ],
+        "stem": "¿Cuál es el resultado de trasladar un cuadrado 3 unidades a la derecha y 2 unidades hacia arriba?",
+        "choices": [
+          "(x+3, y+2)",
+          "(x-3, y-2)",
+          "(x+2, y+3)",
+          "(x-2, y+3)"
+        ],
+        "answerIndex": 0,
+        "explanation": "La traslación implica sumar las unidades de desplazamiento a las coordenadas originales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item5",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "transformaciones"
+        ],
+        "stem": "Si un cuadrado se rota 90 grados en sentido horario, ¿cuál de las siguientes afirmaciones es correcta?",
+        "choices": [
+          "Los vértices se mantienen en la misma posición",
+          "Los lados se alargan",
+          "Los vértices cambian de posición",
+          "La figura se convierte en un triángulo"
+        ],
+        "answerIndex": 2,
+        "explanation": "Una rotación de 90 grados en sentido horario cambia la posición de los vértices del cuadrado. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "item6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "transformaciones"
+        ],
+        "stem": "¿Qué transformación se utiliza para cambiar la orientación de una figura sin alterar su forma o tamaño?",
+        "choices": [
+          "Reflexión",
+          "Escalado",
+          "Translación",
+          "Rotación"
+        ],
+        "answerIndex": 3,
+        "explanation": "La rotación cambia la orientación de la figura sin modificar su forma o tamaño. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Simetria rotacion y traslacion": {
+    "lesson": {
+      "summary": "La simetría de rotación y traslación son transformaciones geométricas que permiten entender cómo se pueden mover figuras en el plano sin alterar su forma. La rotación implica girar una figura alrededor de un punto fijo, mientras que la traslación consiste en mover una figura de un lugar a otro sin cambiar su orientación.",
+      "examples": [
+        {
+          "title": "Ejemplo de Simetría de Rotación",
+          "steps": [
+            "Identificar el centro de rotación.",
+            "Determinar el ángulo de rotación.",
+            "Girar la figura alrededor del centro por el ángulo especificado."
+          ]
+        },
+        {
+          "title": "Ejemplo de Simetría de Traslación",
+          "steps": [
+            "Seleccionar un vector de traslación.",
+            "Mover cada punto de la figura en la dirección del vector.",
+            "Dibujar la nueva posición de la figura."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de geometría",
+        "Entender coordenadas en el plano"
+      ],
+      "pitfalls": [
+        "Confundir rotación con traslación.",
+        "No identificar correctamente el centro de rotación."
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "simetría"
+        ],
+        "stem": "¿Cuál de las siguientes figuras presenta simetría rotacional?",
+        "choices": [
+          "Un triángulo equilátero",
+          "Un cuadrado",
+          "Un rectángulo",
+          "Un trapecio"
+        ],
+        "answerIndex": 1,
+        "explanation": "El cuadrado tiene simetría rotacional de 90 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "traslación"
+        ],
+        "stem": "Si un triángulo se traslada 5 unidades a la derecha y 3 unidades hacia arriba, ¿cuál es la nueva posición del vértice A(2, 3)?",
+        "choices": [
+          "(7, 6)",
+          "(5, 3)",
+          "(2, 3)",
+          "(2, 6)"
+        ],
+        "answerIndex": 0,
+        "explanation": "La nueva posición se obtiene sumando 5 a la coordenada x y 3 a la coordenada y. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 2,
+        "tags": [
+          "simetría",
+          "rotación"
+        ],
+        "stem": "¿Qué figura tiene un orden de simetría rotacional de 3?",
+        "choices": [
+          "Un hexágono",
+          "Un triángulo",
+          "Un cuadrado",
+          "Un pentágono"
+        ],
+        "answerIndex": 1,
+        "explanation": "El triángulo tiene un orden de simetría rotacional de 3, ya que puede rotarse 120 grados. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "traslación"
+        ],
+        "stem": "Si un cuadrado se traslada 2 unidades a la izquierda, ¿cuál es la nueva posición del vértice B(4, 4)?",
+        "choices": [
+          "(2, 4)",
+          "(6, 4)",
+          "(4, 2)",
+          "(4, 6)"
+        ],
+        "answerIndex": 0,
+        "explanation": "La nueva posición se obtiene restando 2 a la coordenada x. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 2,
+        "tags": [
+          "simetría",
+          "traslación"
+        ],
+        "stem": "¿Cuál de las siguientes afirmaciones es verdadera sobre la traslación?",
+        "choices": [
+          "Cambia la forma de la figura",
+          "Cambia la orientación de la figura",
+          "Mantiene la forma y el tamaño",
+          "Es lo mismo que la rotación"
+        ],
+        "answerIndex": 2,
+        "explanation": "La traslación mantiene la forma y el tamaño de la figura, solo cambia su posición. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "simetría"
+        ],
+        "stem": "¿Qué figura tiene simetría de traslación?",
+        "choices": [
+          "Un círculo",
+          "Un cuadrado",
+          "Un rectángulo",
+          "Un patrón de rayas"
+        ],
+        "answerIndex": 3,
+        "explanation": "Un patrón de rayas puede repetirse en una dirección, mostrando simetría de traslación. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Proporcionalidad en figuras": {
+    "lesson": {
+      "summary": "La proporcionalidad en figuras se refiere a la relación constante entre las dimensiones de dos o más figuras geométricas. Esta lección explora cómo identificar y aplicar la proporcionalidad en figuras similares, así como calcular áreas y perímetros en función de esta relación.",
+      "examples": [
+        {
+          "title": "Ejemplo 1: Figuras similares",
+          "steps": [
+            "Identificar dos figuras que sean similares (por ejemplo, un triángulo y un triángulo más grande).",
+            "Determinar la razón de proporcionalidad entre los lados de las figuras (por ejemplo, 2:1).",
+            "Calcular el área de la figura más grande utilizando la razón de proporcionalidad (si el lado del triángulo pequeño es 3 cm, el lado del triángulo grande será 6 cm, y el área se calculará como A = (lado^2) * razón^2)."
+          ]
+        },
+        {
+          "title": "Ejemplo 2: Cálculo de perímetros",
+          "steps": [
+            "Tomar dos rectángulos similares, uno de 4 cm x 6 cm y otro de 8 cm x 12 cm.",
+            "Calcular el perímetro del primer rectángulo (P = 2*(4+6) = 20 cm).",
+            "Usar la razón de proporcionalidad (2:1) para calcular el perímetro del segundo rectángulo (P = 2*(8+12) = 40 cm)."
+          ]
+        }
+      ],
+      "prerequisites": [
+        "Conocimiento básico de figuras geométricas",
+        "Entender el concepto de semejanza en geometría"
+      ],
+      "pitfalls": [
+        "Confundir proporcionalidad con igualdad de medidas",
+        "No aplicar correctamente la razón de proporcionalidad al calcular áreas y perímetros"
+      ],
+      "pregunta_tipo": null,
+      "tipos_de_pregunta": [],
+      "images": []
+    },
+    "items": [
+      {
+        "id": "1",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "proporcionalidad"
+        ],
+        "stem": "En un triángulo, si un lado mide 8 cm y el otro lado es proporcional a 12 cm, ¿cuál es la razón de proporcionalidad?",
+        "choices": [
+          "2/3",
+          "3/2",
+          "4/3",
+          "3/4"
+        ],
+        "answerIndex": 0,
+        "explanation": "La razón de proporcionalidad se calcula como 8/12, que simplificado es 2/3. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "2",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "proporcionalidad"
+        ],
+        "stem": "Si un rectángulo tiene un ancho de 5 cm y su largo es el doble, ¿cuál es el área del rectángulo?",
+        "choices": [
+          "10 cm²",
+          "20 cm²",
+          "25 cm²",
+          "30 cm²"
+        ],
+        "answerIndex": 1,
+        "explanation": "El largo es 10 cm (doble de 5 cm), por lo que el área es 5 cm * 10 cm = 50 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "3",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "proporcionalidad"
+        ],
+        "stem": "Dos triángulos son semejantes. Si el área del primer triángulo es 50 cm² y la razón de proporcionalidad de sus lados es 2:3, ¿cuál es el área del segundo triángulo?",
+        "choices": [
+          "75 cm²",
+          "100 cm²",
+          "150 cm²",
+          "200 cm²"
+        ],
+        "answerIndex": 1,
+        "explanation": "El área de los triángulos es proporcional al cuadrado de la razón de proporcionalidad: (3/2)² * 50 cm² = 100 cm². Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "4",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "proporcionalidad"
+        ],
+        "stem": "Un cuadrado tiene un lado de 4 cm. Si se duplica el tamaño del cuadrado, ¿cuánto mide cada lado del nuevo cuadrado?",
+        "choices": [
+          "4 cm",
+          "6 cm",
+          "8 cm",
+          "10 cm"
+        ],
+        "answerIndex": 2,
+        "explanation": "Si se duplica el tamaño, cada lado del nuevo cuadrado mide 4 cm * 2 = 8 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "5",
+        "difficulty": 3,
+        "tags": [
+          "geometría",
+          "proporcionalidad"
+        ],
+        "stem": "En un trapecio, la base mayor mide 12 cm y la base menor mide 8 cm. Si la altura es proporcional a 5 cm, ¿cuál es la altura si la razón de proporcionalidad es 1:2?",
+        "choices": [
+          "2.5 cm",
+          "5 cm",
+          "10 cm",
+          "15 cm"
+        ],
+        "answerIndex": 2,
+        "explanation": "Si la altura es proporcional a 5 cm y la razón es 1:2, la altura es 5 cm * 2 = 10 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      },
+      {
+        "id": "6",
+        "difficulty": 2,
+        "tags": [
+          "geometría",
+          "proporcionalidad"
+        ],
+        "stem": "Si un círculo tiene un radio de 3 cm, ¿cuál será el radio de un círculo que es proporcional al primero con una razón de 4:3?",
+        "choices": [
+          "2.25 cm",
+          "3 cm",
+          "4 cm",
+          "4.5 cm"
+        ],
+        "answerIndex": 3,
+        "explanation": "El radio del segundo círculo es 3 cm * (4/3) = 4 cm. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "label": "POSIBLE PREGUNTA"
+      }
+    ]
+  },
+  "Razon trigonometrica en triangulos rectangulos": {
+    "lesson": {
+      "summary": "Esta lección aborda las razones trigonométricas en triángulos rectángulos, enfocándose en el seno, coseno y tangente, y su aplicación en la resolución de problemas relacionados con triángulos.",
+      "examples": [
+        {
+          "title": "Cálculo de la altura de un edificio",
+          "steps": [
+            "Identificar el triángulo rectángulo formado por la altura del edificio, la distancia desde el observador hasta la base del edificio y la línea de visión.",
+            "Usar la razón trigonométrica adecuada: si se conoce el ángulo de elevación y la distancia, aplicar la tangente: altura = distancia * tan(ángulo).",
+            "Sustituir los valores conocidos y calcular la altura."
+          ]
+        },
+        {
+          "title": "Encontrar la longitud de un lado en un triángulo rectángulo",
+          "steps": [
+            "Dibuja el triángulo rectángulo y etiqueta los lados: opuesto, adyacente e hipotenusa.",
+            "Si se conoce un ángulo y un lado, usar seno o coseno para encontrar el lado desconocido.",
+            "Por ejemplo, si se conoce el ángulo y el lado adyacente, usar: lado opuesto = lado adyacente * tan(ángulo)."
+          ]
+        }
+      ],
+      "prerequisites": [],
+      "pitfalls": [
+        "Confundir las razones trigonométricas: recordar que seno es opuesto sobre hipotenusa, coseno es adyacente sobre hipotenusa y tangente es opuesto sobre adyacente.",
+        "No aplicar correctamente las funciones trigonométricas según el triángulo que se está analizando."
       ],
       "pregunta_tipo": null,
       "tipos_de_pregunta": [],
@@ -931,17 +2801,17 @@
         "difficulty": 2,
         "tags": [
           "trigonometría",
-          "razones trigonométricas"
+          "triángulos rectángulos"
         ],
-        "stem": "¿Cuál es el valor de seno de 30 grados?",
+        "stem": "En un triángulo rectángulo, si uno de los ángulos agudos mide 30 grados, ¿cuál es la razón trigonométrica del seno de ese ángulo?",
         "choices": [
-          "0",
-          "1/2",
-          "√3/2",
-          "1"
+          "0.5",
+          "0.866",
+          "1",
+          "0.707"
         ],
-        "answerIndex": 1,
-        "explanation": "El seno de 30 grados es 1/2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "El seno de 30 grados es 0.5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -949,53 +2819,53 @@
         "difficulty": 2,
         "tags": [
           "trigonometría",
-          "razones trigonométricas"
+          "triángulos rectángulos"
         ],
-        "stem": "¿Qué razón trigonométrica se define como el cociente entre el cateto opuesto y la hipotenusa?",
+        "stem": "Si en un triángulo rectángulo, la longitud del cateto opuesto a un ángulo de 45 grados es 5, ¿cuál es la longitud del cateto adyacente?",
         "choices": [
-          "Coseno",
-          "Tangente",
-          "Seno",
-          "Secante"
+          "5",
+          "10",
+          "7.07",
+          "3.54"
         ],
-        "answerIndex": 2,
-        "explanation": "El seno se define como el cociente entre el cateto opuesto y la hipotenusa. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 0,
+        "explanation": "En un triángulo 45-45-90, los catetos son iguales, por lo que el cateto adyacente también mide 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "item3",
-        "difficulty": 2,
+        "difficulty": 3,
         "tags": [
           "trigonometría",
-          "razones trigonométricas"
+          "triángulos rectángulos"
         ],
-        "stem": "¿Cuál es el valor de coseno de 60 grados?",
+        "stem": "En un triángulo rectángulo, si el cateto opuesto mide 6 y el cateto adyacente mide 8, ¿cuál es la tangente del ángulo opuesto al cateto de 6?",
         "choices": [
-          "0",
-          "1/2",
-          "√3/2",
-          "1"
+          "0.75",
+          "1.33",
+          "1.5",
+          "2"
         ],
         "answerIndex": 1,
-        "explanation": "El coseno de 60 grados es 1/2. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "La tangente se calcula como cateto opuesto dividido por cateto adyacente: 6/8 = 0.75. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "item4",
-        "difficulty": 2,
+        "difficulty": 3,
         "tags": [
           "trigonometría",
-          "razones trigonométricas"
+          "triángulos rectángulos"
         ],
-        "stem": "¿Qué razón trigonométrica es igual a la tangente de un ángulo?",
+        "stem": "Si en un triángulo rectángulo, el ángulo agudo mide 60 grados, ¿cuál es la razón del coseno de ese ángulo?",
         "choices": [
-          "Seno/Coseno",
-          "Coseno/Seno",
-          "Hipotenusa/Opuesto",
-          "Opuesto/Hipotenusa"
+          "0.5",
+          "0.866",
+          "0.707",
+          "1"
         ],
-        "answerIndex": 0,
-        "explanation": "La tangente de un ángulo es igual a seno sobre coseno. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 1,
+        "explanation": "El coseno de 60 grados es 0.5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
@@ -1003,185 +2873,35 @@
         "difficulty": 2,
         "tags": [
           "trigonometría",
-          "razones trigonométricas"
+          "triángulos rectángulos"
         ],
-        "stem": "¿Cuál es el valor de tangente de 45 grados?",
+        "stem": "En un triángulo rectángulo, si la hipotenusa mide 10 y uno de los catetos mide 6, ¿cuál es el valor del cateto restante?",
         "choices": [
-          "0",
-          "1",
-          "√3",
-          "∞"
+          "8",
+          "4",
+          "6",
+          "5"
         ],
-        "answerIndex": 1,
-        "explanation": "La tangente de 45 grados es 1. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "answerIndex": 3,
+        "explanation": "Usando el teorema de Pitágoras: 10^2 = 6^2 + b^2, b^2 = 100 - 36 = 64, b = 8. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       },
       {
         "id": "item6",
-        "difficulty": 2,
+        "difficulty": 3,
         "tags": [
           "trigonometría",
-          "razones trigonométricas"
+          "triángulos rectángulos"
         ],
-        "stem": "¿Qué relación existe entre las razones trigonométricas de un ángulo y su complemento?",
+        "stem": "Si en un triángulo rectángulo, el cateto opuesto mide 12 y la hipotenusa mide 13, ¿cuál es el valor del cateto adyacente?",
         "choices": [
-          "Son iguales",
-          "Son opuestas",
-          "Son recíprocas",
-          "Son diferentes"
-        ],
-        "answerIndex": 2,
-        "explanation": "Las razones trigonométricas de un ángulo y su complemento son recíprocas. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
-        "label": "POSIBLE PREGUNTA"
-      }
-    ]
-  },
-  "Semejanza y congruencia de triangulos": {
-    "lesson": {
-      "summary": "La semejanza y congruencia de triángulos son conceptos fundamentales en geometría que permiten establecer relaciones entre diferentes triángulos. Dos triángulos son semejantes si sus ángulos son iguales y sus lados son proporcionales. Por otro lado, dos triángulos son congruentes si tienen la misma forma y tamaño, es decir, sus lados y ángulos son iguales.",
-      "examples": [
-        {
-          "title": "Ejemplo 1: Semejanza de triángulos",
-          "steps": [
-            "Considera dos triángulos ABC y DEF.",
-            "Si el ángulo A es igual al ángulo D, el ángulo B es igual al ángulo E, y el ángulo C es igual al ángulo F, entonces los triángulos son semejantes.",
-            "Verifica que los lados son proporcionales: AB/DE = BC/EF = AC/DF."
-          ]
-        },
-        {
-          "title": "Ejemplo 2: Congruencia de triángulos",
-          "steps": [
-            "Considera dos triángulos GHI y JKL.",
-            "Si el lado GH es igual al lado JK, el lado HI es igual al lado KL, y el lado GI es igual al lado JL, entonces los triángulos son congruentes.",
-            "Utiliza el criterio LAL (Lado-Ángulo-Lado) para comprobar la congruencia."
-          ]
-        }
-      ],
-      "prerequisites": [
-        "Conocimiento básico de triángulos",
-        "Entender los conceptos de ángulo y lado"
-      ],
-      "pitfalls": [
-        "Confundir semejanza con congruencia.",
-        "No verificar la proporcionalidad de los lados en la semejanza."
-      ],
-      "pregunta_tipo": null,
-      "tipos_de_pregunta": [],
-      "images": []
-    },
-    "items": [
-      {
-        "id": "1",
-        "difficulty": 2,
-        "tags": [
-          "geometría",
-          "triángulos",
-          "semejanza"
-        ],
-        "stem": "¿Cuáles de los siguientes triángulos son semejantes?",
-        "choices": [
-          "Triángulo ABC con lados 3, 4, 5",
-          "Triángulo DEF con lados 6, 8, 10",
-          "Triángulo GHI con lados 5, 12, 13",
-          "Triángulo JKL con lados 2, 3, 4"
+          "5",
+          "7",
+          "10",
+          "11"
         ],
         "answerIndex": 1,
-        "explanation": "Los triángulos ABC y DEF son semejantes porque sus lados son proporcionales (3:6, 4:8, 5:10). Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
-        "label": "POSIBLE PREGUNTA"
-      },
-      {
-        "id": "2",
-        "difficulty": 2,
-        "tags": [
-          "geometría",
-          "triángulos",
-          "congruencia"
-        ],
-        "stem": "Si dos triángulos son congruentes, ¿qué se puede afirmar sobre sus lados y ángulos?",
-        "choices": [
-          "Son iguales en área",
-          "Tienen la misma forma y tamaño",
-          "Son semejantes",
-          "Tienen ángulos rectos"
-        ],
-        "answerIndex": 1,
-        "explanation": "Los triángulos congruentes tienen la misma forma y tamaño, lo que implica que sus lados y ángulos son iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
-        "label": "POSIBLE PREGUNTA"
-      },
-      {
-        "id": "3",
-        "difficulty": 2,
-        "tags": [
-          "geometría",
-          "triángulos",
-          "semejanza"
-        ],
-        "stem": "¿Qué criterio se utiliza para determinar si dos triángulos son semejantes?",
-        "choices": [
-          "Lado-Lado-Lado (LLL)",
-          "Lado-Ángulo-Lado (LAL)",
-          "Ángulo-Ángulo (AA)",
-          "Ángulo-Lado-Ángulo (ALA)"
-        ],
-        "answerIndex": 2,
-        "explanation": "El criterio Ángulo-Ángulo (AA) establece que si dos ángulos de un triángulo son iguales a dos ángulos de otro triángulo, entonces los triángulos son semejantes.",
-        "label": "POSIBLE PREGUNTA"
-      },
-      {
-        "id": "4",
-        "difficulty": 2,
-        "tags": [
-          "geometría",
-          "triángulos",
-          "congruencia"
-        ],
-        "stem": "Si dos triángulos tienen lados de 5 cm, 12 cm y 13 cm, ¿son congruentes?",
-        "choices": [
-          "Sí",
-          "No",
-          "Solo si tienen el mismo ángulo",
-          "No se puede determinar"
-        ],
-        "answerIndex": 0,
-        "explanation": "Los triángulos son congruentes si sus lados son iguales, y en este caso ambos triángulos tienen lados de 5 cm, 12 cm y 13 cm.",
-        "label": "POSIBLE PREGUNTA"
-      },
-      {
-        "id": "5",
-        "difficulty": 2,
-        "tags": [
-          "geometría",
-          "triángulos",
-          "semejanza"
-        ],
-        "stem": "Si un triángulo tiene lados de 2 cm, 3 cm y 4 cm, y otro triángulo tiene lados de 4 cm, 6 cm y 8 cm, ¿son semejantes?",
-        "choices": [
-          "Sí",
-          "No",
-          "Solo si son congruentes",
-          "No se puede determinar"
-        ],
-        "answerIndex": 0,
-        "explanation": "Los lados del segundo triángulo son el doble de los del primero, por lo que son semejantes. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
-        "label": "POSIBLE PREGUNTA"
-      },
-      {
-        "id": "6",
-        "difficulty": 2,
-        "tags": [
-          "geometría",
-          "triángulos",
-          "congruencia"
-        ],
-        "stem": "¿Cuál de los siguientes enunciados es verdadero sobre triángulos congruentes?",
-        "choices": [
-          "Tienen la misma área",
-          "Tienen lados proporcionales",
-          "Son siempre semejantes",
-          "Tienen un ángulo recto"
-        ],
-        "answerIndex": 0,
-        "explanation": "Los triángulos congruentes tienen la misma área, además de lados y ángulos iguales. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
+        "explanation": "Usando el teorema de Pitágoras: 13^2 = 12^2 + b^2, b^2 = 169 - 144 = 25, b = 5. Explica paso a paso el razonamiento y por qué las otras opciones no son correctas, con detalle suficiente (120-300 palabras).",
         "label": "POSIBLE PREGUNTA"
       }
     ]
